@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap');
+
+@font-face{
+    font-family: IRANSansXBlack;
+    src: url("../fonts/IRANSansX-Black.ttf") format("truetype"),
+    url("../fonts//IRANSansX-Black.woff") format("woff"),
+    url("../fonts//IRANSansX-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: IRANSansXBold;
+    src: url("../fonts/IRANSansX-Bold.ttf") format("truetype"),
+    url("../fonts//IRANSansX-Bold.woff") format("woff"),
+    url("../fonts//IRANSansX-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: IRANSansXDemiBold;
+    src: url("../fonts/IRANSansX-DemiBold.ttf") format("truetype"),
+    url("../fonts/IRANSansX-DemiBold.woff") format("woff"),
+    url("../fonts/IRANSansX-DemiBold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXExtraBold;
+    src: url("../fonts/IRANSansX-ExtraBold.ttf") format("truetype"),
+    url("../fonts/IRANSansX-ExtraBold.woff") format("woff"),
+    url("../fonts/IRANSansX-ExtraBold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXlight;
+    src: url("../fonts/IRANSansX-Light.ttf") format("truetype"),
+    url("../fonts/IRANSansX-Light.woff") format("woff"),
+    url("../fonts/IRANSansX-Light.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXmedium;
+    src: url("../fonts/IRANSansX-Medium.ttf") format("truetype"),
+    url("../fonts/IRANSansX-Medium.woff") format("woff"),
+    url("../fonts/IRANSansX-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXregular;
+    src: url("../fonts/IRANSansX-Regular.ttf") format("truetype"),
+    url("../fonts/IRANSansX-Regular.woff") format("woff"),
+    url("../fonts/IRANSansX-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXthin;
+    src: url("../fonts/IRANSansX-Thin.ttf") format("truetype"),
+    url("../fonts/IRANSansX-Thin.woff") format("woff"),
+    url("../fonts/IRANSansX-Thin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXultraLight;
+    src: url("../fonts/IRANSansX-UltraLight.ttf") format("truetype"),
+    url("../fonts/IRANSansX-UltraLight.woff") format("woff"),
+    url("../fonts/IRANSansX-UltraLight.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXfanumberBlack;
+    src: url("../fonts/IRANSansXFaNum-Black.ttf") format("truetype"),
+    url("../fonts/IRANSansXFaNum-Black.woff") format("woff"),
+    url("../fonts/IRANSansXFaNum-Black.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: IRANSansXfanumberBold;
+    src: url("../fonts/IRANSansXFaNum-Bold.ttf") format("truetype"),
+    url("../fonts/IRANSansXFaNum-Bold.woff") format("woff"),
+    url("../fonts/IRANSansXFaNum-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+*,
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: IRANSansXfanumberBold;
+}
+body{
+    overflow-x: hidden;
+    background: #f6f6f6!important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    cursor: pointer;
+    text-decoration: none!important;
+}
+ul, li, ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 8, 187);
+    border-radius: 10px;
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+}
+*::selection{
+    background-color: rgb(102, 7, 190);
+    color: #fff;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
