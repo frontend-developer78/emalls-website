@@ -1,0 +1,69 @@
+// --------------- Start footer style section
+#footer {
+    background: #fff;
+    padding: 30px 30px 0 30px;
+    .footer-wrapper{
+        .visited-comment-popular-container{
+            .visited-comment-popular-inner{
+                h5{
+                    font: {
+                        size: $default-font-size;
+                    }
+                    color: $text-header-footer-color;
+                    border-right: 5px solid red;
+                    padding-right: 10px;
+                    margin-bottom: 20px;
+                }
+                ul.popular-comment-list-wrapper {
+                    li {
+                        margin-bottom: 30px;
+                        a{
+                            font: {
+                                size: $default-font-size - 2px;
+                            }
+                            color: $link-footer-color;
+                            @include transition-default(all,0.4s);
+                        }
+                        @include transition-default(all,0.4s);
+                        &:hover {
+                            transform: translateX(-4px);
+                            a{
+                                color: #353535;
+                            }
+                        }
+                    }
+                }
+                .rigester-box-container{
+                    margin-top: 50px;
+                    @include flex(flex,center,space-between);
+                    a{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .under-page-text-container{
+            p{
+                font: {
+                    size: $default-font-size - 2px;
+                }
+                margin-bottom: 0;
+            }
+            .socail-media-link-container{
+                @include flex(flex,center,center);
+                a{
+                    margin-right: 12px;
+                }
+            }
+            .black-box-container{
+                margin-top: 20px;
+                .black-box-inner{
+                    width: 100%;
+                    height: 15px;
+                    background: #000;
+                }
+            }
+        }
+    }
+}
