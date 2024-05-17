@@ -14,7 +14,7 @@
             a.navbar-brand{
                 color: $navbar-brand-color;
                 span{
-                    color: rgb(255, 153, 0);
+                    color: $them-color;
                 }
             }
             .navbar-collapse{
@@ -31,68 +31,59 @@
                                 size: $default-font-size - 2px;
                             }
                             &:hover {
-                                color: #00686b;
+                                color: $them-color;
                                 font: {
                                     size: $default-font-size - 1px;
                                 }
                             }
                         }
                     }
-                    li.nav-search-item{
-                        i{
-                            background: #fff;
-                            margin-left: 4px;
-                            @include margin-padding(4px,4px,4px,4px,false);
-                            border-radius: 50%;
-                        }
-                        .nav-search-box-container{
-                            position: absolute;
-                            min-width: 700px;
-                            top: -157%;
-                            right: -5%;
-                            transform: translate(-50%, -50%);
-                            background-color: #ffffffe5;
-                            border-radius: 10px;
-                            padding: 10px 0;
+                    .nav-item-dropdown {
+                        position: relative;
+                        .dropdown-menu-custom {
+                            @include margin-padding(20px,20px,20px,20px,false);
+                            position: fixed;
+                            top: 60px;
+                            right: 0;
+                            transform: translate(-2.5%, 0);
+                            max-width: 95%;
+                            height: 0;
+                            display: none;
                             overflow: hidden;
-                            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-                            div.nav-search-box-inner{
-                                @include flex(flex,center,center);
-                                input{
-                                    width: 80%;
-                                    border: none;
-                                    outline: none;
-                                    background-color: transparent;
-                                    font: {
-                                        size: $default-font-size - 1px;
-                                    }
-                                    &::placeholder{
+                            @include transition-default(all,0.4s);
+                            z-index: 1000;
+                            background-color: #ffffff;
+                            border: 1px solid #0000001c;
+                            border-top: 0;
+                            border-radius: 0 0 20px 20px;
+                            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+                            .dropdown-menu-container {
+                                border-left: 1px solid #00000024;
+                                max-width: 260px;
+                                .dropdown-menu-inner {
+                                    position: relative;
+                                    margin-bottom: 40px;
+                                    a {
+                                        color: $dropdown-menu-link-color;
                                         font: {
-                                            weight: 900;
+                                            size: $default-font-size - 2px;
                                         }
-                                        color: #848484;
-                                    }
-                                }
-                                button{
-                                    border: none;
-                                    outline: none;
-                                    padding: 6px;
-                                    border-radius: 10px;
-                                    background-color: #d7d7d7;
-                                    @include transition-default(all, 0.4s);
-                                    font: {
-                                        size: $default-font-size - 2px;
-                                        weight: 300;
-                                    }
-                                    color: #00686b;
-                                    &:hover {
-                                        background-color: #a3f3f6;
+                                        i {
+                                            position: absolute;
+                                            left: 0;
+                                            color: #00000035;
+                                            @include transition-default(all,0.4s);
+                                        }
+                                        @include transition-default(all,0.4s);
+                                        &:hover {
+                                            color: $them-color;
+                                            i {
+                                                color: $them-color;
+                                            }
+                                        }
                                     }
                                 }
                             }
-                        }
-                        .nav-search-box-active{
-                            top: 157%!important;
                         }
                     }
                 }
@@ -102,15 +93,21 @@
                         border: none;
                         outline: none;
                         background-color: transparent;
-                        i {
-                            @include margin-padding(6px,7px,6px,7px,false);
-                            background-color: #fff;
-                            border-radius: 10px;
+                        @include flex(flex,center,center);
+                        @include margin-padding(10px,12px,10px,12px,false);
+                        background-color: #ffae00;
+                        border-radius: 10px;
+                        p {
+                            font: {
+                                size: $default-font-size - 2px;
+                            }
+                            color: #292929;
+                            margin-bottom: 0;
                         }
                     }
                     .user-acount-box-container{
                         position: absolute;
-                        top: 40px;
+                        top: 45px;
                         left: 10px;
                         width: 10rem;
                         height: 0;
@@ -142,6 +139,18 @@
                             }
                         }
                     }
+                }
+                button.store-registration {
+                    @include margin-padding(8px,10px,8px,10px,false);
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    background: $them-color;
+                    color: #fff;
+                    box-shadow: 0 0 12px rgba(0, 199, 103, 0.902);
                 }
             }
         }
@@ -175,6 +184,11 @@ button.menu-btn-responsive {
 }
 .active-user-acount-box{
     height: 15rem!important;
+}
+.dropdown-menu-active {
+    height: unset!important;
+    display: block!important;
+    @include transition-default(all,0.4s);
 }
 
 @media only screen and (min-width: 1600px) {

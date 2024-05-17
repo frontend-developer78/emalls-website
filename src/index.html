@@ -26,8 +26,42 @@
                   <a class="navbar-brand" href="#"><img width="20" height="20" src="assets/img/logo.png" alt="logo-website"> جست و جو<span class="m-2">کالا</span></a>
                   <div class="navbar-collapse">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                      <li class="nav-item ms-4">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-truck-moving ms-1"></i>دسته بندی ها</a>
+                      <li class="nav-item nav-item-dropdown ms-4">
+                        <a class="nav-link nav-link-dropdown" aria-current="page" href="#"><i class="fa-solid fa-truck-moving ms-1"></i>دسته بندی ها <i class="fa-solid fa-angle-down me-1"></i></a>
+                        <div class="dropdown-menu-custom container-fluid">
+                          <ul class="dropdown-menu-container">
+                            <li class="dropdown-menu-inner">
+                              <a href="#">گوشی موبایل <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">تبلت و لپتاپ <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">لوازم خانگی <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">سوپرمارکت <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">کنسول بازی <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">میز و صندلی <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">لباس مردانه <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">لباس زنانه <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">دکوراسیون منزل <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">کتاب <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                          </ul>
+                        </div>
                       </li>
                       <li class="nav-item ms-4">
                         <a class="nav-link" href="#"><i class="fa-solid fa-hotel ms-1"></i>پنل فروشگاه ها</a>
@@ -41,7 +75,7 @@
                     </ul>
                     <div class="user-acount-section">
                       <button type="button" class="user-profile-btn me-4" onclick="profileAcountDefault()">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user"></i><p class="me-1">ورود / ثبت نام</p>
                       </button>
                       <div class="user-acount-box-container" data-acount-default="open">
                         <ul class="user-acount-inner">
@@ -52,6 +86,7 @@
                         </ul>
                       </div>
                     </div>
+                    <button class="store-registration me-2" type="button">ثبت فروشگاه</button>
                   </div>
                 </div>
             </nav>
@@ -72,8 +107,142 @@
       </div>
     </div>
     <!-- ----------------- End navbar section ------------------- -->
+    <!-- ----------------- Start header section ------------------- -->
+    <section id="header" class="container-fluid px-0">
+      <img class="img-fluid header-baner-image" src="assets/img/baner-bg.png" alt="baner-image">
+      <div class="container search-header-container">
+        <div class="row">
+          <div class="col-12 col-6">
+            <h4 class="search-header-content">با ما تو خرید های آنلاینت دیگه ضرر نمی کنی و خیالت راحته</h4>
+            <form action="">
+              <div class="search-form-container">
+                <input id="search-box" placeholder="دنبال چی می گردی ..." type="text" name="search-box" title="جست و جو کنید ...">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </form>
+            <div class="last-searching-content">
+              <ul>
+                <li><a href="#">یخچال سامسونگ</a></li>
+                <li><a href="#">اسباب بازی برای کودک ۵ ساله</a></li>
+                <li><a href="#">گوشی A55</a></li>
+                <li><a href="#">اسپیکر</a></li>
+                <li><a href="#">آب میوه گیری</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- End header section ------------------- -->
+    <!-- ----------------- Start category product section ------------------- -->
+    <section id="category" class="container-fluid mt-3">
+      <div class="category-product-wrapper">
+        <ul class="category-product-list">
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/Appliances-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/baby&mom-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/bike-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/car-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/food-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/home-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/laptop-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/medical-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/tools-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+          <li class="category-product-inner"><a href="#" class="category-card">
+            <div class="category-card-box">
+              <img class="img-fluid w-50" src="assets/img/Appliances-category.png" alt="category-image">
+              <p>دکوراسیون خانگی</p>
+            </div>
+          </a></li>
+        </ul>
+        <a class="all-category-link" href="#">مشاهده همه <i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+    </section>
+    <!-- ----------------- End category product section ------------------- -->
+    <section id="carouselBaner" class="container mt-4">
+      <div class="row">
+        <div class="col-12 carousel-baner-container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#">
+                  <img src="assets/img/category-baner-image-1.png" class="d-block w-100" alt="category-baner-image">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#">
+                  <img src="assets/img/category-baner-image-2.png" class="d-block w-100" alt="category-baner-image">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#">
+                  <img src="assets/img/category-baner-image-3.png" class="d-block w-100" alt="category-baner-image">
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ----------------- Start footer section ----------------- -->
-    <!-- <section id="footer">
+    <section id="footer">
       <div class="container-fluid footer-wrapper">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 visited-comment-popular-container">
@@ -135,7 +304,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- ----------------- End footer section ----------------- -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
