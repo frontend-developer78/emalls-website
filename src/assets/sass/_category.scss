@@ -42,3 +42,14 @@
         }
     }
 }
+@media only screen and (max-width: 992px) {
+    #category {
+        .category-product-wrapper {
+            .category-product-list {
+                #categoryProduct3,#categoryProduct4,#categoryProduct6,#categoryProduct9,#categoryProduct7,#categoryProduct10 {
+                    display: none!important;
+                }
+            }
+        }
+    }
+}
