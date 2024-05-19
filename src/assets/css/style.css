@@ -288,6 +288,129 @@ body::-webkit-scrollbar-track {
   box-shadow: 0 0 12px rgba(0, 199, 103, 0.902);
 }
 
+#responsiveNavbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  width: 100%;
+  background: rgb(229, 255, 253);
+  background: linear-gradient(0deg, rgb(240, 255, 254) 0%, rgb(255, 255, 255) 100%);
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0px -7px 19px rgba(0, 0, 0, 0.2);
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0;
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link button {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: #555555;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link button:hover {
+  color: #11B76B;
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link a {
+  font-size: 15px;
+  color: #555555;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link a:hover {
+  color: #11B76B;
+}
+
+#menuResponsive {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  height: 100vh;
+  transform: translateX(500px);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner nav .nav-tabs button {
+  border-radius: 0;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner nav .nav-tabs .active {
+  background: #f1f1f1;
+  color: #505050;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category {
+  margin-left: 0;
+  padding-left: 0;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown button.dropdown-toggle {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #3a3a3a;
+  text-align: right;
+  font-size: 14px;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown button.dropdown-toggle::after {
+  left: 6px;
+  position: absolute;
+  top: 17px;
+  font-size: 15px;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown .dropdown-menu {
+  width: 100%;
+  text-align: right;
+  border: none;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown .dropdown-menu li {
+  border-bottom: 1px solid #eaeaea;
+  padding: 6px 0;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown .dropdown-menu li .dropdown-item {
+  font-size: 13px;
+  color: #2f2f2f;
+}
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .login-btn {
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #3a3a3a;
+  text-align: right;
+  font-size: 14px;
+}
+
+.menu-response-active {
+  transform: translateX(0) !important;
+}
+
 .sticky {
   background-color: #ffffff;
   position: fixed !important;
@@ -455,11 +578,6 @@ button.menu-btn-responsive i {
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@media only screen and (min-width: 1600px) {
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container {
-    transform: translate(-90%, -50%);
-  }
-}
 @media only screen and (max-width: 992px) {
   button.menu-btn-responsive {
     display: block !important;
@@ -477,6 +595,7 @@ button.menu-btn-responsive i {
     color: rgb(255, 153, 0);
   }
   #navbar nav.navbar {
+    display: none;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform: translateX(400px);
     margin-top: 30px;
@@ -519,61 +638,6 @@ button.menu-btn-responsive i {
   }
   #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link i {
     font-size: 17px;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item i {
-    background: #fff;
-    margin-left: 4px;
-    padding: 4px 4px 4px 4px;
-    border-radius: 50%;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container {
-    position: absolute;
-    min-width: 700px;
-    top: -147%;
-    right: 0;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8980392157);
-    border-radius: 10px;
-    padding: 10px 0;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container div.nav-search-box-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container div.nav-search-box-inner input {
-    width: 80%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 15px;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container div.nav-search-box-inner input::-moz-placeholder {
-    font-weight: 900;
-    color: #848484;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container div.nav-search-box-inner input::placeholder {
-    font-weight: 900;
-    color: #848484;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container div.nav-search-box-inner button {
-    border: none;
-    outline: none;
-    padding: 6px;
-    border-radius: 10px;
-    background-color: #d7d7d7;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    font-size: 14px;
-    font-weight: 300;
-    color: #00686b;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-container div.nav-search-box-inner button:hover {
-    background-color: #a3f3f6;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-search-item .nav-search-box-active {
-    top: 147% !important;
   }
   #navbar nav.navbar div .navbar-collapse .user-acount-section {
     display: none;
@@ -620,6 +684,7 @@ button.menu-btn-responsive i {
   }
   #navbar nav.active-responsive-menu {
     transform: translateX(0) !important;
+    display: block;
   }
   .sticky {
     display: none;
@@ -670,6 +735,9 @@ button.menu-btn-responsive i {
   }
   .user-acount-responsive-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a:hover img {
     transform: rotate(5deg);
+  }
+  #responsiveNavbar {
+    display: block;
   }
 }
 #header {
@@ -751,17 +819,22 @@ button.menu-btn-responsive i {
 }
 
 @media only screen and (max-width: 992px) {
-  #header .search-header-container {
-    position: static;
-  }
   #header .search-header-container .search-header-content {
-    margin-top: 10px;
-    color: #00562f;
-    font-size: 17px;
-    text-align: center;
+    display: none;
+  }
+  #header .search-header-container form .search-form-container {
+    padding: 6px !important;
   }
   #header .last-searching-content ul li a {
-    font-size: 9px !important;
+    font-size: 7px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #header .last-searching-content ul {
+    display: none !important;
+  }
+  #header .last-searching-content ul li a {
+    font-size: 7px !important;
   }
 }
 #category .category-product-wrapper .category-product-list {
@@ -804,9 +877,31 @@ button.menu-btn-responsive i {
   vertical-align: -2px;
 }
 
-@media only screen and (max-width: 992px) {
-  #category .category-product-wrapper .category-product-list #categoryProduct3, #category .category-product-wrapper .category-product-list #categoryProduct4, #category .category-product-wrapper .category-product-list #categoryProduct6, #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
+@media only screen and (max-width: 540px) {
+  #category .category-product-wrapper .category-product-list #categoryProduct2, #category .category-product-wrapper .category-product-list #categoryProduct3, #category .category-product-wrapper .category-product-list #categoryProduct4, #category .category-product-wrapper .category-product-list #categoryProduct6, #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
     display: none !important;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 661px) {
+  #category .category-product-wrapper .category-product-list #categoryProduct4, #category .category-product-wrapper .category-product-list #categoryProduct6, #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
+    display: none !important;
+  }
+  #category .category-product-wrapper .category-product-list #categoryProduct3 {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 661px) and (max-width: 920px) {
+  #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
+    display: none !important;
+  }
+  #category .category-product-wrapper .category-product-list #categoryProduct3 {
+    display: block !important;
+  }
+  #category .category-product-wrapper .category-product-list #categoryProduct4 {
+    display: block !important;
+  }
+  #category .category-product-wrapper .category-product-list #categoryProduct6 {
+    display: block !important;
   }
 }
 #carouselBaner .carousel-baner-container #carouselExampleIndicators .carousel-inner .carousel-item a img {

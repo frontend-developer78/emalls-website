@@ -82,14 +82,13 @@
 @media only screen and (max-width: 992px) {
     #header {
         .search-header-container {
-            position: static;
             .search-header-content {
-                margin-top: 10px;
-                color: #00562f;
-                font: {
-                    size: $default-font-size + 1px;
+                display: none;
+            }
+            form {
+                .search-form-container {
+                    padding: 6px!important;
                 }
-                text-align: center;
             }
         }
         .last-searching-content {
@@ -97,7 +96,23 @@
                 li {
                     a {
                         font: {
-                            size: $default-font-size - 7px!important;
+                            size: $default-font-size - 9px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    #header {
+        .last-searching-content {
+            ul {
+                display: none!important;
+                li {
+                    a {
+                        font: {
+                            size: $default-font-size - 9px!important;
                         }
                     }
                 }

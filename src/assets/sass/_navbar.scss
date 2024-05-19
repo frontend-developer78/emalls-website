@@ -173,6 +173,154 @@
         }
     }
 }
+#responsiveNavbar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1001;
+    width: 100%;
+    background: rgb(229,255,253);
+    background: linear-gradient(0deg, rgb(240, 255, 254) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0px -7px 19px rgba(0, 0, 0, 0.2);
+    .navbar-responsive-container {
+        .navbar-ersponsive-inner {
+            @include flex(flex,center,space-between);
+            @include margin-padding(20px,20px,20px,20px,false);
+            margin-bottom: 0;
+            .navbar-responsive-link {
+                @include flex(flex,center,center);
+                flex-direction: column;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                }
+                button {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    background-color: transparent;
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                    color: #555555;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        color: $them-color;
+                    }
+                }
+                a {
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                    color: #555555;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        color: $them-color;
+                    }
+                }
+            }
+        }
+    }
+}
+#menuResponsive {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 100vh;
+    transform: translateX(500px);
+    @include transition-default(all,0.4s);
+    .menu-responsive-container {
+        .menu-responsive-inner {
+            nav {
+               .nav-tabs {
+                button {
+                    border-radius: 0;
+                    font: {
+                        size: $default-font-size - 4px;
+                    }
+                    color: #a4a4a4;
+                }
+                .active {
+                    background: #f1f1f1;
+                    color: #505050;
+                }
+               } 
+            }
+            .tab-content {
+                .tab-pane {
+                    .menu-list-category {
+                        margin-left: 0;
+                        padding-left: 0;
+                        .menu-list-category-inner {
+                            .dropdown {
+                                button.dropdown-toggle {
+                                    margin-bottom: 20px;
+                                    position: relative;
+                                    width: 100%;
+                                    border-radius: 0;
+                                    background-color: transparent;
+                                    border: none;
+                                    outline: none;
+                                    color: #3a3a3a;
+                                    text-align: right;
+                                    font: {
+                                        size: $default-font-size - 2px;
+                                    }
+                                    &::after {
+                                        left: 6px;
+                                        position: absolute;
+                                        top: 17px;
+                                        font: {
+                                            size: $default-font-size - 1px;
+                                        }
+                                    }
+                                }
+                                .dropdown-menu {
+                                    width: 100%;
+                                    text-align: right;
+                                    border: none;
+                                    li {
+                                        border-bottom: 1px solid #eaeaea;
+                                        padding: 6px 0;
+                                        .dropdown-item {
+                                            font: {
+                                                size: $default-font-size - 3px;
+                                            }
+                                            color: #2f2f2f;
+                                        }
+                                    }
+                                }
+                            }
+                            .login-btn {
+                                margin-bottom: 20px;
+                                padding: 15px;
+                                width: 100%;
+                                border-radius: 0;
+                                background-color: transparent;
+                                border: none;
+                                outline: none;
+                                color: #3a3a3a;
+                                text-align: right;
+                                font: {
+                                    size: $default-font-size - 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-response-active {
+    transform: translateX(0)!important;
+}
 .sticky {
     background-color: #ffffff;
     position: fixed!important;
@@ -354,23 +502,6 @@ button.menu-btn-responsive {
     @include transition-default(all,0.4s);
 }
 
-@media only screen and (min-width: 1600px) {
-    #navbar {
-        nav.navbar {
-            div {
-                .navbar-collapse{
-                    ul.navbar-nav {
-                        li.nav-search-item {
-                            .nav-search-box-container {
-                                transform: translate(-90%, -50%);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } 
-}
 @media only screen and (max-width: 992px) {
     button.menu-btn-responsive {
         display: block!important;
@@ -391,6 +522,7 @@ button.menu-btn-responsive {
     }
     #navbar {
         nav.navbar {
+            display: none;
             @include transition-default(all, 0.4s);
             transform: translateX(400px);
             margin-top: 30px;
@@ -434,63 +566,7 @@ button.menu-btn-responsive {
                                 }
                             }
                         }
-                        li.nav-search-item{
-                            i{
-                                background: #fff;
-                                margin-left: 4px;
-                                @include margin-padding(4px,4px,4px,4px,false);
-                                border-radius: 50%;
-                            }
-                            .nav-search-box-container{
-                                position: absolute;
-                                min-width: 700px;
-                                top: -147%;
-                                right: 0;
-                                transform: translate(-50%, -50%);
-                                background-color: #ffffffe5;
-                                border-radius: 10px;
-                                padding: 10px 0;
-                                overflow: hidden;
-                                transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-                                div.nav-search-box-inner{
-                                    @include flex(flex,center,center);
-                                    input{
-                                        width: 80%;
-                                        border: none;
-                                        outline: none;
-                                        background-color: transparent;
-                                        font: {
-                                            size: $default-font-size - 1px;
-                                        }
-                                        &::placeholder{
-                                            font: {
-                                                weight: 900;
-                                            }
-                                            color: #848484;
-                                        }
-                                    }
-                                    button{
-                                        border: none;
-                                        outline: none;
-                                        padding: 6px;
-                                        border-radius: 10px;
-                                        background-color: #d7d7d7;
-                                        @include transition-default(all, 0.4s);
-                                        font: {
-                                            size: $default-font-size - 2px;
-                                            weight: 300;
-                                        }
-                                        color: #00686b;
-                                        &:hover {
-                                            background-color: #a3f3f6;
-                                        }
-                                    }
-                                }
-                            }
-                            .nav-search-box-active{
-                                top: 147%!important;
-                            }
-                        }
+                        
                     }
                     .user-acount-section{
                         display: none;
@@ -544,6 +620,7 @@ button.menu-btn-responsive {
         }
         nav.active-responsive-menu {
             transform: translateX(0)!important;
+            display: block;
         }
     }
     .sticky {
@@ -599,5 +676,8 @@ button.menu-btn-responsive {
                 }
             }
         }
+    }
+    #responsiveNavbar {
+        display: block;
     }
 }

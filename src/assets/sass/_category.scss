@@ -42,12 +42,47 @@
         }
     }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 540px) {
     #category {
         .category-product-wrapper {
             .category-product-list {
-                #categoryProduct3,#categoryProduct4,#categoryProduct6,#categoryProduct9,#categoryProduct7,#categoryProduct10 {
+                #categoryProduct2,#categoryProduct3,#categoryProduct4,#categoryProduct6,#categoryProduct9,#categoryProduct7,#categoryProduct10 {
                     display: none!important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 661px) {
+    #category {
+        .category-product-wrapper {
+            .category-product-list {
+                #categoryProduct4,#categoryProduct6,#categoryProduct9,#categoryProduct7,#categoryProduct10 {
+                    display: none!important;
+                }
+                #categoryProduct3 {
+                    display: block!important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 661px) and (max-width: 920px) {
+    #category {
+        .category-product-wrapper {
+            .category-product-list {
+                #categoryProduct9,#categoryProduct7,#categoryProduct10 {
+                    display: none!important;
+                }
+                #categoryProduct3 {
+                    display: block!important;
+                }
+                #categoryProduct4 {
+                    display: block!important;
+                }
+                #categoryProduct6 {
+                    display: block!important;
                 }
             }
         }

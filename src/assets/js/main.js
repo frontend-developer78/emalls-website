@@ -33,10 +33,6 @@ function deleteBtnAdver() {
 }
 
 
-menuBtnResponsive.addEventListener("click", () => {
-  navMenuResponsive.classList.toggle("active-responsive-menu");
-});
-
 
 let navbar = document.querySelector(".navbar-sticky");
 
@@ -53,4 +49,10 @@ const navLinkDropdown = document.querySelector(".nav-link-dropdown");
 const dropdownMenuCustom = document.querySelector(".dropdown-menu-custom");
 navLinkDropdown.addEventListener("click", () => {
     dropdownMenuCustom.classList.toggle("dropdown-menu-active");
+})
+
+const menuResponBtn = document.getElementById("menuResponBtn");
+const menuResponse = document.querySelector(".menu-response");
+menuResponBtn.addEventListener("click", () => {
+  menuResponse.classList.toggle("menu-response-active");
 })
