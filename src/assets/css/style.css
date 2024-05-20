@@ -288,6 +288,117 @@ body::-webkit-scrollbar-track {
   box-shadow: 0 0 12px rgba(0, 199, 103, 0.902);
 }
 
+.modal .modal-dialog .modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  padding-bottom: 0;
+  padding-top: 33px;
+  border-bottom: 0;
+}
+.modal .modal-dialog .modal-content .modal-header div {
+  text-align: center;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content .modal-header div h1 {
+  font-size: 16px !important;
+}
+.modal .modal-dialog .modal-content .modal-header div h1 p {
+  color: #11B76B;
+  display: inline-block;
+  margin-left: 6px;
+  margin-bottom: 0;
+}
+.modal .modal-dialog .modal-content .modal-header div h1 p.signContent {
+  display: none !important;
+}
+.modal .modal-dialog .modal-content .modal-header div p.modal-title-details {
+  font-size: 14px !important;
+  color: #a3a3a3;
+  margin-top: 10px;
+}
+.modal .modal-dialog .modal-content .modal-header button {
+  margin: 0;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#emailContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#passwordContent {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 8px 10px 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  color: #343434;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#emailContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#passwordContent::-moz-placeholder {
+  font-size: 13px;
+  color: #5d5d5d;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#emailContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#passwordContent::placeholder {
+  font-size: 13px;
+  color: #5d5d5d;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner p.forget-pass-link {
+  font-size: 13px;
+  color: #313131;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner p.forget-pass-link a {
+  color: #11B76B;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner div label {
+  font-size: 15px;
+  color: #ff8400;
+  margin-right: 6px;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitLogin {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #11B76B;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .login-with-google {
+  width: 100%;
+  display: block;
+  color: #ff5100;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container {
+  margin-top: 10px;
+  padding-top: 13px;
+  border-top: 1px solid #e6e6e6;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  color: #11B76B;
+}
+
 #responsiveNavbar {
   display: none;
   position: fixed;

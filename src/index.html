@@ -73,7 +73,7 @@
                         <a class="nav-link"><i class="fa-solid fa-address-card ms-1"></i>درباره ما</a>
                       </li>
                     </ul>
-                    <button type="button" class="regester-profile-btn me-4">
+                    <button type="button" class="regester-profile-btn me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <i class="fa-solid fa-right-to-bracket"></i><p class="me-1">ورود / ثبت نام</p>
                     </button>
                     <div class="user-acount-section">
@@ -95,6 +95,36 @@
             </nav>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><p class="loginContent">ورود به</p><p class="signContent">ثبت نام در</p><span>جست و جوی کالا</span></h1>
+              <p class="modal-title-details">لطفا شماره تماس یا ایمیل خود را وارد نمایید</p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="login-form-container" action="">
+              <div class="form-login-inner">
+                <input id="emailContent" type="text" placeholder="ایمیل یا شماره موبایل" name="email-input" title="email">
+                <input id="passwordContent" type="text" placeholder="رمز عبور" name="password-input" title="password">
+                <p class="forget-pass-link">کلمه عبور خود را فراموش کرده اید؟!! <a href="#">ایجاد رمز عبور جدید</a></p>
+                <div class="mb-3">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">مرا به خاطر بسپار</label>
+                </div>
+                <button type="submit" id="submitLogin" title="submit" name="submiy-login">ورود به حساب</button>
+                <a class="login-with-google" href="#">ورود از طریق گوگل</a>
+              </div>
+              <p class="signUp-btn-container">کاربر جدید هستید؟! <button id="signUpBtn" type="button">ثبت نام در وبسایت</button></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="responsiveNavbar" class="container-fluid">
       <div class="row">
         <div class="col-12 navbar-responsive-container">
@@ -280,7 +310,7 @@
                   </div>
                 </li>
                 <li class="menu-list-category-inner">
-                  <button class="login-btn" type="button">
+                  <button class="login-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       ورود / ثبت نام
                   </button>
                 </li>
