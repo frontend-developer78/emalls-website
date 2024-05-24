@@ -965,21 +965,56 @@ button.menu-btn-responsive i {
     font-size: 8px !important;
   }
 }
-#category .category-splite-container .owl-carousel-container .owl-carousel-inner .splide-slide-card .category-card-box {
+#category .category-carousel-wrapper .category-carousel-container {
+  position: relative;
+}
+#category .category-carousel-wrapper .category-carousel-container .category-carousel-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#category .category-carousel-wrapper .category-carousel-container .category-carousel-card .carousel-card-inner {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 5px 0 5px;
 }
-#category .category-splite-container .owl-carousel-container .owl-carousel-inner .splide-slide-card .category-card-box img {
+#category .category-carousel-wrapper .category-carousel-container .category-carousel-card .carousel-card-inner img {
+  transform: scale(0.5);
   padding: 10px;
   background: #d8f1fd;
   border-radius: 20px;
 }
-#category .category-splite-container .owl-carousel-container .owl-carousel-inner .splide-slide-card .category-card-box p {
+#category .category-carousel-wrapper .category-carousel-container .category-carousel-card .carousel-card-inner p {
   margin-top: 10px;
   font-size: 13px;
   color: #4b4b4b;
+}
+#category .category-carousel-wrapper .category-carousel-container button {
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #d8f1fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#category .category-carousel-wrapper .category-carousel-container button:hover {
+  background-color: #c2ecff;
+}
+#category .category-carousel-wrapper .category-carousel-container #nextBtn {
+  position: absolute;
+  top: 33%;
+  right: 20px;
+}
+#category .category-carousel-wrapper .category-carousel-container #PreviousBtn {
+  position: absolute;
+  top: 33%;
+  left: 20px;
 }
 
 #carouselBaner .carousel-baner-container #carouselExampleIndicators .carousel-inner .carousel-item a img {

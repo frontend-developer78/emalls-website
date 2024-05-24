@@ -1,26 +1,51 @@
 // ------------------- start category section style
 #category {
-    .category-splite-container {
-        .owl-carousel-container {
-            .owl-carousel-inner {
-                .splide-slide-card {
-                    .category-card-box {
-                        @include flex(flex,center,center);
-                        flex-direction: column;
-                        img {
-                            padding: 10px;
-                            background: #d8f1fd;
-                            border-radius: 20px;
+    .category-carousel-wrapper {
+        .category-carousel-container {
+            position: relative;
+            .category-carousel-card {
+                @include flex(flex,center,center);
+                .carousel-card-inner {
+                    @include flex(flex,center,center);
+                    flex-direction: column;
+                    @include margin-padding(0,5px,0,5px);
+                    img {
+                        transform: scale(0.5);
+                        padding: 10px;
+                        background: #d8f1fd;
+                        border-radius: 20px;
+                    }
+                    p {
+                        margin-top: 10px;
+                        font: {
+                            size: $default-font-size - 3px;
                         }
-                        p {
-                            margin-top: 10px;
-                            font: {
-                                size: $default-font-size - 3px;
-                            }
-                            color: $category-text-color;
-                        }
+                        color: $category-text-color;
                     }
                 }
+            }
+            button {
+                border: none;
+                outline: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: #d8f1fd;
+                @include flex(flex,center,center);
+                @include transition-default(all,0.4s);
+                &:hover {
+                    background-color: #c2ecff;
+                }
+            }
+            #nextBtn {
+                position: absolute;
+                top: 33%;
+                right: 20px;
+            }
+            #PreviousBtn {
+                position: absolute;
+                top: 33%;
+                left: 20px;
             }
         }
     }
