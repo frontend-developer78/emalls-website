@@ -1,5 +1,8 @@
 // ------------ Start header section style
 #header {
+    .header-baner-image-responsive {
+        display: none;
+    }
     position: relative;
     .search-header-container {
         position: absolute;
@@ -81,6 +84,12 @@
 
 @media only screen and (max-width: 992px) {
     #header {
+        .header-baner-image {
+            display: none;
+        }
+        .header-baner-image-responsive {
+            display: block;
+        }
         .search-header-container {
             .search-header-content {
                 display: none;
@@ -106,13 +115,21 @@
 }
 @media only screen and (max-width: 576px) {
     #header {
-        .last-searching-content {
-            ul {
-                display: none!important;
-                li {
-                    a {
-                        font: {
-                            size: $default-font-size - 9px!important;
+        .search-header-container {
+            form {
+                .search-form-container {
+                    border-radius: 9px;
+                }
+            }
+            .last-searching-content {
+                ul {
+                    padding-left: 0;
+                    justify-content: center!important;
+                    li {
+                        a {
+                            font: {
+                                size: $default-font-size - 8px!important;
+                            }
                         }
                     }
                 }

@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="جست و جو کالا">
+    <meta name="Copyright" content="جست و جو کالا">
+    <meta name="description" content="جست و جو کالا یک وبسایت برای همه">
+    <meta name="language" content="fa">
+    <meta name="document-type" content="Public">
+    <meta name="document-rating" content="General">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="resource-type" content="document">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موتور جسن و جوی کالا</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png" type="image/x.icon">
     <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body dir="rtl">
     <!-- ----------------- Start navbar section ------------------- -->
@@ -25,7 +27,7 @@
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#"><img width="20" height="20" src="assets/img/logo.png" alt="logo-website"> جست و جو<span class="m-2">کالا</span></a>
                   <div class="navbar-collapse">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                       <li class="nav-item nav-item-dropdown ms-4">
                         <a class="nav-link nav-link-dropdown" aria-current="page" href="#"><i class="fa-solid fa-layer-group ms-1"></i>دسته بندی ها <i class="fa-solid fa-angle-down me-1"></i></a>
                         <div class="dropdown-menu-custom container-fluid">
@@ -73,23 +75,25 @@
                         <a class="nav-link"><i class="fa-solid fa-address-card ms-1"></i>درباره ما</a>
                       </li>
                     </ul>
-                    <button type="button" class="regester-profile-btn me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <i class="fa-solid fa-right-to-bracket"></i><p class="me-1">ورود / ثبت نام</p>
-                    </button>
-                    <div class="user-acount-section">
-                      <button type="button" class="user-profile-btn me-4" onclick="profileAcountDefault()">
-                        <i class="fa-solid fa-user"></i><p class="me-1">محمد سلطانی</p>
+                    <div class="d-flex">
+                      <button type="button" class="regester-profile-btn me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-right-to-bracket"></i><p class="me-1">ورود / ثبت نام</p>
                       </button>
-                      <div class="user-acount-box-container" data-acount-default="open">
-                        <ul class="user-acount-inner">
-                          <li class="profile-acount-list mt-2 mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/admin-settings-male.png" alt="admin-settings-male"/>مشاهده پروفایل</a></li>
-                          <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/urgent-message.png" alt="urgent-message"/>گفت و گو های من</a></li>
-                          <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/money-bag-bitcoin.png" alt="money-bag-bitcoin"/>فاکتور مالی</a></li>
-                          <li class="profile-acount-list mb-2"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/exit--v1.png" alt="exit--v1"/>خروج</a></li>
-                        </ul>
+                      <div class="user-acount-section">
+                        <button type="button" class="user-profile-btn me-2" onclick="profileAcountDefault()">
+                          <i class="fa-solid fa-user"></i><p class="me-1">محمد سلطانی</p>
+                        </button>
+                        <div class="user-acount-box-container" data-acount-default="open">
+                          <ul class="user-acount-inner">
+                            <li class="profile-acount-list mt-2 mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/admin-settings-male.png" alt="admin-settings-male"/>مشاهده پروفایل</a></li>
+                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/urgent-message.png" alt="urgent-message"/>گفت و گو های من</a></li>
+                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/money-bag-bitcoin.png" alt="money-bag-bitcoin"/>فاکتور مالی</a></li>
+                            <li class="profile-acount-list mb-2"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/exit--v1.png" alt="exit--v1"/>خروج</a></li>
+                          </ul>
+                        </div>
                       </div>
+                      <button class="store-registration me-2" type="button">ثبت فروشگاه</button>
                     </div>
-                    <button class="store-registration me-2" type="button">ثبت فروشگاه</button>
                   </div>
                 </div>
             </nav>
@@ -492,7 +496,8 @@
     <!-- ----------------- End navbar section ------------------- -->
     <!-- ----------------- Start header section ------------------- -->
     <section id="header" class="container-fluid px-0">
-      <img class="img-fluid header-baner-image" src="assets/img/baner-bg.png" alt="baner-image">
+      <img class="img-fluid header-baner-image" src="assets/img/baner-bg-3.png" alt="baner-image">
+      <img class="img-fluid header-baner-image-responsive" src="assets/img/header-baner-img-responsive.jpg" alt="baner-image">
       <div class="container search-header-container">
         <div class="row">
           <div class="col-12 col-6">
@@ -518,73 +523,13 @@
     </section>
     <!-- ----------------- End header section ------------------- -->
     <!-- ----------------- Start category product section ------------------- -->
-    <section id="category" class="container-fluid mt-3">
-      <div class="category-product-wrapper">
-        <ul class="category-product-list">
-          <li id="categoryProduct1" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/Appliances-category.png" alt="category-image">
-              <p>دکوراسیون خانگی</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct2" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/baby&mom-category.png" alt="category-image">
-              <p>کودک و مادر</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct3" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/bike-category.png" alt="category-image">
-              <p>دوچرخه</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct4" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/car-category.png" alt="category-image">
-              <p>ماشین</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct5" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/food-category.png" alt="category-image">
-              <p>خوارکی</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct6" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/home-category.png" alt="category-image">
-              <p>لوازم خانه</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct7" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/laptop-category.png" alt="category-image">
-              <p>لپتاپ و تبلت</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct8" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/medical-category.png" alt="category-image">
-              <p>تجهیزات پزشکی</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct9" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/tools-category.png" alt="category-image">
-              <p>ابزار آلات</p>
-            </div>
-          </a></li>
-          <li id="categoryProduct10" class="category-product-inner"><a href="#" class="category-card">
-            <div class="category-card-box">
-              <img class="img-fluid w-50" src="assets/img/Appliances-category.png" alt="category-image">
-              <p>دکوراسیون خانگی</p>
-            </div>
-          </a></li>
-        </ul>
-        <a class="all-category-link" href="#">مشاهده همه <i class="fa-solid fa-arrow-left"></i></a>
+    <div id="category" class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-12">
+          
+        </div>
       </div>
-    </section>
+    </div>
     <!-- ----------------- End category product section ------------------- -->
     <!-- ----------------- Start carousel Baner section ------------------- -->
     <section id="carouselBaner" class="container mt-4">
@@ -1271,10 +1216,8 @@
       </div>
     </section>
     <!-- ----------------- End footer section ----------------- -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -128,18 +128,18 @@ body::-webkit-scrollbar-track {
 
 #navbar {
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1000;
 }
 #navbar nav.navbar {
-  background-color: transparent;
+  background-color: #fcfcfc;
 }
 #navbar nav.navbar div {
   flex-wrap: nowrap;
 }
 #navbar nav.navbar div a.navbar-brand {
-  color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
 }
 #navbar nav.navbar div a.navbar-brand span {
   color: #11B76B;
@@ -147,23 +147,23 @@ body::-webkit-scrollbar-track {
 #navbar nav.navbar div .navbar-collapse {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-right: 10px;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link {
   cursor: pointer;
-  color: #e8e8e8;
+  color: #323232;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  font-size: 14px;
+  font-size: 13px;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link:hover {
   color: #11B76B;
-  font-size: 15px;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown {
   position: relative;
@@ -212,16 +212,19 @@ body::-webkit-scrollbar-track {
   color: #11B76B;
 }
 #navbar nav.navbar div .navbar-collapse .regester-profile-btn {
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1647058824);
   outline: none;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 12px 10px 12px;
-  background-color: #fff4ec;
-  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.348);
   border-radius: 10px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#navbar nav.navbar div .navbar-collapse .regester-profile-btn:hover {
+  background-color: #fffbf3;
+  box-shadow: 0 0 10px rgb(254, 231, 207);
 }
 #navbar nav.navbar div .navbar-collapse .regester-profile-btn p {
   font-size: 14px;
@@ -249,7 +252,7 @@ body::-webkit-scrollbar-track {
 }
 #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container {
   position: absolute;
-  top: 45px;
+  top: 51px;
   left: 10px;
   width: 10rem;
   height: 0;
@@ -700,10 +703,11 @@ button.menu-btn-responsive i {
     top: 20px;
     right: 20px;
     font-size: 21px;
-    color: rgb(255, 255, 255);
+    color: #fff;
   }
   .navbar-brand-responsive span {
     color: rgb(255, 153, 0);
+    margin-right: 5px;
   }
   #navbar nav.navbar {
     display: none;
@@ -724,7 +728,7 @@ button.menu-btn-responsive i {
   }
   #navbar nav.navbar div a.navbar-brand {
     display: none;
-    color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
   }
   #navbar nav.navbar div a.navbar-brand span {
     color: rgb(255, 153, 0);
@@ -744,7 +748,7 @@ button.menu-btn-responsive i {
   }
   #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link {
     cursor: pointer;
-    color: #e8e8e8;
+    color: #323232;
     font-size: 14px;
   }
   #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link i {
@@ -854,6 +858,9 @@ button.menu-btn-responsive i {
 #header {
   position: relative;
 }
+#header .header-baner-image-responsive {
+  display: none;
+}
 #header .search-header-container {
   position: absolute;
   top: 50%;
@@ -930,6 +937,12 @@ button.menu-btn-responsive i {
 }
 
 @media only screen and (max-width: 992px) {
+  #header .header-baner-image {
+    display: none;
+  }
+  #header .header-baner-image-responsive {
+    display: block;
+  }
   #header .search-header-container .search-header-content {
     display: none;
   }
@@ -941,80 +954,34 @@ button.menu-btn-responsive i {
   }
 }
 @media only screen and (max-width: 576px) {
-  #header .last-searching-content ul {
-    display: none !important;
+  #header .search-header-container form .search-form-container {
+    border-radius: 9px;
   }
-  #header .last-searching-content ul li a {
-    font-size: 7px !important;
+  #header .search-header-container .last-searching-content ul {
+    padding-left: 0;
+    justify-content: center !important;
+  }
+  #header .search-header-container .last-searching-content ul li a {
+    font-size: 8px !important;
   }
 }
-#category .category-product-wrapper .category-product-list {
-  padding-left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#category .category-product-wrapper .category-product-list .category-product-inner {
-  margin: 0 5px 0 5px;
-}
-#category .category-product-wrapper .category-product-list .category-product-inner .category-card-box {
+#category .category-splite-container .owl-carousel-container .owl-carousel-inner .splide-slide-card .category-card-box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#category .category-product-wrapper .category-product-list .category-product-inner .category-card-box img {
+#category .category-splite-container .owl-carousel-container .owl-carousel-inner .splide-slide-card .category-card-box img {
   padding: 10px;
   background: #d8f1fd;
   border-radius: 20px;
 }
-#category .category-product-wrapper .category-product-list .category-product-inner .category-card-box p {
+#category .category-splite-container .owl-carousel-container .owl-carousel-inner .splide-slide-card .category-card-box p {
   margin-top: 10px;
   font-size: 13px;
   color: #4b4b4b;
 }
-#category .category-product-wrapper .all-category-link {
-  display: block;
-  text-align: end;
-  padding-left: 10px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  font-size: 14px;
-  color: rgb(167, 167, 167);
-}
-#category .category-product-wrapper .all-category-link:hover {
-  color: #11B76B;
-}
-#category .category-product-wrapper .all-category-link i {
-  vertical-align: -2px;
-}
 
-@media only screen and (max-width: 540px) {
-  #category .category-product-wrapper .category-product-list #categoryProduct2, #category .category-product-wrapper .category-product-list #categoryProduct3, #category .category-product-wrapper .category-product-list #categoryProduct4, #category .category-product-wrapper .category-product-list #categoryProduct6, #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
-    display: none !important;
-  }
-}
-@media only screen and (min-width: 541px) and (max-width: 661px) {
-  #category .category-product-wrapper .category-product-list #categoryProduct4, #category .category-product-wrapper .category-product-list #categoryProduct6, #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
-    display: none !important;
-  }
-  #category .category-product-wrapper .category-product-list #categoryProduct3 {
-    display: block !important;
-  }
-}
-@media only screen and (min-width: 661px) and (max-width: 920px) {
-  #category .category-product-wrapper .category-product-list #categoryProduct9, #category .category-product-wrapper .category-product-list #categoryProduct7, #category .category-product-wrapper .category-product-list #categoryProduct10 {
-    display: none !important;
-  }
-  #category .category-product-wrapper .category-product-list #categoryProduct3 {
-    display: block !important;
-  }
-  #category .category-product-wrapper .category-product-list #categoryProduct4 {
-    display: block !important;
-  }
-  #category .category-product-wrapper .category-product-list #categoryProduct6 {
-    display: block !important;
-  }
-}
 #carouselBaner .carousel-baner-container #carouselExampleIndicators .carousel-inner .carousel-item a img {
   border-radius: 20px;
 }

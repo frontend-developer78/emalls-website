@@ -1,5 +1,4 @@
 // ------------- Start Js function
-
 let body = document.getElementById("themBody");
 let moonBox = document.querySelector(".moon-box");
 let sunBox = document.querySelector(".sun-box");
@@ -56,3 +55,4 @@ const menuResponse = document.querySelector(".menu-response");
 menuResponBtn.addEventListener("click", () => {
   menuResponse.classList.toggle("menu-response-active");
 })
+///////////////////////////////////////////////////
