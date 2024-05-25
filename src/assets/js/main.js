@@ -56,3 +56,68 @@ menuResponBtn.addEventListener("click", () => {
   menuResponse.classList.toggle("menu-response-active");
 })
 ///////////////////////////////////////////////////
+const categoryCarouselCard = document.querySelector(".category-carousel-card");
+const nextBtn = document.getElementById("nextBtn");
+const PreviousBtn = document.getElementById("PreviousBtn");
+const slides = document.querySelector(".carousel-card-inner");
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    const width = slides[0].offsetWidth;
+    carouselContainer.style.transform = `translateX(${-currentIndex * width}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < slides.length - 1) {
+      currentIndex++;
+  } else {
+      currentIndex = 0;
+  }
+  updateCarousel();
+});
+
+PreviousBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+      currentIndex--;
+  } else {
+      currentIndex = slides.length - 1;
+  }
+  updateCarousel();
+});
+///////////////////////////////////////////// sign up page style
+const signUpBtn = document.getElementById("signUpBtn");
+const loginContent = document.querySelector(".loginContent");
+const signContent = document.querySelector(".signContent");
+const loginContainer = document.querySelector(".loginContainer");
+const signContainer = document.querySelector(".signContainer");
+const forgetLink = document.querySelector(".forget-pass-link");
+const submitLogin = document.getElementById("submitLogin");
+const submitSign = document.getElementById("submitSign");
+const signUpbtnContainer = document.querySelector(".signUp-btn-container");
+const loginBtnContainer = document.querySelector(".login-btn-container");
+const loginBtn = document.getElementById("loginBtn");
+
+signUpBtn.addEventListener("click", () => {
+  loginContent.style.display = "none";
+  signContent.style.display = "inline-block";
+  loginContainer.style.display = "none";
+  signContainer.style.display = "block";
+  forgetLink.style.display = "none";
+  submitLogin.style.display = "none";
+  submitSign.style.display = "block";
+  signUpbtnContainer.style.display = "none";
+  loginBtnContainer.style.display = "block";
+});
+
+loginBtn.addEventListener("click", () => {
+  loginContent.style.display = "inline-block";
+  signContent.style.display = "none";
+  loginContainer.style.display = "block";
+  signContainer.style.display = "none";
+  forgetLink.style.display = "block";
+  submitLogin.style.display = "block";
+  submitSign.style.display = "none";
+  signUpbtnContainer.style.display = "block";
+  loginBtnContainer.style.display = "none";
+});

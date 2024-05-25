@@ -113,17 +113,26 @@
           <div class="modal-body">
             <form class="login-form-container" action="">
               <div class="form-login-inner">
-                <input id="emailContent" type="text" placeholder="ایمیل یا شماره موبایل" name="email-input" title="email">
-                <input id="passwordContent" type="text" placeholder="رمز عبور" name="password-input" title="password">
+                <div class="loginContainer">
+                  <input id="emailContent" type="text" placeholder="ایمیل یا شماره موبایل" name="email-input" title="email">
+                  <input id="passwordContent" type="text" placeholder="رمز عبور" name="password-input" title="password">
+                </div>
+                <div class="signContainer">
+                  <input id="emailContentSign" type="text" placeholder="شماره موبایل" name="emailContentSign" title="email">
+                  <input id="passwordContentSign" type="text" placeholder="رمز عبور جدید" name="passwordContentSign" title="password">
+                  <input id="passwordContentSignReturn" type="text" placeholder="تکرار رمز عبور" name="passwordContentSignReturn" title="password">
+                </div>
                 <p class="forget-pass-link">کلمه عبور خود را فراموش کرده اید؟!! <a href="#">ایجاد رمز عبور جدید</a></p>
                 <div class="mb-3">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">مرا به خاطر بسپار</label>
                 </div>
                 <button type="submit" id="submitLogin" title="submit" name="submiy-login">ورود به حساب</button>
+                <button type="submit" id="submitSign" title="submitSign" name="submiy-sign">ثبت نام</button>
                 <a class="login-with-google" href="#">ورود از طریق گوگل</a>
               </div>
               <p class="signUp-btn-container">کاربر جدید هستید؟! <button id="signUpBtn" type="button">ثبت نام در وبسایت</button></p>
+              <p class="login-btn-container">عضو سایت هستی؟!!<button id="loginBtn" type="button">ورود به وبسایت</button></p>
             </form>
           </div>
         </div>
@@ -865,10 +874,10 @@
     <!-- ----------------- Start baner section ----------------- -->
     <section id="baner" class="container my-4">
       <div class="row">
-        <div class="col-6 baner-image-container">
+        <div class="col-12 col-md-6 mb-2 baner-image-container">
           <img class="img-fluid rounded" src="assets/img/category-baner-image-2.png" alt="baner">
         </div>
-        <div class="col-6 baner-image-container">
+        <div class="col-12 col-md-6 mb-2 baner-image-container">
           <img class="img-fluid rounded" src="assets/img/category-baner-image-3.png" alt="baner">
         </div>
       </div>

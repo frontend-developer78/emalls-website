@@ -314,7 +314,7 @@ body::-webkit-scrollbar-track {
   margin-bottom: 0;
 }
 .modal .modal-dialog .modal-content .modal-header div h1 p.signContent {
-  display: none !important;
+  display: none;
 }
 .modal .modal-dialog .modal-content .modal-header div p.modal-title-details {
   font-size: 14px !important;
@@ -332,12 +332,15 @@ body::-webkit-scrollbar-track {
 }
 .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner {
   width: 100%;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
 }
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#emailContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#passwordContent {
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSignReturn, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSignReturn {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px 8px 10px 8px;
@@ -348,13 +351,16 @@ body::-webkit-scrollbar-track {
   font-size: 14px;
   color: #343434;
 }
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#emailContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#passwordContent::-moz-placeholder {
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSignReturn::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSignReturn::-moz-placeholder {
   font-size: 13px;
   color: #5d5d5d;
 }
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#emailContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner input#passwordContent::placeholder {
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSignReturn::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSignReturn::placeholder {
   font-size: 13px;
   color: #5d5d5d;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer {
+  display: none;
 }
 .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner p.forget-pass-link {
   font-size: 13px;
@@ -368,7 +374,7 @@ body::-webkit-scrollbar-track {
   color: #ff8400;
   margin-right: 6px;
 }
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitLogin {
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitLogin, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitSign {
   width: 100%;
   padding: 10px;
   border: none;
@@ -376,6 +382,10 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   color: #fff;
   background-color: #11B76B;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitSign {
+  background-color: #ffa600;
+  display: none;
 }
 .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .login-with-google {
   width: 100%;
@@ -385,7 +395,7 @@ body::-webkit-scrollbar-track {
   margin-top: 10px;
   font-size: 15px;
 }
-.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container {
+.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container, .modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container {
   margin-top: 10px;
   padding-top: 13px;
   border-top: 1px solid #e6e6e6;
@@ -394,12 +404,18 @@ body::-webkit-scrollbar-track {
   font-size: 14px;
   color: #3a3a3a;
 }
-.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container button {
+.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container button, .modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container button {
   border: none;
   outline: none;
   box-shadow: none;
   background: transparent;
   color: #11B76B;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container {
+  display: none;
+}
+.modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container button {
+  margin-right: 5px;
 }
 
 #responsiveNavbar {

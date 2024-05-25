@@ -197,7 +197,7 @@
                             margin-bottom: 0;
                         }
                         p.signContent {
-                            display: none!important;
+                            display: none;
                         }
                     }
                     p.modal-title-details {
@@ -218,26 +218,32 @@
                     flex-direction: column;
                     .form-login-inner {
                         width: 100%;
-                        @include flex(flex,flex-start,space-between);
-                        flex-direction: column;
-                        input#emailContent, input#passwordContent {
+                        .loginContainer, .signContainer {
                             width: 100%;
-                            margin-bottom: 15px;
-                            @include margin-padding(10px,8px,10px,8px,false);
-                            border-radius: 8px;
-                            border: none;
-                            outline: none;
-                            background-color: #f3f3f3;
-                            font: {
-                                size: $default-font-size - 2px;
-                            }
-                            color: #343434;
-                            &::placeholder {
+                            @include flex(flex,flex-start,space-between);
+                            flex-direction: column;
+                            input#emailContent, input#passwordContent, input#emailContentSign, input#passwordContentSign, input#passwordContentSignReturn {
+                                width: 100%;
+                                margin-bottom: 15px;
+                                @include margin-padding(10px,8px,10px,8px,false);
+                                border-radius: 8px;
+                                border: none;
+                                outline: none;
+                                background-color: #f3f3f3;
                                 font: {
-                                    size: $default-font-size - 3px;
+                                    size: $default-font-size - 2px;
                                 }
-                                color: #5d5d5d;
+                                color: #343434;
+                                &::placeholder {
+                                    font: {
+                                        size: $default-font-size - 3px;
+                                    }
+                                    color: #5d5d5d;
+                                }
                             }
+                        }
+                        .signContainer {
+                            display: none;
                         }
                         p.forget-pass-link {
                             font: {
@@ -257,7 +263,7 @@
                                 margin-right: 6px;
                             }
                         }
-                        button#submitLogin {
+                        button#submitLogin, button#submitSign {
                             width: 100%;
                             padding: 10px;
                             border: none;
@@ -265,6 +271,10 @@
                             border-radius: 10px;
                             color: #fff;
                             background-color: $them-color;
+                        }
+                        button#submitSign {
+                            background-color: #ffa600;
+                            display: none;
                         }
                         .login-with-google {
                             width: 100%;
@@ -277,7 +287,7 @@
                             }
                         }
                     }
-                    p.signUp-btn-container {
+                    p.signUp-btn-container, p.login-btn-container {
                         margin-top: 10px;
                         padding-top: 13px;
                         border-top: 1px solid #e6e6e6;
@@ -293,6 +303,12 @@
                             box-shadow: none;
                             background: transparent;
                             color: $them-color;
+                        }
+                    }
+                    p.login-btn-container {
+                        display: none;
+                        button {
+                            margin-right: 5px;
                         }
                     }
                 }
