@@ -55,36 +55,6 @@ const menuResponse = document.querySelector(".menu-response");
 menuResponBtn.addEventListener("click", () => {
   menuResponse.classList.toggle("menu-response-active");
 })
-///////////////////////////////////////////////////
-const categoryCarouselCard = document.querySelector(".category-carousel-card");
-const nextBtn = document.getElementById("nextBtn");
-const PreviousBtn = document.getElementById("PreviousBtn");
-const slides = document.querySelector(".carousel-card-inner");
-
-let currentIndex = 0;
-
-function updateCarousel() {
-    const width = slides[0].offsetWidth;
-    carouselContainer.style.transform = `translateX(${-currentIndex * width}px)`;
-}
-
-nextBtn.addEventListener('click', () => {
-  if (currentIndex < slides.length - 1) {
-      currentIndex++;
-  } else {
-      currentIndex = 0;
-  }
-  updateCarousel();
-});
-
-PreviousBtn.addEventListener('click', () => {
-  if (currentIndex > 0) {
-      currentIndex--;
-  } else {
-      currentIndex = slides.length - 1;
-  }
-  updateCarousel();
-});
 ///////////////////////////////////////////// sign up page style
 const signUpBtn = document.getElementById("signUpBtn");
 const loginContent = document.querySelector(".loginContent");
@@ -120,4 +90,42 @@ loginBtn.addEventListener("click", () => {
   submitSign.style.display = "none";
   signUpbtnContainer.style.display = "block";
   loginBtnContainer.style.display = "none";
+});
+//////////////////////////////////////////////////
+const scrollBtn = document.getElementById("scrollBtn");
+
+window.addEventListener("scroll", () => {
+  let scroll = window.scrollY;
+  if(scroll >= 50) {
+    scrollBtn.style.bottom = "20px";
+  } else {
+    scrollBtn.style.bottom = "-70px";
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+})
+////////////////////////////////////////////////
+const categoryContainer = document.querySelector(".category-carousel-card");
+const categoryCard = document.querySelectorAll("[data-card = 'carousel-card']");
+const nextBtnCategory = document.getElementById("nextBtn");
+const prevBtnCategory = document.getElementById("PreviousBtn");
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  const width = categoryCard[0].offsetWidth;
+  categoryContainer.style.transform = `translateX(${-currentIndex * width}px)`;
+}
+
+nextBtnCategory.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % categoryCard.length;
+  updateCarousel();
+});
+
+prevBtnCategory.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + categoryCard.length) % categoryCard.length;
+  updateCarousel();
+  console.log(currentIndex);
 });

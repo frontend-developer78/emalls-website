@@ -3,24 +3,32 @@
     .category-carousel-wrapper {
         .category-carousel-container {
             position: relative;
+            width: 97%;
+            margin: auto;
+            overflow: hidden;
             .category-carousel-card {
-                @include flex(flex,center,center);
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                transition: transform 0.5s ease;
                 .carousel-card-inner {
-                    @include flex(flex,center,center);
-                    flex-direction: column;
-                    @include margin-padding(0,5px,0,5px);
-                    img {
-                        transform: scale(0.5);
-                        padding: 10px;
-                        background: #d8f1fd;
-                        border-radius: 20px;
-                    }
-                    p {
-                        margin-top: 10px;
-                        font: {
-                            size: $default-font-size - 3px;
+                    a {
+                        @include flex(flex,center,center);
+                        @include margin-padding(0,5px,0,5px);
+                        flex-direction: column;
+                        img {
+                            transform: scale(0.5);
+                            padding: 10px;
+                            background: #d8f1fd;
+                            border-radius: 20px;
                         }
-                        color: $category-text-color;
+                        p {
+                            margin-top: 10px;
+                            font: {
+                                size: $default-font-size - 3px;
+                            }
+                            color: $category-text-color;
+                        }
                     }
                 }
             }
@@ -40,12 +48,12 @@
             #nextBtn {
                 position: absolute;
                 top: 33%;
-                right: 20px;
+                right: 5px;
             }
             #PreviousBtn {
                 position: absolute;
                 top: 33%;
-                left: 20px;
+                left: 5px;
             }
         }
     }
