@@ -1247,4 +1247,154 @@ button.menu-btn-responsive i {
 }
 #breadcrumb .breadcrumb-container nav .breadcrumb .breadcrumb-item a {
   color: #11B76B;
+}
+
+#descriptionStore .store-registration-form-container h3 {
+  font-size: 21px;
+  color: #343434;
+  margin: 20px 0;
+}
+#descriptionStore .store-registration-form-container h3 span {
+  color: #11B76B;
+}
+#descriptionStore .store-registration-form-container p {
+  font-size: 13px;
+  line-height: 30px;
+  color: rgb(180, 180, 180);
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-box-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-box-inner button {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1215686275);
+  outline: none;
+  background-color: #fff;
+  padding: 30px 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 10px 20px;
+  box-shadow: -2px 1px 9px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-box-inner button::after {
+  content: "";
+  position: absolute;
+  bottom: -328px;
+  left: -218px;
+  width: 500px;
+  height: 300px;
+  filter: blur(1.4);
+  background-color: rgba(169, 255, 143, 0.1647058824);
+  transform: rotate(20deg);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-box-inner button:hover::after {
+  bottom: 328px;
+  left: -218px;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-box-inner button img {
+  width: 60px;
+  height: 60px;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-box-inner button p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #595959;
+  margin-top: 15px;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: #ffffff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form .input-form-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form .input-form-box label {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #3e3e3e;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form .input-form-box label span {
+  color: rgb(255, 132, 0);
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form .input-form-box input {
+  width: 100%;
+  padding: 6px 10px 6px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.137254902);
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  color: #434343;
+  font-size: 15px;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form .input-form-box textarea {
+  width: 100%;
+  padding: 6px 10px 30px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.137254902);
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  color: #434343;
+  font-size: 15px;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container .store-registration-form button {
+  background-color: #11B76B;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 15px;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container #onlineStoreRegesterForm {
+  height: 0;
+  opacity: 0;
+}
+#descriptionStore .store-registration-form-container .store-registration-box-container #oflineStoreRegesterForm {
+  height: 510px;
+  opacity: 1;
+}
+#descriptionStore .store-registration-rules .store-registration-rules-inner {
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid rgb(38, 103, 0);
+  background-color: #fff;
+}
+#descriptionStore .store-registration-rules .store-registration-rules-inner h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #11B76B;
+}
+#descriptionStore .store-registration-rules .store-registration-rules-inner .store-registration-rules-content li {
+  margin-bottom: 10px;
+  line-height: 30px;
+  color: #2e2e2e;
+  font-size: 14px;
+}
+#descriptionStore .store-registration-rules .store-registration-rules-inner .store-registration-rules-content li i {
+  color: rgb(255, 213, 0);
+}
+
+.active-store-regester-form {
+  height: 510px !important;
+  opacity: 1 !important;
+}
+
+.unactive-store-regester-form {
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+.active-online-store-btn {
+  border: 3px solid #11B76B !important;
+  box-shadow: -2px 1px 9px rgba(56, 250, 7, 0.269) !important;
 }/*# sourceMappingURL=style.css.map */

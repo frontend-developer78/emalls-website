@@ -106,26 +106,24 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 })
-////////////////////////////////////////////////
-const categoryContainer = document.querySelector(".category-carousel-card");
-const categoryCard = document.querySelectorAll("[data-card = 'carousel-card']");
-const nextBtnCategory = document.getElementById("nextBtn");
-const prevBtnCategory = document.getElementById("PreviousBtn");
+///////////////////////////////////////////////////////
+const onlineStore = document.getElementById("onlineStore");
+const oflineStore = document.getElementById("oflineStore");
+const onlineStoreRegesterForm1 = document.querySelector(".online-Store-Regester-Form");
+const onlineStoreRegesterForm2 = document.querySelector(".ofline-Store-Regester-Form")
 
-let currentIndex = 0;
 
-function updateCarousel() {
-  const width = categoryCard[0].offsetWidth;
-  categoryContainer.style.transform = `translateX(${-currentIndex * width}px)`;
-}
-
-nextBtnCategory.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % categoryCard.length;
-  updateCarousel();
+onlineStore.addEventListener("click", () => {
+  onlineStore.classList.add("active-online-store-btn");
+  oflineStore.classList.remove("active-online-store-btn");
+  onlineStoreRegesterForm1.classList.add("active-store-regester-form");
+  onlineStoreRegesterForm2.classList.add("unactive-store-regester-form");
 });
 
-prevBtnCategory.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + categoryCard.length) % categoryCard.length;
-  updateCarousel();
-  console.log(currentIndex);
+oflineStore.addEventListener("click", () => {
+  onlineStore.classList.remove("active-online-store-btn");
+  oflineStore.classList.add("active-online-store-btn");
+  onlineStoreRegesterForm2.classList.remove("unactive-store-regester-form");
+  onlineStoreRegesterForm2.classList.add("active-store-regester-form");
+  onlineStoreRegesterForm1.classList.remove("active-store-regester-form");
 });

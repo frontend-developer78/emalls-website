@@ -1,0 +1,173 @@
+// -------------------- Start descriptionStore style section
+#descriptionStore {
+    .store-registration-form-container {
+        h3 {
+            font: {
+                size: $default-font-size + 5px;
+            }
+            color: $store-registration-form-container-header-color;
+            margin: 20px 0;
+            span {
+                color: $them-color;
+            }
+        }
+        p {
+            font: {
+                size: $default-font-size - 3px;
+            }
+            line-height: 30px;
+            color: rgb(180, 180, 180);
+        }
+        .store-registration-box-container {
+            .store-registration-box-inner {
+                @include flex(flex,center,center);
+                button {
+                    position: relative;
+                    border: 1px solid #0000001f;
+                    outline: none;
+                    background-color: $store-registration-box-btn-bg;
+                    padding: 30px 20px;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    margin: 10px 20px;
+                    box-shadow: -2px 1px 9px rgba(0, 0, 0, 0.1);
+                    @include transition-default(all,0.4s);
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -328px;
+                        left: -218px;
+                        width: 500px;
+                        height: 300px;
+                        filter: blur(1.4);
+                        background-color: #a9ff8f2a;
+                        transform: rotate(20deg);
+                        @include transition-default(all,0.6s);
+                    }
+                    &:hover {
+                        &::after {
+                            bottom: 328px;
+                            left: -218px;
+                        }
+                    }
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    p {
+                        font: {
+                            size: $default-font-size - 1px;
+                        }
+                        line-height: 30px;
+                        color: #595959;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .store-registration-form {
+                @include transition-default(all,0.4s);
+                background-color: $store-registration-form-bg;
+                @include margin-padding(20px,20px,20px,20px,false);
+                border-radius: 20px;
+                overflow: hidden;
+                .input-form-box {
+                    @include flex(flex,flex-start,space-between);
+                    flex-direction: column;
+                    label {
+                        margin: 15px 0;
+                        font: {
+                            size: $default-font-size - 2px;
+                        }
+                        color: $label-store-regester-form-color;
+                        span {
+                            color: rgb(255, 132, 0);
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        @include margin-padding(6px,10px,6px,10px,false);
+                        border: 1px solid #00000023;
+                        border-radius: 10px;
+                        background-color: #f8f8f8;
+                        color: #434343;
+                        font: {
+                            size: $default-font-size - 1px;
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        @include margin-padding(6px,10px,30px,10px,false);
+                        border: 1px solid #00000023;
+                        border-radius: 10px;
+                        background-color: #f8f8f8;
+                        color: #434343;
+                        font: {
+                            size: $default-font-size - 1px;
+                        }
+                    }
+                }
+                button {
+                    background-color: $them-color;
+                    color: #fff;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    @include transition-default(all,0.4s);
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                }
+            }
+            #onlineStoreRegesterForm {
+                height: 0;
+                opacity: 0;
+            }
+            #oflineStoreRegesterForm {
+                height: 510px;
+                opacity: 1;
+            }
+        }
+    }
+    .store-registration-rules {
+        .store-registration-rules-inner {
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid rgb(38, 103, 0);
+            background-color: #fff;
+            h4 {
+                font: {
+                    size: $default-font-size + 2px;
+                }
+                margin-bottom: 20px;
+                color: $them-color;
+            }
+            .store-registration-rules-content {
+                li {
+                    margin-bottom: 10px;
+                    line-height: 30px;
+                    color: #2e2e2e;
+                    font: {
+                        size: $default-font-size - 2px;
+                    }
+                    i {
+                        color: rgb(255, 213, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+.active-store-regester-form {
+    height: 510px!important;
+    opacity: 1!important;
+}
+.unactive-store-regester-form {
+    height: 0!important;
+    opacity: 0!important;
+}
+.active-online-store-btn {
+    border: 3px solid $them-color!important;
+    box-shadow: -2px 1px 9px rgba(56, 250, 7, 0.269)!important;
+}
