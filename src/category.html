@@ -526,45 +526,605 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                          Accordion Item #1
+                          لوازم خانگی
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <div class="category-product-details">
+                            <ul>
+                              <li><a href="#">سرمایش و گرمایش</a></li>
+                              <li><a href="#">شست و شو </a></li>
+                              <li><a href="#">لوازم خانگی برقی</a></li>
+                              <li><a href="#">آشپزخانه</a></li>
+                              <li><a href="#">خواب و حمام</a></li>
+                              <li><a href="#">صوتی و تصویری</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                          Accordion Item #2
+                          برند ها
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <div class="category-product-brand">
+                            <form action="" class="search-category-brand">
+                              <input id="inputBrand" name="brandName" title="نام برند خود را جست و جو کنید" type="text" placeholder="نام برند ...">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </form>
+                            <div class="list-brand-container">
+                              <ul class="list-brand-inner">
+                                <li><a href="#">سونی</a></li>
+                                <li><a href="#">ال جی</a></li>
+                                <li><a href="#">فیلیپس</a></li>
+                                <li><a href="#">شیاومی</a></li>
+                                <li><a href="#">بوش</a></li>
+                                <li><a href="#">پاناسونیک</a></li>
+                                <li><a href="#">سامسونگ</a></li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                          Accordion Item #3
+                        <button class="accordion-button collapsed show" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          موجودی کالا
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="inputCheck">
+                            <label class="form-check-label" for="inputCheck">فقط کالاهای موجود را نمایش بده</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                          محدوده قیمت
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                          <form action="" class="price-product-container">
+                            <div class="card-conteiner">
+                              <div class="card-content">
+                                <div data-range="#third" data-value-1="#second" data-value-0="#first" class="slider">
+                                  <label class="label-min-value">50,000 تومان</label>
+                                  <label class="label-max-value">25,000,000 تومان</label>
+                                </div>
+                                <div class="rangeslider mt-2">
+                                  <input class="min input-ranges" name="range_1" type="range" min="1" max="10000" value="0">
+                                  <input class="max input-ranges" name="range_1" type="range" min="1" max="10000" value="10000">
+                                </div>
+                              </div>
+                            </div>
+                            <div id="minPrice" class="mb-3">
+                              <label for="minPriceProduct" class="form-label">از قیمت:</label>
+                              <input id="minPriceProduct" type="number" class="form-control" title="کمترین قیمت" name="min-price-product" aria-describedby="min-price-product">
+                            </div>
+                            <div id="minPrice" class="mb-3">
+                              <label for="maxPriceProduct" class="form-label">تا قیمت:</label>
+                              <input id="maxPriceProduct" type="number" class="form-control" title="بیشترین قیمت" name="max-price-product" aria-describedby="max-price-product">
+                            </div>
+                            <button id="priceBtnProduct" type="button" name="price-product-btn" title="مشخص کردن قیمت">اعمال قیمت</button>
+                          </form>
                         </div>
                       </div>
                     </div>
                 </div>
+                <div class="baner-image-section-sidebar mt-3">
+                  <a href="#"><img class="img-fluid rounded" src="assets/img/category-baner-image-1.png" alt="baner-image"></a>
+                </div>
+                <div class="baner-image-section-sidebar mt-3">
+                  <a href="#"><img class="img-fluid rounded" src="assets/img/category-baner-image-3.png" alt="baner-image"></a>
+                </div>
             </div>
-            <div class="col-12 col-md-9 category-product-box-container"></div>
+            <div class="col-12 col-md-9 category-product-box-container">
+              <div class="category-product-box-inner">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 price-filter-card-container">
+                      <ul class="price-filter-card-inner">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12 col-md-2">
+                              <li class="price-filter-header">فیلتر :</li>
+                            </div>
+                            <div class="col-6 col-md-2">
+                              <li class="price-filter-card"><a href="#">جدیدترین</a></li>
+                            </div>
+                            <div class="col-6 col-md-2">
+                              <li class="price-filter-card"><a href="#">پرفروش ترین</a></li>
+                            </div>
+                            <div class="col-6 col-md-2">
+                              <li class="price-filter-card"><a href="#">ارزان ترین</a></li>
+                            </div>
+                            <div class="col-6 col-md-2">
+                              <li class="price-filter-card"><a href="#">گران ترین</a></li>
+                            </div>
+                            <div class="col-6 col-md-2">
+                              <li class="price-filter-card"><a href="#">پربازدید ترین</a></li>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 category-product-box-card mb-3">
+                      <div class="category-product-box-card-inner">
+                        <div class="product-list-card-inner">
+                          <a href="#">
+                            <div class="product-list-card">
+                              <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
+                              <div class="product-list-card-content">
+                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                <ul class="detail-product">
+                                  <li><i class="fa-solid fa-star"></i>4/5</li>
+                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                </ul>
+                                <p class="Price-before-discount">شروع قیمت از</p>
+                                <p class="price-product">1,850,000 تومان</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3 pagination-number-container">
+                    <nav class="navigation-custom" aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item"><a class="page-link" href="#">11</a></li>
+                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                        <li class="page-item"><a class="page-link" href="#">13</a></li>
+                        <li class="page-item"><a class="page-link" href="#">14</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </section>
     <!-- ----------------- End category product section ------------------- -->
+    <!-- ----------------- Start baner section ----------------- -->
+    <section id="baner" class="container my-4">
+      <div class="row">
+        <div class="col-12 baner-image-container">
+          <img class="img-fluid rounded" src="assets/img/category-baner-image-2.png" alt="baner">
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- End baner section ----------------- -->
     <!-- ----------------- Start footer section ----------------- -->
     <div class="container footer-details-header">
       <div class="row">
