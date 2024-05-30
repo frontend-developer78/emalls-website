@@ -10,6 +10,10 @@
     font-style: normal;
 }
 @font-face{
+    font-family: IRANYekan;
+    src: url("../fonts/BYekan+.ttf") format("truetype");
+}
+@font-face{
     font-family: IRANSansXBold;
     src: url("../fonts/IRANSansX-Bold.ttf") format("truetype"),
     url("../fonts//IRANSansX-Bold.woff") format("woff"),
@@ -95,7 +99,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: IRANSansXfanumberBold;
+    font-family: IRANSansXBold;
 }
 body{
     overflow-x: hidden;

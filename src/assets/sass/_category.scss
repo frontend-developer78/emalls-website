@@ -2,58 +2,48 @@
 #category {
     .category-carousel-wrapper {
         .category-carousel-container {
-            position: relative;
-            width: 97%;
-            margin: auto;
-            overflow: hidden;
-            .category-carousel-card {
-                display: flex;
-                flex-wrap: nowrap;
-                overflow: hidden;
-                transition: transform 0.5s ease;
-                .carousel-card-inner {
-                    a {
-                        @include flex(flex,center,center);
-                        @include margin-padding(0,5px,0,5px);
-                        flex-direction: column;
-                        img {
-                            transform: scale(0.5);
-                            padding: 10px;
-                            background: #d8f1fd;
-                            border-radius: 20px;
-                        }
-                        p {
-                            margin-top: 10px;
-                            font: {
-                                size: $default-font-size - 3px;
+            .owl-loop {
+                .owl-stage {
+                    display: flex;
+                    .carousel-card-inner {
+                        a {
+                            @include flex(flex,center,center);
+                            @include margin-padding(0,5px,0,5px);
+                            flex-direction: column;
+                            img {
+                                transform: scale(0.5);
+                                padding: 10px;
+                                background: #d8f1fd;
+                                border-radius: 20px;
                             }
-                            color: $category-text-color;
+                            p {
+                                margin-top: 10px;
+                                font: {
+                                    size: $default-font-size - 3px;
+                                }
+                                color: $category-text-color;
+                            }
                         }
                     }
                 }
-            }
-            button {
-                border: none;
-                outline: none;
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-                background-color: #d8f1fd;
-                @include flex(flex,center,center);
-                @include transition-default(all,0.4s);
-                &:hover {
-                    background-color: #c2ecff;
+                .owl-nav {
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        margin: 20px 10px;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 10px;
+                        border: none;
+                        color: #2e2e2e;
+                        @include transition-default(all,0.4s);
+                        &:hover {
+                            background-color: rgb(238, 255, 225);
+                        }
+                    }
                 }
-            }
-            #nextBtn {
-                position: absolute;
-                top: 33%;
-                right: 5px;
-            }
-            #PreviousBtn {
-                position: absolute;
-                top: 33%;
-                left: 5px;
+                .owl-dots {
+                    display: none;
+                }
             }
         }
     }

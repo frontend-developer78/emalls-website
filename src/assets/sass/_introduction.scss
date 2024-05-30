@@ -1,0 +1,487 @@
+// ------------------------- Start Product introduction page style section
+#introduction {
+    .product-introduction-page-slider-container {
+        .slider-product-wrapper {
+            .slide-product-container {
+                background-color: #fff;
+                border-radius: 20px;
+                overflow: hidden;
+                #carouselExampleControls {
+                    .carousel-inner {
+                        .carousel-item {
+                            img {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+                .reaction-product-container {
+                    .reaction-product-list {
+                        margin-left: 0;
+                        padding-left: 0;
+                        @include flex(flex,center,center);
+                        li {
+                            margin: 10px 10px;
+                            border: 1px solid #0000001a;
+                            border-radius: 100%;
+                            padding: 6px 6px;
+                            @include transition-default(all,0.4s);
+                            &:hover {
+                                border: 1px solid #ffffff1a;
+                                border-top: 2px solid red;
+                                transform: rotate(180deg);
+                            }
+                            a {
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .average-price-container {
+                background-color: #fff;
+                border-radius: 20px;
+                padding: 20px;
+                margin-top: 20px;
+                ul.average-price-list {
+                    margin-bottom: 0;
+                    padding-left: 0;
+                    @include flex(flex,center,space-between);
+                    li.average-price-details {
+                        padding: 10px;
+                        p {
+                            text-align: center;
+                            font: {
+                                size: $default-font-size - 2px;
+                                weight: 900;
+                            }
+                            font-family: IRANYekan;
+                        }
+                        h4 {
+                            font: {
+                                size: $default-font-size + 5px;
+                                family: IRANSansXfanumberBlack;
+                            }
+                            color: $them-color;
+                        }
+                    }
+                    li:nth-child(2) {
+                        border-right: 1px solid #00000019;
+                        h4 {
+                            color: rgb(255, 78, 78);
+                        }
+                    }
+                }
+            }
+            .comment-product-container {
+                margin-top: 20px;
+                background-color: #fff;
+                border-radius: 20px;
+                padding: 20px;
+                .comment-product-card {
+                    .comment-product-header {
+                        @include flex(flex,center,center);
+                        margin-bottom: 8px;
+                        img {
+                            margin-left: 10px;
+                            width: 50px;
+                            height: 50px;
+                            padding: 10px;
+                            background-color: rgb(255, 251, 235);
+                            border-radius: 10px;
+                            border: 1px solid #0000000a;
+                            box-shadow: 0 3px 12px rgba(255, 183, 0, 0.584);
+                        }
+                        h6 {
+                            margin-bottom: 0;
+                            font: {
+                                size: $default-font-size + 2px;
+                                weight: 900;
+                            }
+                            font-family: IRANYekan;
+                            color: rgb(190, 130, 0);
+                        }
+                    }
+                    p.comment-send-number {
+                        font: {
+                            size: $default-font-size - 1px;
+                        }
+                        font-family: IRANYekan;
+                        color: #838383;
+                    }
+                    form.comment-product-form {
+                        .star-range-container {
+                            .rating {
+                                margin: 0 30px;
+                            }
+                            .rating > label {
+                                margin-right: 4px;
+                            }
+                            .rating:not(:checked) > input {
+                                display: none;
+                            }
+
+                            .rating:not(:checked) > label {
+                                float: right;
+                                cursor: pointer;
+                                font-size: 30px;
+                            }
+
+                            .rating:not(:checked) > label > svg {
+                                fill: #d5d5d5;
+                                transition: fill 0.3s ease;
+                            }
+
+                            .rating > input:checked ~ label > svg {
+                                fill: #4e2f00;
+                            }
+
+                            .rating:not(:checked) > label:hover ~ label > svg,
+                            .rating:not(:checked) > label:hover > svg {
+                                fill: #ff9e0b;
+                            }
+
+                            #star1:hover ~ label > svg,
+                            #star1:hover > svg {
+                                fill: #ff0000 !important;
+                            }
+
+                            #star2:hover ~ label > svg,
+                            #star2:hover > svg {
+                                fill: #ff5e00 !important;
+                            }
+
+                            #star3:hover ~ label > svg,
+                            #star3:hover > svg {
+                                fill: #9f7e18 !important;
+                            }
+
+                            #star4:hover ~ label > svg,
+                            #star4:hover > svg {
+                                fill: #22885e !important;
+                            }
+
+                            #star5:hover ~ label > svg,
+                            #star5:hover > svg {
+                                fill: #ffbb00 !important;
+                            }
+
+                            #star1:checked ~ label > svg {
+                                fill: #ff0000;
+                            }
+
+                            #star2:checked ~ label > svg {
+                                fill: #f96712;
+                            }
+
+                            #star3:checked ~ label > svg {
+                                fill: #c8ea08;
+                            }
+
+                            #star4:checked ~ label > svg {
+                                fill: #41c319;
+                            }
+
+                            #star5:checked ~ label > svg {
+                                fill: #ffa600;
+                            }
+                        }
+                        textarea.form-control {
+                            padding: 20px;
+                            outline: none;
+                            box-shadow: none;
+                            border-radius: 15px;
+                            border: 1px solid #00000015;
+                            font: {
+                                size: $default-font-size - 1px;
+                            }
+                        }
+                        #submitComment {
+                            width: 100%;
+                            @include margin-padding(10px,10px,10px,10px,false);
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
+                            background-color: #ffbf00;
+                            border-radius: 10px;
+                            font: {
+                                size: $default-font-size + 1px;
+                                weight: 900;
+                            }
+                            font-family: IRANYekan;
+                            @include transition-default(all,0.4s);
+                            color: #393939;
+                            &:hover {
+                                box-shadow: 0 0 10px #ff9500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-introduction-page-details-container {
+        .product-title-wrapper {
+            background-color: #fff;
+            @include margin-padding(20px,20px,20px,20px,false);
+            border-radius: 20px;
+            .breadcrumb-container {
+                nav {
+                    ol.breadcrumb {
+                        margin-bottom: 20px;
+                        padding-left: 0;
+                        li {
+                            font: {
+                                size: $default-font-size - 1px;
+                                family: IRANYekan;
+                                weight:900;
+                            }
+                            a {
+                                color: rgb(255, 72, 72);
+                            }
+                        }
+                    }
+                }
+            }
+            .product-title-detals-container {
+                h5 {
+                    font: {
+                        size: $default-font-size + 5px;
+                        family: IRANYekan;
+                        weight:900;
+                    }
+                    margin-bottom: 20px;
+                }
+                a.buy-popular-store {
+                    background-color: rgb(255, 60, 60);
+                    padding: 10px;
+                    display: inline-block;
+                    color: #fff;
+                    border-radius: 15px;
+                    p {
+                        font: {
+                            size: $default-font-size - 2px;
+                            weight:900;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        background-color: #fff;
+                        padding: 4px;
+                        color: #393939;
+                        font: {
+                            size: $default-font-size - 1px;
+                            family: IRANYekan;
+                        }
+                        border-radius: 6px 6px 0 6px;
+                    }
+                    h6 {
+                        font: {
+                            size: $default-font-size + 4px;
+                            family: IRANYekan;
+                        }
+                    }
+                }
+            }
+        }
+        .view-sellers-box-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            ul.nav {
+                li.nav-item {
+                    .nav-link {
+                        font: {
+                            size: $default-font-size + 1px;
+                            family: IRANYekan;
+                        }
+                        i {
+                            color: rgb(255, 166, 0);
+                        }
+                        color: #4a4a4a;
+                    }
+                    .nav-link.active {
+                        border: 1px solid #00000045;
+                        border-radius: 14px 14px 0 0;
+                        border-bottom: 2px solid #ffffff;
+                        color: #303030;
+                        background-color: rgb(255, 179, 0);
+                        box-shadow: 0 3px 10px rgba(255, 197, 72, 0.435);
+                        i{
+                            color: #434343;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .store-seller-item-content {
+                    .store-seller-item-content-header {
+                        margin-bottom: 20px;
+                        a {
+                            color: #000;
+                            font: {
+                                size: $default-font-size - 3px;
+                            }
+                            border: 1px solid #0000001c;
+                            padding: 10px;
+                            border-radius: 10px;
+                            border-right: 2px solid red;
+                            @include transition-default(all,0.4s);
+                            &:hover {
+                                border-left: 2px solid red;
+                                border-right: 1px solid #0000001c;
+                                background-color: #ffe8e8;
+                                color: red;
+                            }
+                        }
+                    }
+                    .store-seller-item-card {
+                        border: 1px solid rgba(0, 0, 0, 0.101);
+                        padding: 20px;
+                        border-radius: 20px;
+                        margin-bottom: 20px;
+                        .store-seller-item-inner {
+                            span.store-selected {
+                                background-color: $them-color;
+                                padding: 6px;
+                                border-radius: 10px;
+                                color: #fff;
+                                display: inline-block;
+                                margin-bottom: 10px;
+                                box-shadow: 0 0 10px rgba(6, 190, 0, 0.473);
+                                font: {
+                                    size: $default-font-size - 2px;
+                                    family:IRANYekan;
+                                }
+                            }
+                            .container {
+                                margin-top: 10px;
+                                h5 {
+                                    font: {
+                                        size: $default-font-size + 1px;
+                                        weight: 900;
+                                    }
+                                    margin-bottom: 0;
+                                }
+                                p {
+                                    font: {
+                                        size: $default-font-size - 1px;
+                                        family: IRANYekan;
+                                    }
+                                    color: #a1a1a1;
+                                }
+                                strong {
+                                    margin-bottom: 10px;
+                                    display: inline-block;
+                                    font: {
+                                        size: $default-font-size - 2px;
+                                        family: IRANYekan;
+                                    }
+                                    span {
+                                        font: {
+                                            size: $default-font-size - 2px;
+                                            family: IRANYekan;
+                                        }
+                                    }
+                                    background-color: gold;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                    svg {
+                                        transform: translateY(-2px);
+                                        margin-left: 5px;
+                                    }
+                                }
+                                h3 {
+                                    font: {
+                                        size: $default-font-size + 3px;
+                                        weight: 900;
+                                    }
+                                    color: #262626;
+                                    margin-bottom: 20px;
+                                }
+                                .submit-seller-container {
+                                    p {
+                                        font: {
+                                            size: $default-font-size + 5px;
+                                            family: IRANSansXfanumberBlack;
+                                        }
+                                        color: #414141;
+                                        span {
+                                            color: red;
+                                            font: {
+                                                size: $default-font-size + 3px;
+                                                family: IRANYekan;
+                                            }
+                                        }
+                                    }
+                                    .button {
+                                        text-decoration: none;
+                                        line-height: 1;
+                                        border-radius: 1.5rem;
+                                        overflow: hidden;
+                                        position: relative;
+                                        box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+                                        background-color: #f4f4f4;
+                                        color: #1b1b1b;
+                                        border: none;
+                                        cursor: pointer;
+                                      }
+                                      
+                                      .button-decor {
+                                        position: absolute;
+                                        inset: 0;
+                                        background-color: rgb(255, 76, 91);
+                                        transform: translateX(-100%);
+                                        transition: transform .3s;
+                                        z-index: 0;
+                                      }
+                                      
+                                      .button-content {
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: 600;
+                                        position: relative;
+                                        overflow: hidden;
+                                      }
+                                      
+                                      .button__icon {
+                                        width: 48px;
+                                        height: 40px;
+                                        background-color: rgb(255, 67, 67);
+                                        display: grid;
+                                        place-items: center;
+                                      }
+                                      
+                                      .button__text {
+                                        display: inline-block;
+                                        transition: color .2s;
+                                        padding: 2px 10px 2px 10px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        max-width: 150px;
+                                        font: {
+                                            size: $default-font-size - 2px;
+                                            family:IRANYekan;
+                                        }
+                                      }
+                                      
+                                      .button:hover .button__text {
+                                        color: #fff;
+                                      }
+                                      
+                                      .button:hover .button-decor {
+                                        transform: translate(0);
+                                      }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

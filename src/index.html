@@ -17,6 +17,7 @@
     <link rel="icon" href="assets/img/logo.png" type="image/x.icon">
     <script src="https://kit.fontawesome.com/b4735ff0d1.js" crossorigin="anonymous"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 </head>
 <body dir="rtl">
     <!-- ----------------- Start navbar section ------------------- -->
@@ -29,7 +30,7 @@
                   <div class="navbar-collapse">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                       <li class="nav-item nav-item-dropdown ms-4">
-                        <a class="nav-link nav-link-dropdown" aria-current="page" href="#"><i class="fa-solid fa-layer-group ms-1"></i>دسته بندی ها <i class="fa-solid fa-angle-down me-1"></i></a>
+                        <a class="nav-link nav-link-dropdown" aria-current="page" href="#"><img class="img-fluid ms-2" src="assets/img/category.png" width="20" height="20" alt="icon image">دسته بندی ها <i class="fa-solid fa-angle-down me-1"></i></a>
                         <div class="dropdown-menu-custom container-fluid">
                           <ul class="dropdown-menu-container">
                             <li class="dropdown-menu-inner">
@@ -66,13 +67,13 @@
                         </div>
                       </li>
                       <li class="nav-item ms-4">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-store ms-1"></i>پنل فروشگاه ها</a>
+                        <a class="nav-link" href="#"><img class="img-fluid ms-2" src="assets/img/store.png" width="20" height="20" alt="icon image">پنل فروشگاه ها</a>
                       </li>
                       <li class="nav-item ms-4">
-                        <a class="nav-link"><i class="fa-solid fa-scale-balanced ms-1"></i>شرایط و قوانین</a>
+                        <a class="nav-link"><img class="img-fluid ms-2" src="assets/img/law.png" width="20" height="20" alt="icon image">شرایط و قوانین</a>
                       </li>
                       <li class="nav-item ms-4">
-                        <a class="nav-link"><i class="fa-solid fa-address-card ms-1"></i>درباره ما</a>
+                        <a class="nav-link"><img class="img-fluid ms-2" src="assets/img/about us.png" width="20" height="20" alt="icon image">درباره ما</a>
                       </li>
                     </ul>
                     <div class="d-flex">
@@ -85,10 +86,10 @@
                         </button>
                         <div class="user-acount-box-container" data-acount-default="open">
                           <ul class="user-acount-inner">
-                            <li class="profile-acount-list mt-2 mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/admin-settings-male.png" alt="admin-settings-male"/>مشاهده پروفایل</a></li>
-                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/urgent-message.png" alt="urgent-message"/>گفت و گو های من</a></li>
-                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/money-bag-bitcoin.png" alt="money-bag-bitcoin"/>فاکتور مالی</a></li>
-                            <li class="profile-acount-list mb-2"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/exit--v1.png" alt="exit--v1"/>خروج</a></li>
+                            <li class="profile-acount-list mt-2 mb-3"><a href="#"><img width="25" height="25" src="assets/img/admin-settings-male.png" alt="admin-settings-male"/>مشاهده پروفایل</a></li>
+                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="assets/img/urgent-message.png" alt="urgent-message"/>گفت و گو های من</a></li>
+                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="assets/img/money-bag-bitcoin.png" alt="money-bag-bitcoin"/>فاکتور مالی</a></li>
+                            <li class="profile-acount-list mb-2"><a href="#"><img width="25" height="25" src="assets/img/exit--v1.png" alt="exit--v1"/>خروج</a></li>
                           </ul>
                         </div>
                       </div>
@@ -536,7 +537,7 @@
       <div class="row">
         <div class="col-12 category-carousel-wrapper">
           <div class="category-carousel-container">
-            <div class="category-carousel-card">
+            <div class="owl-loop">
               <div class="carousel-card-inner" data-card="carousel-card">
                 <a href="#">
                   <img class="img-fluid" src="assets/img/Appliances-category.png" alt="category-card-image">
@@ -598,8 +599,6 @@
                 </a>
               </div>
             </div>
-            <button id="nextBtn" class="next-btn-carousel" type="button" data-action="next"><i class="fa-solid fa-angle-right"></i></button>
-            <button id="PreviousBtn" class="Previous-btn-carousel" type="button" data-action="prev"><i class="fa-solid fa-angle-left"></i></button>
           </div>
         </div>
       </div>
@@ -651,118 +650,178 @@
         <div class="col-12 product-list-head-content mb-2">
           <h5><img class="img-fluid" src="assets/img/store-icon.png" alt="store-icon"> فروشگاه اپل استور</h5>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+        <div class="col-12 product-list-card-container mb-2">
+          <div class="owl-carousel">
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>کیف رودوشی شیائومی مدل ZJB4032CN</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>عینک واقعیت مجازی اپل مدل Apple Vision 512GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>پرینتر لیزری چهار کاره اچ پی HP Pro MFP M428fdn</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>ساعت مچی متی تیسوت مدل H41CHAN Vintage</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-6.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>لپ تاپ ایسوس 15.6 اینچ Asus TUF Gaming</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-12">
@@ -775,118 +834,178 @@
         <div class="col-12 product-list-head-content mb-2">
           <h5><img class="img-fluid" src="assets/img/store-icon.png" alt="store-icon"> فروشگاه اپل استور</h5>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+        <div class="col-12 product-list-card-container mb-1">
+          <div class="owl-carousel">
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>کیف رودوشی شیائومی مدل ZJB4032CN</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>عینک واقعیت مجازی اپل مدل Apple Vision 512GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>پرینتر لیزری چهار کاره اچ پی HP Pro MFP M428fdn</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>ساعت مچی متی تیسوت مدل H41CHAN Vintage</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-6.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>لپ تاپ ایسوس 15.6 اینچ Asus TUF Gaming</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-12">
@@ -913,118 +1032,178 @@
         <div class="col-12 product-list-head-content mb-2">
           <h5><img class="img-fluid" src="assets/img/store-icon.png" alt="store-icon"> فروشگاه اپل استور</h5>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+        <div class="col-12 product-list-card-container mb-2">
+          <div class="owl-carousel">
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>کیف رودوشی شیائومی مدل ZJB4032CN</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>عینک واقعیت مجازی اپل مدل Apple Vision 512GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>پرینتر لیزری چهار کاره اچ پی HP Pro MFP M428fdn</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>ساعت مچی متی تیسوت مدل H41CHAN Vintage</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-6.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>لپ تاپ ایسوس 15.6 اینچ Asus TUF Gaming</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-12">
@@ -1037,118 +1216,178 @@
         <div class="col-12 product-list-head-content mb-2">
           <h5><img class="img-fluid" src="assets/img/store-icon.png" alt="store-icon"> فروشگاه اپل استور</h5>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+        <div class="col-12 product-list-card-container mb-1">
+          <div class="owl-carousel">
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>کیف رودوشی شیائومی مدل ZJB4032CN</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>عینک واقعیت مجازی اپل مدل Apple Vision 512GB</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>پرینتر لیزری چهار کاره اچ پی HP Pro MFP M428fdn</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>ساعت مچی متی تیسوت مدل H41CHAN Vintage</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 product-list-card-container mb-2">
-          <div class="product-list-card-inner">
-            <a href="#">
-              <div class="product-list-card">
-                <img class="img-fluid" src="assets/img/product-image-6.png" alt="product-image">
-                <div class="product-list-card-content">
-                  <p>لپ تاپ ایسوس 15.6 اینچ Asus TUF Gaming</p>
-                  <ul class="detail-product">
-                    <li><i class="fa-solid fa-star"></i>4/5</li>
-                    <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                    <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                  </ul>
-                  <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
-                  <p class="price-product">1,850,000 تومان</p>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="product-list-card-inner">
+              <a href="#">
+                <div class="product-list-card">
+                  <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                  <div class="product-list-card-content">
+                    <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                    <ul class="detail-product">
+                      <li><i class="fa-solid fa-star"></i>4/5</li>
+                      <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
+                      <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                    </ul>
+                    <p class="Price-before-discount"><span>20% تخفیف</span><s>2,700,000 تومان</s></p>
+                    <p class="price-product">1,850,000 تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-12">
@@ -1296,5 +1535,8 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/carousel-custom.js"></script>
+    <script src="assets/js/carousel-category.js"></script>
 </body>
 </html>
