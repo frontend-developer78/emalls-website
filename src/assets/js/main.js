@@ -1,3 +1,39 @@
+// init Swiper:
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 7,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
 // ------------- Start Js function
 let body = document.getElementById("themBody");
 let moonBox = document.querySelector(".moon-box");

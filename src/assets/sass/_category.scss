@@ -1,48 +1,32 @@
 // ------------------- start category section style
 #category {
+    background: linear-gradient(45deg, #fffaf9, #ebfbff);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.083);
+    width: 98%;
+    margin: 0 1%;
+    border-radius: 20px;
+    overflow: hidden;
     .category-carousel-wrapper {
         .category-carousel-container {
-            .owl-loop {
-                .owl-stage {
-                    display: flex;
-                    .carousel-card-inner {
-                        a {
-                            @include flex(flex,center,center);
-                            @include margin-padding(0,5px,0,5px);
-                            flex-direction: column;
-                            img {
-                                transform: scale(0.5);
-                                padding: 10px;
-                                background: #d8f1fd;
-                                border-radius: 20px;
+            .swiper-wrapper {
+                .carousel-card-inner {
+                    a {
+                        @include flex(flex,center,center);
+                        @include margin-padding(0,5px,0,5px);
+                        flex-direction: column;
+                        img {
+                            transform: scale(0.5);
+                            padding: 10px;
+                            background: #d8f1fd;
+                            border-radius: 20px;
+                        }
+                        p {
+                            font: {
+                                size: $default-font-size - 3px;
                             }
-                            p {
-                                margin-top: 10px;
-                                font: {
-                                    size: $default-font-size - 3px;
-                                }
-                                color: $category-text-color;
-                            }
+                            color: $category-text-color;
                         }
                     }
-                }
-                .owl-nav {
-                    button {
-                        width: 40px;
-                        height: 40px;
-                        margin: 20px 10px;
-                        background-color: rgb(255, 255, 255);
-                        border-radius: 10px;
-                        border: none;
-                        color: #2e2e2e;
-                        @include transition-default(all,0.4s);
-                        &:hover {
-                            background-color: rgb(238, 255, 225);
-                        }
-                    }
-                }
-                .owl-dots {
-                    display: none;
                 }
             }
         }
