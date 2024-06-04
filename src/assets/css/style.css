@@ -1008,8 +1008,6 @@ button.menu-btn-responsive i {
   }
 }
 #category {
-  background: linear-gradient(45deg, #fffaf9, #ebfbff);
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.083);
   width: 98%;
   margin: 0 1%;
   border-radius: 20px;
@@ -1103,21 +1101,6 @@ button.menu-btn-responsive i {
 #productList .product-list-card-container .product-list-card-inner a .product-list-card .product-list-card-content p.price-product {
   text-align: right;
   margin-bottom: 0;
-}
-#productList .owl-nav button {
-  width: 40px;
-  height: 40px;
-  margin: 20px 10px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  color: #2e2e2e;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-#productList .owl-nav button:hover {
-  background-color: rgb(238, 255, 225);
-}
-#productList .owl-dots {
-  display: none !important;
 }
 #productList .all-category-link {
   display: block;
@@ -2210,6 +2193,545 @@ button.menu-btn-responsive i {
 #similarProducts .similar-products-container .swiper-wrapper .product-list-card-container .product-list-card-inner a .product-list-card .product-list-card-content p.price-product {
   text-align: right;
   margin-bottom: 0;
+}
+
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills button {
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 16px;
+  font-family: IRANYekan;
+  color: #1f1f1f;
+  text-align: right;
+  margin-bottom: 20px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills button:hover {
+  color: #11B76B;
+  border-right: 2px solid #b8b8b8;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills button img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills button.active {
+  background-color: transparent;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content {
+  background: #ffffff;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-header h5 {
+  margin-bottom: 20px;
+  color: #2b2b2b;
+  font-size: 15px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-header h5 img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content {
+  margin-top: 20px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content table {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 20px;
+  height: 150px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content table tr th {
+  text-align: center;
+  margin: 0 30px;
+  font-size: 17px;
+  font-family: IRANYekan;
+  font-weight: 900;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content table tr td {
+  text-align: center;
+  margin: 0 30px;
+  font-size: 14px;
+  color: #818181;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form {
+  margin-top: 80px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form ul#myEditProfileTab {
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form ul#myEditProfileTab li {
+  width: 49%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.0862745098);
+  text-align: center;
+  overflow: hidden;
+  margin: 0 0.5%;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form ul#myEditProfileTab li button {
+  width: 100%;
+  padding: 10px;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form ul#myEditProfileTab li button.active {
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #001c6f;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 14px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form label {
+  font-size: 16px;
+  font-family: IRANYekan;
+  font-weight: 900;
+  margin: 10px 0;
+  color: #262626;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 15px;
+  font-family: IRANYekan;
+  color: #404660;
+  padding: 10px;
+  border-radius: 9px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1176470588);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 15px;
+  font-family: IRANYekan;
+  color: #404660;
+  padding: 10px 30px 10px 0;
+  border-radius: 9px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form select:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1176470588);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 15px;
+  background-color: #11B76B;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .edit-profile-form .tab-content .tab-pane form button:hover {
+  background-color: rgb(0, 135, 0);
+  transform: translateY(-3px);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner h5 {
+  margin-bottom: 20px;
+  color: #002183;
+  font-size: 15px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1058823529);
+  border-radius: 14px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card img {
+  width: 80%;
+  margin: 0 10%;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content p {
+  color: #404040;
+  font-size: 14px;
+  font-family: IRANYekan;
+  text-align: center;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content ul.detail-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content ul.detail-product li {
+  padding: 4px 5px 4px 5px;
+  margin: 0 3px 0 3px;
+  background-color: #e9e9e9;
+  color: #4d4d4d;
+  border-radius: 5px;
+  font-size: 8px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content ul.detail-product li i {
+  margin-left: 10px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content p.price-product {
+  text-align: right;
+  margin-bottom: 10px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content p.Store-name-product {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: IRANYekan;
+  font-weight: 900;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner .container .my-orders-card a .product-list-card .product-list-card-content p.Store-name-product span {
+  padding: 5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px 5px 0 5px;
+  background-color: red;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner h5 {
+  margin-bottom: 20px;
+  color: #002183;
+  font-size: 15px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner .container .my-orders-card a .product-list-card {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1058823529);
+  border-radius: 14px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner .container .my-orders-card a .product-list-card img {
+  width: 80%;
+  margin: 0 10%;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner .container .my-orders-card a .product-list-card .product-list-card-content p {
+  color: #404040;
+  font-size: 14px;
+  font-family: IRANYekan;
+  text-align: center;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner .container .my-orders-card a .product-list-card .product-list-card-content ul.detail-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner .container .my-orders-card a .product-list-card .product-list-card-content ul.detail-product li {
+  padding: 4px 5px 4px 5px;
+  margin: 0 3px 0 3px;
+  background-color: #e9e9e9;
+  color: #4d4d4d;
+  border-radius: 5px;
+  font-size: 8px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-like-folder .like-product-folder-container .like-product-folder-inner .container .my-orders-card a .product-list-card .product-list-card-content ul.detail-product li i {
+  margin-left: 10px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1098039216);
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0666666667);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head .profile-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head .profile-icon-container .profile-icon-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head .profile-icon-container div h4 {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head .profile-icon-container div span {
+  font-size: 13px;
+  color: #838383;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head div ul.star-rate-comment {
+  margin-bottom: 10px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head div ul.star-rate-comment li {
+  margin: 0 1px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head div ul.star-rate-comment li i {
+  color: rgb(255, 179, 0);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-head div button#retwitteBtn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #caffc7;
+  color: green;
+  box-shadow: 0 2px 3px rgba(11, 237, 3, 0.709);
+  font-size: 13px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-text p {
+  font-size: 15px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-text div.boxSubmitRetwitte {
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-text div.boxSubmitRetwitte .retwitteCommentProduct {
+  width: 100%;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.0549019608);
+  font-size: 13px;
+  color: #3f3f3f;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-text div.boxSubmitRetwitte .retwitteCommentProduct::-moz-placeholder {
+  font-size: 13px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-text div.boxSubmitRetwitte .retwitteCommentProduct::placeholder {
+  font-size: 13px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-comments .my-tab-pane-comments .my-tab-pane-comments-inner .comment-seller-item-box .comment-seller-item-box-text div.boxSubmitRetwitte #SubmitRetwitteBtn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #ffc7c7;
+  color: rgb(128, 0, 0);
+  box-shadow: 0 2px 3px rgba(237, 3, 3, 0.709);
+  font-size: 13px;
+}
+
+.continue-application {
+  --color: #fff;
+  --background: #404660;
+  --background-hover: #3A4059;
+  --background-left: #2B3044;
+  --folder: #F3E9CB;
+  --folder-inner: #BEB393;
+  --paper: #FFFFFF;
+  --paper-lines: #BBC1E1;
+  --paper-behind: #E1E6F9;
+  --pencil-cap: #fff;
+  --pencil-top: #275EFE;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5C86FF;
+  --shadow: rgba(13, 15, 25, .2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  float: left;
+  transform: translateY(-40px);
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: IranYekan;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 53px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  background: var(--background-left);
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: .15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: .15s;
+  --pex: -24px;
 }
 
 .footer-details-header h5 {

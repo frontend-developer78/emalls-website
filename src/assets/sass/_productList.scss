@@ -85,23 +85,6 @@
             }
         }
     }
-    .owl-nav {
-        button {
-            width: 40px;
-            height: 40px;
-            margin: 20px 10px;
-            background-color: rgb(255, 255, 255);
-            border-radius: 10px;
-            color: #2e2e2e;
-            @include transition-default(all,0.4s);
-            &:hover {
-                background-color: rgb(238, 255, 225);
-            }
-        }
-    }
-    .owl-dots {
-        display: none!important;
-    }
     .all-category-link {
         display: block;
         text-align: end;

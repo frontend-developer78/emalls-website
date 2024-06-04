@@ -142,3 +142,10 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 })
+///////////////////////////////////////////
+const retwitteBtn = document.getElementById("retwitteBtn");
+const boxSubmitRetwitte = document.querySelector(".boxSubmitRetwitte");
+
+retwitteBtn.addEventListener("click", () => {
+  boxSubmitRetwitte.classList.toggle("active-box-Submit-Retwitte");
+})
