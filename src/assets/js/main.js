@@ -149,3 +149,10 @@ const boxSubmitRetwitte = document.querySelector(".boxSubmitRetwitte");
 retwitteBtn.addEventListener("click", () => {
   boxSubmitRetwitte.classList.toggle("active-box-Submit-Retwitte");
 })
+///////////////////////////////////////////////
+const ticketBtn = document.querySelector(".ticket-btn-container");
+const ticketForm = document.querySelector(".ticket-form-container");
+
+ticketBtn.addEventListener("click", () => {
+  ticketForm.classList.toggle("activ-ticket-form");
+})

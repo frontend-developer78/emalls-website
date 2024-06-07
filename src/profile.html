@@ -511,15 +511,15 @@
             <div class="col-12 profile-acount-box-container">
                 <div class="profile-acount-box-inner">
                     <div class="profile-acount-card">
-                        <div class="d-flex align-items-start">
+                        <div class="d-flex align-items-start profile-acount-card-wrapper">
                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                               <button class="nav-link active" id="v-pills-profile-acount-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-acount" type="button" role="tab" aria-controls="v-pills-profile-acount" aria-selected="true"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> محمد سلطانی</button>
-                              <button class="nav-link" id="v-pills-bag-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bag" type="button" role="tab" aria-controls="v-pills-bag" aria-selected="false"><img class="img-fluid" src="assets/img/carts-profile-icon.png" alt="bag-icon"> سفارش های من</button>
-                              <button class="nav-link" id="v-pills-like-folder-tab" data-bs-toggle="pill" data-bs-target="#v-pills-like-folder" type="button" role="tab" aria-controls="v-pills-like-folder" aria-selected="false"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> کالاهای مورد علاقه</button>
-                              <button class="nav-link" id="v-pills-comments-tab" data-bs-toggle="pill" data-bs-target="#v-pills-comments" type="button" role="tab" aria-controls="v-pills-comments" aria-selected="false"><img class="img-fluid" src="assets/img/message-profile-icon.png" alt="comment-icon"> نظرات</button>
+                              <button class="nav-link" id="v-pills-bag-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bag" type="button" role="tab" aria-controls="v-pills-bag" aria-selected="false"><img class="img-fluid" src="assets/img/carts-profile-icon.png" alt="bag-icon"> پیشخوان</button>
+                              <button class="nav-link" id="v-pills-like-folder-tab" data-bs-toggle="pill" data-bs-target="#v-pills-like-folder" type="button" role="tab" aria-controls="v-pills-like-folder" aria-selected="false"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> تیکت ها</button>
+                              <button class="nav-link" id="v-pills-Bill-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bill" type="button" role="tab" aria-controls="v-pills-Bill" aria-selected="false"><img class="img-fluid" src="assets/img/message-profile-icon.png" alt="comment-icon"> صورتحساب</button>
                               <button class="nav-link" id="v-pills-location-tab" data-bs-toggle="pill" data-bs-target="#v-pills-location" type="button" role="tab" aria-controls="v-pills-location" aria-selected="false"><img class="img-fluid" src="assets/img/placeholder-profile-icon.png" alt="location icon"> نشانی ها</button>
-                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img class="img-fluid" src="assets/img/new-email-profile-icon.png" alt="message icon"> پیام ها</button>
-                              <button class="nav-link" id="v-pills-visited-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visited" type="button" role="tab" aria-controls="v-pills-visited" aria-selected="false"><img class="img-fluid" src="assets/img/eye-scanner-profile-icon.png" alt="eyes-icon"> آخرین کالاهای دیده شده</button>
+                              <button class="nav-link" id="v-pills-comments-tab" data-bs-toggle="pill" data-bs-target="#v-pills-comments" type="button" role="tab" aria-controls="v-pills-comments" aria-selected="false"><img class="img-fluid" src="assets/img/new-email-profile-icon.png" alt="message icon"> پیام ها</button>
+                              <button class="nav-link" id="v-pills-visited-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visited" type="button" role="tab" aria-controls="v-pills-visited" aria-selected="false"><img class="img-fluid" src="assets/img/eye-scanner-profile-icon.png" alt="eyes-icon">ارسال مدارک</button>
                               <button class="nav-link" id="exited-button" type="button"><img class="img-fluid" src="assets/img/logout-profile-icon.png" alt="exit icon"> خروج</button>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
@@ -700,22 +700,20 @@
                               <div class="tab-pane fade" id="v-pills-bag" role="tabpanel" aria-labelledby="v-pills-bag-tab" tabindex="0">
                                 <div class="my-orders-card-container">
                                   <div class="my-orders-card-inner">
-                                    <h5>سفارش های شما در یک ماه اخیر</h5>
+                                    <h5>پیشخوان فروشگاه شما</h5>
                                     <div class="container">
                                       <div class="row">
                                         <div class="col-12 col-md-3 my-orders-card mb-3">
                                           <a href="#">
                                             <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
+                                              <img class="img-fluid" src="assets/img/store-dashboard-icon-image.png" alt="product-image">
                                               <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                                <p>فروشگاه دیجیکالا</p>
                                                 <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                                  <li><i class="fa-solid fa-star ms-2 text-warning"></i>4/5</li>
+                                                  <li><i class="fa-solid fa-message ms-2 text-danger"></i>270 نظر</li>
                                                 </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
+                                                <p class="Store-name-product">ورود به <span class="me-1">پنل فروشگاه</span></p>
                                               </div>
                                             </div>
                                           </a>
@@ -723,16 +721,14 @@
                                         <div class="col-12 col-md-3 my-orders-card mb-3">
                                           <a href="#">
                                             <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
+                                              <img class="img-fluid" src="assets/img/store-dashboard-icon-2.png" alt="product-image">
                                               <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                                <p>فروشگاه تکنولایف</p>
                                                 <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                                  <li><i class="fa-solid fa-star ms-2 text-warning"></i>4/5</li>
+                                                  <li><i class="fa-solid fa-message ms-2 text-danger"></i>270 نظر</li>
                                                 </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
+                                                <p class="Store-name-product">ورود به <span class="me-1">پنل فروشگاه</span></p>
                                               </div>
                                             </div>
                                           </a>
@@ -740,16 +736,14 @@
                                         <div class="col-12 col-md-3 my-orders-card mb-3">
                                           <a href="#">
                                             <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
+                                              <img class="img-fluid" src="assets/img/store-dashboard-icon-3.png" alt="product-image">
                                               <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                                <p>فروشگاه ترب</p>
                                                 <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                                  <li><i class="fa-solid fa-star ms-2 text-warning"></i>4/5</li>
+                                                  <li><i class="fa-solid fa-message ms-2 text-danger"></i>270 نظر</li>
                                                 </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
+                                                <p class="Store-name-product">ورود به <span class="me-1">پنل فروشگاه</span></p>
                                               </div>
                                             </div>
                                           </a>
@@ -757,84 +751,14 @@
                                         <div class="col-12 col-md-3 my-orders-card mb-3">
                                           <a href="#">
                                             <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
+                                              <img class="img-fluid" src="assets/img/store-dashboard-icon-4.png" alt="product-image">
                                               <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
+                                                <p>فروشگاه شهر فرش</p>
                                                 <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
+                                                  <li><i class="fa-solid fa-star ms-2 text-warning"></i>4/5</li>
+                                                  <li><i class="fa-solid fa-message ms-2 text-danger"></i>270 نظر</li>
                                                 </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
-                                              </div>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
-                                              </div>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-6.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
-                                              </div>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
-                                              </div>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                                <p class="price-product">1,850,000 تومان</p>
-                                                <p class="Store-name-product">خرید از فروشگاه <span>دیجیکالا</span></p>
+                                                <p class="Store-name-product">ورود به <span class="me-1">پنل فروشگاه</span></p>
                                               </div>
                                             </div>
                                           </a>
@@ -847,130 +771,388 @@
                               <div class="tab-pane fade" id="v-pills-like-folder" role="tabpanel" aria-labelledby="v-pills-like-folder-tab" tabindex="0">
                                 <div class="like-product-folder-container">
                                   <div class="like-product-folder-inner">
-                                    <h5>سفارش های شما در یک ماه اخیر</h5>
+                                    <h5>پنل مدیریت فروشگاه | تیکت ها</h5>
                                     <div class="container">
                                       <div class="row">
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                          </a>
+                                        <div class="col-12">
+                                          <table class="ticket-table-container">
+                                            <thead>
+                                              <tr>
+                                                <td>شماره تیکت</td>
+                                                <th>عنوان</th>
+                                                <th>تاریخ</th>
+                                                <th>وضعیت</th>
+                                                <th>فروشگاه</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th>12569</th>
+                                                <td>ثبت محصولات</td>
+                                                <td>1403/03/18</td>
+                                                <td><img class="img-fluid" src="assets/img/graph.png" alt="loading image">فعال</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>17895</th>
+                                                <td>تکمیل اطلاعات کاربری</td>
+                                                <td>1403/03/01</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>ترب</td>
+                                              </tr>
+                                              <tr>
+                                                <th>14234</th>
+                                                <td>ارسال مدارک حقوقی</td>
+                                                <td>1403/02/15</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>98734</th>
+                                                <td>حذف محصولات قبلی</td>
+                                                <td>1403/01/01</td>
+                                                <td><img class="img-fluid" src="assets/img/graph.png" alt="loading image">فعال</td>
+                                                <td>ترب</td>
+                                              </tr>
+                                              <tr>
+                                                <th>54689</th>
+                                                <td>خرید اشتراک ویژه</td>
+                                                <td>1402/12/01</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                              <tr>
+                                                <th>23498</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>دیجیکالا</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                          <button class="Documents-btn ticket-btn-container" type="button" name="ticket btn" title="ارسال درخواست جدید">
+                                            <span class="folderContainer">
+                                              <svg
+                                                class="fileBack"
+                                                width="146"
+                                                height="113"
+                                                viewBox="0 0 146 113"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z"
+                                                  fill="url(#paint0_linear_117_4)"
+                                                ></path>
+                                                <defs>
+                                                  <linearGradient
+                                                    id="paint0_linear_117_4"
+                                                    x1="0"
+                                                    y1="0"
+                                                    x2="72.93"
+                                                    y2="95.4804"
+                                                    gradientUnits="userSpaceOnUse"
+                                                  >
+                                                    <stop stop-color="#8F88C2"></stop>
+                                                    <stop offset="1" stop-color="#5C52A2"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                              <svg
+                                                class="filePage"
+                                                width="88"
+                                                height="99"
+                                                viewBox="0 0 88 99"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+                                                <defs>
+                                                  <linearGradient
+                                                    id="paint0_linear_117_6"
+                                                    x1="0"
+                                                    y1="0"
+                                                    x2="81"
+                                                    y2="160.5"
+                                                    gradientUnits="userSpaceOnUse"
+                                                  >
+                                                    <stop stop-color="white"></stop>
+                                                    <stop offset="1" stop-color="#686868"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                          
+                                              <svg
+                                                class="fileFront"
+                                                width="160"
+                                                height="79"
+                                                viewBox="0 0 160 79"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z"
+                                                  fill="url(#paint0_linear_117_5)"
+                                                ></path>
+                                                <defs>
+                                                  <linearGradient
+                                                    id="paint0_linear_117_5"
+                                                    x1="38.7619"
+                                                    y1="8.71323"
+                                                    x2="66.9106"
+                                                    y2="82.8317"
+                                                    gradientUnits="userSpaceOnUse"
+                                                  >
+                                                    <stop stop-color="#C3BBFF"></stop>
+                                                    <stop offset="1" stop-color="#51469A"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                            </span>
+                                            <p class="text">ارسال تیکت جدید</p>
+                                          </button>                                          
                                         </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
+                                        <div class="col-12 ticket-form-container">
+                                          <form class="ticket-form" action="">
+                                            <div class="row">
+                                              <div class="col">
+                                                <label for="ticketName"><i class="fa-solid fa-pencil ms-2"></i>عنوان تیکت</label>
+                                                <input id="ticketName" type="text" class="form-control" aria-label="ticketName">
+                                              </div>
+                                              <div class="col">
+                                                <label for="StoreTicketName"><i class="fa-solid fa-pencil ms-2"></i>فروشگاه مربوطه</label>
+                                                <select id="StoreTicketName" class="form-select" aria-label="فروشگاه مربوطه">
+                                                  <option selected>انتخاب کنید</option>
+                                                  <option value="1">دیجیکالا</option>
+                                                  <option value="2">ترب</option>
+                                                  <option value="3">تکنولایف</option>
+                                                </select>
+                                              </div>
+                                              <div class="col">
+                                                <label for="sendTicketForOffice"><i class="fa-solid fa-pencil ms-2"></i>ارسال تیکت برای</label>
+                                                <select id="sendTicketForOffice" class="form-select" aria-label="ارسال برای قسمت مورد نظر">
+                                                  <option selected>انتخاب کنید</option>
+                                                  <option value="1">انتصالات و محصولات</option>
+                                                  <option value="2">بخش فنی</option>
+                                                  <option value="3">پیگیری مشکلات</option>
+                                                  <option value="4">تبلیغات و فروش</option>
+                                                  <option value="5">ثبت فروشگاه و پیگیری مدارک</option>
+                                                </select>
                                               </div>
                                             </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
+                                            <div class="row mt-3">
+                                              <div class="col">
+                                                <label for="ticketMessage"><i class="fa-solid fa-pencil ms-2"></i>متن پیام</label>
+                                                <textarea name="ticketMessage" id="ticketMessage"></textarea>
                                               </div>
                                             </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-4.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
+                                            <div class="row ticket-file-container mt-4">
+                                              <div class="col">
+                                                <label for="ticketfile"><i class="fa-solid fa-pencil ms-2"></i>ارسال فایل</label>
+                                                <input id="ticketfile" name="ticketfile" title="ارسال فایل" type="file">
+                                              </div>
+                                              <div class="col">
+                                                <h5>پسوندهای ارسالی مجاز</h5>
+                                                <p>.jpg, .gif, .jpeg, .png, .txt, .pdf, .zip, .rar</p>
                                               </div>
                                             </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-5.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
+                                            <div class="row">
+                                              <div class="col">
+                                                <button class="button-ticket-form" type="submit">ارسال پیام</button>
                                               </div>
                                             </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-6.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-3.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <div class="col-12 col-md-3 my-orders-card mb-3">
-                                          <a href="#">
-                                            <div class="product-list-card">
-                                              <img class="img-fluid" src="assets/img/product-image-2.png" alt="product-image">
-                                              <div class="product-list-card-content">
-                                                <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ GB</p>
-                                                <ul class="detail-product">
-                                                  <li><i class="fa-solid fa-star"></i>4/5</li>
-                                                  <li><i class="fa-solid fa-truck-fast"></i>ارسال فوری</li>
-                                                  <li><i class="fa-solid fa-message"></i>270 نظر</li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                          </a>
+                                          </form>
                                         </div>
                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-Bill" role="tabpanel" aria-labelledby="v-pills-Bill-tab" tabindex="0">
+                                <div class="bill-ticket-folder-container">
+                                  <div class="bill-ticket-folder-inner">
+                                    <h5>پنل مدیریت فروشگاه | صورتحساب ها</h5>
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <table class="ticket-table-container">
+                                            <thead>
+                                              <tr>
+                                                <td>ردیف</td>
+                                                <th>شرح</th>
+                                                <th>تاریخ</th>
+                                                <th>وضعیت</th>
+                                                <th>مبلغ</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th>1</th>
+                                                <td>ثبت محصولات</td>
+                                                <td>1403/03/18</td>
+                                                <td><img class="img-fluid" src="assets/img/graph.png" alt="loading image">فعال</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>2</th>
+                                                <td>تکمیل اطلاعات کاربری</td>
+                                                <td>1403/03/01</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>3</th>
+                                                <td>ارسال مدارک حقوقی</td>
+                                                <td>1403/02/15</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>4</th>
+                                                <td>حذف محصولات قبلی</td>
+                                                <td>1403/01/01</td>
+                                                <td><img class="img-fluid" src="assets/img/graph.png" alt="loading image">فعال</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>5</th>
+                                                <td>خرید اشتراک ویژه</td>
+                                                <td>1402/12/01</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>6</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>7</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>8</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>9</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>10</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>11</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>12</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>13</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                              <tr>
+                                                <th>14</th>
+                                                <td>فعال سازی پنل فروشگاه</td>
+                                                <td>1402/08/25</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تکمیل شده</td>
+                                                <td>12,650,000 تومان</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>                                         
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-location" role="tabpanel" aria-labelledby="v-pills-location-tab" tabindex="0">
+                                <div class="container">
+                                  <div class="row w-100">
+                                    <div class="col-12">
+                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.6827782931005!2d52.57342367165282!3d29.61827738539763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb20cfd54f26125%3A0x73b6c5b59f2e5e27!2sDelgosha%20Garden!5e0!3m2!1sen!2s!4v1717766194718!5m2!1sen!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                   </div>
                                 </div>
@@ -1135,9 +1317,94 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="tab-pane fade" id="v-pills-location" role="tabpanel" aria-labelledby="v-pills-location-tab" tabindex="0">...</div>
-                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                              <div class="tab-pane fade" id="v-pills-visited" role="tabpanel" aria-labelledby="v-pills-visited-tab" tabindex="0">...</div>
+                              <div class="tab-pane fade" id="v-pills-visited" role="tabpanel" aria-labelledby="v-pills-visited-tab" tabindex="0">
+                                <div class="like-product-folder-container">
+                                  <div class="like-product-folder-inner">
+                                    <h5>پنل مدیریت فروشگاه | ارسال مدرک</h5>
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <table class="ticket-table-container">
+                                            <thead>
+                                              <tr>
+                                                <td>ردیف</td>
+                                                <th>نوع مدرک</th>
+                                                <th>فروشگاه</th>
+                                                <th>وضعیت</th>
+                                                <th>تاریخ ارسال</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th>1</th>
+                                                <td>شناسنامه صاحب وبسایت</td>
+                                                <td>دیجیکالا</td>
+                                                <td><img class="img-fluid" src="assets/img/graph.png" alt="loading image">در دست اقدام</td>
+                                                <td>1403/03/02</td>
+                                              </tr>
+                                              <tr>
+                                                <th>2</th>
+                                                <td>کارت ملی صاحب وبسایت</td>
+                                                <td>دیجیکالا</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تایید شده</td>
+                                                <td>1403/03/02</td>
+                                              </tr>
+                                              <tr>
+                                                <th>3</th>
+                                                <td>کارت پایان خدمت</td>
+                                                <td>دیجیکالا</td>
+                                                <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تایید شده</td>
+                                                <td>1403/03/02</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>                                        
+                                        </div>
+                                        <div class="col-12 ticket-form-container">
+                                          <form class="ticket-form" action="">
+                                            <div class="row">
+                                              <div class="col">
+                                                <label for="personalCardName"><i class="fa-solid fa-pencil ms-2"></i>نوع مدرک</label>
+                                                <select id="personalCardName" class="form-select" aria-label="نوع مدرک ارسالی را مشخص نمایید">
+                                                  <option selected>انتخاب کنید</option>
+                                                  <option value="1">شناسنامه</option>
+                                                  <option value="2">کارت ملی</option>
+                                                  <option value="3">کارت پایان خدمت (ویژه آقایان)</option>
+                                                </select>
+                                              </div>
+                                              <div class="col">
+                                                <label for="StoreCardOffice"><i class="fa-solid fa-pencil ms-2"></i>فروشگاه های مرتبط</label>
+                                                <select id="StoreCardOffice" class="form-select" aria-label="فروشگاه مدنظر شما">
+                                                  <option selected>انتخاب کنید</option>
+                                                  <option value="1">دیجیکالا</option>
+                                                  <option value="2">ترب</option>
+                                                  <option value="3">تکنولایف</option>
+                                                  <option value="4">دیجی شهر</option>
+                                                  <option value="5">شهر فرش</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="row ticket-file-container mt-4">
+                                              <div class="col">
+                                                <label for="cardTicketfile"><i class="fa-solid fa-pencil ms-2"></i>ارسال مدرک</label>
+                                                <input id="cardTicketfile" name="cardTicketfile" title="ارسال فایل" type="file">
+                                              </div>
+                                              <div class="col">
+                                                <h5>پسوندهای ارسالی مجاز</h5>
+                                                <p>.jpg, .gif, .jpeg, .png, .txt, .pdf, .zip, .rar</p>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <button class="button-ticket-form" type="submit">ارسال مدرک</button>
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
