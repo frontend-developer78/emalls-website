@@ -8,7 +8,7 @@
                     background-color: #fff;
                     padding: 10px;
                     border-radius: 20px;
-                    button {
+                    .nav-link {
                         border-radius:0; 
                         @include transition-default(all,0.4s);
                         &:hover {
@@ -624,7 +624,7 @@
                                             }
                                         }
                                     }
-                                    button#retwitteBtn {
+                                    button.retwitteBtn {
                                         border: none;
                                         outline: none;
                                         box-shadow: none;

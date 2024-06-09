@@ -12,7 +12,7 @@
     <meta name="resource-type" content="document">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حساب کاربری | مشخصات کاربری</title>
+    <title>حساب کاربری | ارسال مدارک</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png" type="image/x.icon">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -513,190 +513,104 @@
                     <div class="profile-acount-card">
                         <div class="d-flex align-items-start profile-acount-card-wrapper">
                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link active" id="v-pills-profile-acount-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-acount" type="button" role="tab" aria-controls="v-pills-profile-acount" aria-selected="true"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> محمد سلطانی</button>
+                              <a href="profile.html" class="nav-link"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> محمد سلطانی</a>
                               <a href="Counter.html" class="nav-link"><img class="img-fluid" src="assets/img/carts-profile-icon.png" alt="bag-icon"> پیشخوان</a>
                               <a href="ticket-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> تیکت ها</a>
                               <a href="Bill-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/message-profile-icon.png" alt="comment-icon"> صورتحساب</a>
                               <a href="location-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/placeholder-profile-icon.png" alt="location icon"> نشانی ها</a>
                               <a href="comments-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/new-email-profile-icon.png" alt="message icon"> پیام ها</a>
-                              <a href="send-sc-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/eye-scanner-profile-icon.png" alt="eyes-icon">ارسال مدارک</a>
+                              <button class="nav-link active" id="v-pills-visited-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visited" type="button" role="tab" aria-controls="v-pills-visited" aria-selected="false"><img class="img-fluid" src="assets/img/eye-scanner-profile-icon.png" alt="eyes-icon">ارسال مدارک</button>
                               <button class="nav-link" id="exited-button" type="button"><img class="img-fluid" src="assets/img/logout-profile-icon.png" alt="exit icon"> خروج</button>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
-                              <div class="tab-pane fade show active" id="v-pills-profile-acount" role="tabpanel" aria-labelledby="v-pills-profile-acount-tab" tabindex="0">
-                                <div class="container">
-                                  <div class="row">
-                                    <div class="col-12 pills-profile-acount-header">
-                                      <h5><img class="img-fluid" src="assets/img/resume-profile-icon.png" alt="profile-icon-image"> مشخصات حساب کاربری</h5>
-                                    </div>
-                                    <div class="col-12 pills-profile-acount-content">
-                                      <table>
-                                        <tr>
-                                          <th>نام و نام خانوادگی</th>
-                                          <th>پست الکترونیک</th>
-                                          <th>شماره موبایل</th>
-                                          <th>کد ملی</th>
-                                          <th>دریافت خبرنامه</th>
-                                          <th>شماره کارت</th>
-                                        </tr>
-                                        <tr>
-                                          <td>محمد سلطانی</td>
-                                          <td>mhd.soltani97@gmail.com</td>
-                                          <td>09176350307</td>
-                                          <td>2282931580</td>
-                                          <td>خیر</td>
-                                          <td>6037997529101256</td>
-                                        </tr>
-                                      </table>
-                                      <button id="editBtnProfile" class="continue-application" name="edit profile btn" title="ویرایش اطلاعات حساب کاربری" type="button">
-                                        <div>
-                                          <div class="pencil"></div>
-                                          <div class="folder">
-                                              <div class="top">
-                                                  <svg viewBox="0 0 24 27">
-                                                      <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
-                                                  </svg>
-                                              </div>
-                                              <div class="paper"></div>
-                                          </div>
-                                        </div>
-                                        ویرایش مشخصات
-                                      </button>
-                                      <div class="edit-profile-form">
-                                        <ul class="nav nav-tabs" id="myEditProfileTab" role="tablist">
-                                          <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="personal-profile-tab" data-bs-toggle="tab" data-bs-target="#personal-profile-tab-pane" type="button" role="tab" aria-controls="personal-profile-tab-pane" aria-selected="true">مشخصات فردی</button>
-                                          </li>
-                                          <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="legal-profile-tab" data-bs-toggle="tab" data-bs-target="#legal-profile-tab-pane" type="button" role="tab" aria-controls="legal-profile-tab-pane" aria-selected="false">مشخصات حقوقی</button>
-                                          </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                          <div class="tab-pane fade show active edit-personal-profile" id="personal-profile-tab-pane" role="tabpanel" aria-labelledby="personal-profile-tab" tabindex="0">
-                                            <form action="">
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="FirstNameTag"><i class="fa-solid fa-pencil ms-2"></i>نام</label>
-                                                  <input id="FirstNameTag" type="text" class="form-control" aria-label="First name">
+                                <div class="tab-pane fade show active" id="v-pills-visited" role="tabpanel" aria-labelledby="v-pills-visited-tab" tabindex="0">
+                                    <div class="like-product-folder-container">
+                                      <div class="like-product-folder-inner">
+                                        <h5>پنل مدیریت فروشگاه | ارسال مدرک</h5>
+                                        <div class="container">
+                                          <div class="row">
+                                            <div class="col-12">
+                                              <table class="ticket-table-container">
+                                                <thead>
+                                                  <tr>
+                                                    <td>ردیف</td>
+                                                    <th>نوع مدرک</th>
+                                                    <th>فروشگاه</th>
+                                                    <th>وضعیت</th>
+                                                    <th>تاریخ ارسال</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th>1</th>
+                                                    <td>شناسنامه صاحب وبسایت</td>
+                                                    <td>دیجیکالا</td>
+                                                    <td><img class="img-fluid" src="assets/img/graph.png" alt="loading image">در دست اقدام</td>
+                                                    <td>1403/03/02</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th>2</th>
+                                                    <td>کارت ملی صاحب وبسایت</td>
+                                                    <td>دیجیکالا</td>
+                                                    <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تایید شده</td>
+                                                    <td>1403/03/02</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th>3</th>
+                                                    <td>کارت پایان خدمت</td>
+                                                    <td>دیجیکالا</td>
+                                                    <td><img class="img-fluid" src="assets/img/loading.png" alt="loading image">تایید شده</td>
+                                                    <td>1403/03/02</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>                                        
+                                            </div>
+                                            <div class="col-12 ticket-form-container">
+                                              <form class="ticket-form" action="">
+                                                <div class="row">
+                                                  <div class="col">
+                                                    <label for="personalCardName"><i class="fa-solid fa-pencil ms-2"></i>نوع مدرک</label>
+                                                    <select id="personalCardName" class="form-select" aria-label="نوع مدرک ارسالی را مشخص نمایید">
+                                                      <option selected>انتخاب کنید</option>
+                                                      <option value="1">شناسنامه</option>
+                                                      <option value="2">کارت ملی</option>
+                                                      <option value="3">کارت پایان خدمت (ویژه آقایان)</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col">
+                                                    <label for="StoreCardOffice"><i class="fa-solid fa-pencil ms-2"></i>فروشگاه های مرتبط</label>
+                                                    <select id="StoreCardOffice" class="form-select" aria-label="فروشگاه مدنظر شما">
+                                                      <option selected>انتخاب کنید</option>
+                                                      <option value="1">دیجیکالا</option>
+                                                      <option value="2">ترب</option>
+                                                      <option value="3">تکنولایف</option>
+                                                      <option value="4">دیجی شهر</option>
+                                                      <option value="5">شهر فرش</option>
+                                                    </select>
+                                                  </div>
                                                 </div>
-                                                <div class="col">
-                                                  <label for="LastNameTag"><i class="fa-solid fa-pencil ms-2"></i>نام خانوادگی</label>
-                                                  <input id="LastNameTag" type="text" class="form-control" aria-label="Last name">
+                                                <div class="row ticket-file-container mt-4">
+                                                  <div class="col">
+                                                    <label for="cardTicketfile"><i class="fa-solid fa-pencil ms-2"></i>ارسال مدرک</label>
+                                                    <input id="cardTicketfile" name="cardTicketfile" title="ارسال فایل" type="file">
+                                                  </div>
+                                                  <div class="col">
+                                                    <h5>پسوندهای ارسالی مجاز</h5>
+                                                    <p>.jpg, .gif, .jpeg, .png, .txt, .pdf, .zip, .rar</p>
+                                                  </div>
                                                 </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="partNumberTag"><i class="fa-solid fa-pencil ms-2"></i>کد ملی</label>
-                                                  <input id="partNumberTag" type="text" class="form-control" aria-label="partNumberTag">
+                                                <div class="row">
+                                                  <div class="col">
+                                                    <button class="button-ticket-form" type="submit">ارسال مدرک</button>
+                                                  </div>
                                                 </div>
-                                                <div class="col">
-                                                  <label for="phoneNumberTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل</label>
-                                                  <input id="phoneNumberTag" type="tel" class="form-control" aria-label="phoneNumberTag">
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="emailTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس ایمیل</label>
-                                                  <input id="emailTag" type="email" class="form-control" aria-label="emailTag">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="cardTag"><i class="fa-solid fa-pencil ms-2"></i>شماره کارت</label>
-                                                  <input id="cardTag" type="text" class="form-control" aria-label="cardTag">
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="passwordTag"><i class="fa-solid fa-pencil ms-2"></i>رمز عبور جدید</label>
-                                                  <input id="passwordTag" type="password" class="form-control" aria-label="passwordTag">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="returnPasswordTag"><i class="fa-solid fa-pencil ms-2"></i>تکرار رمز عبور جدید</label>
-                                                  <input id="returnPasswordTag" type="password" class="form-control" aria-label="returnPasswordTag">
-                                                </div>
-                                                <button class="mt-4" id="edit-profile-personal-form" name="edit-profile-personal-form" title="ثبت مشخصات" type="submit">ثبت مشخصات</button>
-                                              </div>
-                                            </form>
-                                          </div>
-                                          <div class="tab-pane fade" id="legal-profile-tab-pane" role="tabpanel" aria-labelledby="legal-profile-tab" tabindex="0">
-                                            <form action="">
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="FirstNameTag1"><i class="fa-solid fa-pencil ms-2"></i>نام سازمان</label>
-                                                  <input id="FirstNameTag1" type="text" class="form-control" aria-label="First name">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="LastNameTag2"><i class="fa-solid fa-pencil ms-2"></i>کد اقتصادی</label>
-                                                  <input id="LastNameTag2" type="text" class="form-control" aria-label="Last name">
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="partNumberTag3"><i class="fa-solid fa-pencil ms-2"></i>شناسه ملی</label>
-                                                  <input id="partNumberTag3" type="text" class="form-control" aria-label="partNumberTag">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="phoneNumberTag4"><i class="fa-solid fa-pencil ms-2"></i>شناسه ثبت</label>
-                                                  <input id="phoneNumberTag4" type="text" class="form-control" aria-label="phoneNumberTag">
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="inputState8" class="form-label"><i class="fa-solid fa-pencil ms-2"></i>نام استان</label>
-                                                  <select id="inputState8" class="form-select">
-                                                    <option selected>-انتخاب استان-</option>
-                                                    <option>تهران</option>
-                                                    <option>فارس</option>
-                                                    <option>خراسان جنوبی</option>
-                                                    <option>اصفهان</option>
-                                                    <option>یزد</option>
-                                                    <option>کرمان</option>
-                                                    <option>آذربایجان غربی</option>
-                                                    <option>سیستان و بلوچستان</option>
-                                                    <option>مازندران</option>
-                                                  </select>
-                                                </div>
-                                                <div class="col">
-                                                  <label for="inputState9" class="form-label"><i class="fa-solid fa-pencil ms-2"></i>شهر محل دفتر مرکزی</label>
-                                                  <select id="inputState9" class="form-select">
-                                                    <option selected>-انتخاب شهر-</option>
-                                                    <option>تهران</option>
-                                                    <option>شیراز</option>
-                                                    <option>مشهد</option>
-                                                    <option>اصفهان</option>
-                                                    <option>یزد</option>
-                                                    <option>کرمان</option>
-                                                    <option>زاهدان</option>
-                                                    <option>تبریز</option>
-                                                    <option>گیلان</option>
-                                                    <option>رشت</option>
-                                                  </select>
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="emailTag5"><i class="fa-solid fa-pencil ms-2"></i>شماره تلفن ثابت</label>
-                                                  <input id="emailTag5" type="text" class="form-control" aria-label="emailTag">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="cardTag6"><i class="fa-solid fa-pencil ms-2"></i>کد پستی</label>
-                                                  <input id="cardTag6" type="text" class="form-control" aria-label="cardTag">
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col">
-                                                  <label for="passwordTag7"><i class="fa-solid fa-pencil ms-2"></i>آدرس پستی</label>
-                                                  <input id="passwordTag7" type="text" class="form-control" aria-label="passwordTag">
-                                                </div>
-                                                <button class="mt-4" id="edit-profile-company-form" name="edit-profile-personal-form" title="ثبت مشخصات" type="submit">ثبت مشخصات</button>
-                                              </div>
-                                            </form>
+                                              </form>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
                             </div>
                         </div>
                     </div>

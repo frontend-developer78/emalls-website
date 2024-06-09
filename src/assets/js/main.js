@@ -142,17 +142,17 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 })
-///////////////////////////////////////////
-const retwitteBtn = document.getElementById("retwitteBtn");
-const boxSubmitRetwitte = document.querySelector(".boxSubmitRetwitte");
-
-retwitteBtn.addEventListener("click", () => {
-  boxSubmitRetwitte.classList.toggle("active-box-Submit-Retwitte");
-})
 ///////////////////////////////////////////////
 const ticketBtn = document.querySelector(".ticket-btn-container");
 const ticketForm = document.querySelector(".ticket-form-container");
 
 ticketBtn.addEventListener("click", () => {
   ticketForm.classList.toggle("activ-ticket-form");
+})
+/////////////////////////////////////////////////
+const retwitteBtn = document.querySelectorAll(".retwitteBtn");
+const boxSubmitRetwitte = document.querySelector(".boxSubmitRetwitte");
+
+retwitteBtn.addEventListener("click", () => {
+  boxSubmitRetwitte.classList.toggle("active-box-Submit-Retwitte");
 })
