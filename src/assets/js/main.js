@@ -103,30 +103,6 @@ const submitSign = document.getElementById("submitSign");
 const signUpbtnContainer = document.querySelector(".signUp-btn-container");
 const loginBtnContainer = document.querySelector(".login-btn-container");
 const loginBtn = document.getElementById("loginBtn");
-
-signUpBtn.addEventListener("click", () => {
-  loginContent.style.display = "none";
-  signContent.style.display = "inline-block";
-  loginContainer.style.display = "none";
-  signContainer.style.display = "block";
-  forgetLink.style.display = "none";
-  submitLogin.style.display = "none";
-  submitSign.style.display = "block";
-  signUpbtnContainer.style.display = "none";
-  loginBtnContainer.style.display = "block";
-});
-
-loginBtn.addEventListener("click", () => {
-  loginContent.style.display = "inline-block";
-  signContent.style.display = "none";
-  loginContainer.style.display = "block";
-  signContainer.style.display = "none";
-  forgetLink.style.display = "block";
-  submitLogin.style.display = "block";
-  submitSign.style.display = "none";
-  signUpbtnContainer.style.display = "block";
-  loginBtnContainer.style.display = "none";
-});
 //////////////////////////////////////////////////
 const scrollBtn = document.getElementById("scrollBtn");
 

@@ -2201,6 +2201,27 @@ button.menu-btn-responsive i {
   padding: 10px;
   border-radius: 20px;
 }
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.0901960784);
+  padding: 10px;
+  border-radius: 15px;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount .store-acount-profile-content h5 {
+  font-size: 15px;
+  text-align: center;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount .store-acount-profile-content ul.star-rate-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount .store-acount-profile-content ul.star-rate-comment li {
+  margin: 0 4px;
+  filter: opacity(0.7);
+}
 #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .nav-link {
   border-radius: 0;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -3266,6 +3287,180 @@ button.menu-btn-responsive i {
 }
 #loginPage .login-page-image img {
   border-radius: 20px;
+}
+
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills {
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.0901960784);
+  padding: 10px;
+  border-radius: 15px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount .store-acount-profile-content h5 {
+  font-size: 15px;
+  text-align: center;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount .store-acount-profile-content ul.star-rate-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .store-name-acount .store-acount-profile-content ul.star-rate-comment li {
+  margin: 0 4px;
+  filter: opacity(0.7);
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .nav-link {
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 16px;
+  font-family: IRANYekan;
+  color: #1f1f1f;
+  text-align: right;
+  margin-bottom: 20px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .nav-link:hover {
+  color: #11B76B;
+  border-right: 2px solid #b8b8b8;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills .nav-link img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills button.active {
+  background-color: transparent;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content {
+  width: 100%;
+  background: #ffffff;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-header h5 {
+  margin-bottom: 20px;
+  color: #2b2b2b;
+  font-size: 15px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-header h5 img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 14px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .upload-logo-image {
+  border: 1px solid rgba(0, 0, 0, 0.1098039216);
+  padding: 20px;
+  border-radius: 20px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .upload-logo-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .upload-logo-image input {
+  width: 30%;
+  padding: 10px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .upload-logo-image ul {
+  margin-top: 10px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .upload-logo-image ul li p {
+  font-size: 14px;
+  color: #404660;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .location-store-upload {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1098039216);
+  padding: 20px;
+  border-radius: 20px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .location-store-upload iframe {
+  width: 100%;
+  height: 300px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .location-store-upload textarea {
+  font-size: 15px;
+  font-family: IRANYekan;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .location-store-upload button {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #11B76B;
+  padding: 8px;
+  color: #fff;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .store-payment-method-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1176470588);
+  border-radius: 20px;
+  background-color: rgba(222, 249, 255, 0.055);
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .store-payment-method-container h5 {
+  font-size: 18px;
+  font-family: IRANYekan;
+  color: rgb(0, 120, 0);
+  margin-bottom: 20px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .store-payment-method-container .form-check {
+  margin-bottom: 10px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .store-payment-method-container .form-check label {
+  margin: 0;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form .store-payment-method-container textarea {
+  font-size: 15px;
+  font-family: IRANYekan;
+  color: #444444;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form button {
+  float: left;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: red;
+  color: #fff;
+  transform: translateY(-4px);
+  font-size: 14px;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form label {
+  font-size: 16px;
+  font-family: IRANYekan;
+  font-weight: 900;
+  margin: 10px 0;
+  color: #262626;
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 15px;
+  font-family: IRANYekan;
+  color: #404660;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .tab-content #v-pills-profile-acount .pills-profile-acount-content .edit-profile-form form input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1176470588);
 }
 
 .footer-details-header h5 {

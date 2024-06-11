@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="جست و جو کالا">
+    <meta name="Copyright" content="جست و جو کالا">
+    <meta name="description" content="جست و جو کالا یک وبسایت برای همه">
+    <meta name="language" content="fa">
+    <meta name="document-type" content="Public">
+    <meta name="document-rating" content="General">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="resource-type" content="document">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب کاربری | ویرایش فروشگاه</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.png" type="image/x.icon">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+</head>
+<body dir="rtl">
+    <!-- ----------------- Start navbar section ------------------- -->
+    <a class="navbar-brand-responsive" href="#">جست و جو<span>کالا</span></a>
+    <section id="navbar" class="navbar-sticky">
+        <div class="container-fluid px-0">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img width="20" height="20" src="assets/img/logo.png" alt="logo-website"> جست و جو<span class="m-2">کالا</span></a>
+                  <div class="navbar-collapse">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item nav-item-dropdown ms-4">
+                        <a class="nav-link nav-link-dropdown" aria-current="page" href="#"><img class="img-fluid ms-2" src="assets/img/category.png" width="20" height="20" alt="icon image">دسته بندی ها <i class="fa-solid fa-angle-down me-1"></i></a>
+                        <div class="dropdown-menu-custom container-fluid">
+                          <ul class="dropdown-menu-container">
+                            <li class="dropdown-menu-inner">
+                              <a href="#">گوشی موبایل <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">تبلت و لپتاپ <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">لوازم خانگی <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">سوپرمارکت <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">کنسول بازی <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">میز و صندلی <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">لباس مردانه <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">لباس زنانه <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">دکوراسیون منزل <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="dropdown-menu-inner">
+                              <a href="#">کتاب <i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item ms-4">
+                        <a class="nav-link" href="#"><img class="img-fluid ms-2" src="assets/img/store.png" width="20" height="20" alt="icon image">پنل فروشگاه ها</a>
+                      </li>
+                      <li class="nav-item ms-4">
+                        <a class="nav-link"><img class="img-fluid ms-2" src="assets/img/law.png" width="20" height="20" alt="icon image">شرایط و قوانین</a>
+                      </li>
+                      <li class="nav-item ms-4">
+                        <a class="nav-link"><img class="img-fluid ms-2" src="assets/img/about us.png" width="20" height="20" alt="icon image">درباره ما</a>
+                      </li>
+                    </ul>
+                    <div class="d-flex">
+                      <a class="regester-profile-btn me-4" href="login.html">
+                        <i class="fa-solid fa-right-to-bracket"></i><p class="me-1">ورود / ثبت نام</p>
+                      </a>
+                      <div class="user-acount-section">
+                        <button type="button" class="user-profile-btn me-2" onclick="profileAcountDefault()">
+                          <i class="fa-solid fa-user"></i><p class="me-1">محمد سلطانی</p>
+                        </button>
+                        <div class="user-acount-box-container" data-acount-default="open">
+                          <ul class="user-acount-inner">
+                            <li class="profile-acount-list mt-2 mb-3"><a href="#"><img width="25" height="25" src="assets/img/admin-settings-male.png" alt="admin-settings-male"/>مشاهده پروفایل</a></li>
+                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="assets/img/urgent-message.png" alt="urgent-message"/>گفت و گو های من</a></li>
+                            <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="assets/img/money-bag-bitcoin.png" alt="money-bag-bitcoin"/>فاکتور مالی</a></li>
+                            <li class="profile-acount-list mb-2"><a href="#"><img width="25" height="25" src="assets/img/exit--v1.png" alt="exit--v1"/>خروج</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="store-registration me-2" type="button">ثبت فروشگاه</button>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="responsiveNavbar" class="container-fluid">
+      <div class="row">
+        <div class="col-12 navbar-responsive-container">
+          <ul class="navbar-ersponsive-inner">
+            <li class="navbar-responsive-link">
+              <img class="img-fluid" src="assets/img/icons8-menu-32.png" alt="image">
+              <button id="menuResponBtn" type="button">منو</button>
+            </li>
+            <li class="navbar-responsive-link">
+              <img class="img-fluid" src="assets/img/icons8-home-48.png" alt="image">
+              <a href="#">خانه</a>
+            </li>
+            <li class="navbar-responsive-link">
+              <img class="img-fluid" src="assets/img/icons8-store-100.png" alt="image">
+              <a href="#">فروشگاه</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="menuResponsive" class="menu-response">
+      <div class="menu-responsive-container">
+        <div class="menu-responsive-inner">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">فهرست اصلی</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">دسته بندی محصولات</button>
+            </div>
+          </nav>
+          <div class="tab-content mt-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <ul class="menu-list-category">
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      گوشی موبایل
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      تبلت
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      لپتاپ
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      کامپیوتر
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ساعت هوشمند
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      هدفون
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      لوازم جانبی
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      تلویزیون
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <button class="login-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      ورود / ثبت نام
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <ul class="menu-list-category">
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      گوشی موبایل
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      تبلت
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      لپتاپ
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      کامپیوتر
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ساعت هوشمند
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      هدفون
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      لوازم جانبی
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-list-category-inner">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      تلویزیون
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">اپل</a></li>
+                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
+                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
+                      <li><a class="dropdown-item" href="#">اوپو</a></li>
+                      <li><a class="dropdown-item" href="#">ال جی</a></li>
+                      <li><a class="dropdown-item" href="#">انکر</a></li>
+                      <li><a class="dropdown-item" href="#">هواوی</a></li>
+                      <li><a class="dropdown-item" href="#">باسوس</a></li>
+                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                      <li><a class="dropdown-item" href="#">داریا</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="user-acount-responsive-section">
+      <button type="button" class="user-profile-btn me-4" onclick="profileAcount()">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <div class="user-acount-box-container" data-acount="open">
+        <ul class="user-acount-inner">
+          <li class="profile-acount-list mt-2 mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/admin-settings-male.png" alt="admin-settings-male"/>مشاهده پروفایل</a></li>
+          <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/urgent-message.png" alt="urgent-message"/>گفت و گو های من</a></li>
+          <li class="profile-acount-list mb-3"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/money-bag-bitcoin.png" alt="money-bag-bitcoin"/>فاکتور مالی</a></li>
+          <li class="profile-acount-list mb-2"><a href="#"><img width="25" height="25" src="https://img.icons8.com/fluency/48/exit--v1.png" alt="exit--v1"/>خروج</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------- End navbar section ------------------- -->
+    <!-- ----------------- Start profile box section ----------------- -->
+    <section id="StoreDashboardAcount" class="container-fluid my-5">
+        <div class="row">
+            <div class="col-12 profile-acount-box-container">
+                <div class="profile-acount-box-inner">
+                    <div class="profile-acount-card">
+                        <div class="d-flex align-items-start profile-acount-card-wrapper">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <div class="store-name-acount">
+                                    <img src="assets/img/store-dashboard-icon-2.png" alt="store image">
+                                    <div class="store-acount-profile-content">
+                                        <h5>فروشگاه تکنولایف</h5>
+                                        <ul class="star-rate-comment">
+                                            <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                        </ul>
+                                    </div>
+                                </div>   
+                                <a class="nav-link" href="StoreManager.html"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> ویرایش فروشگاه</a>
+                                <button class="nav-link active" id="v-pills-click-chart-tab" data-bs-toggle="pill" data-bs-target="#v-pills-click-chart" type="button" role="tab" aria-controls="v-pills-click-chart" aria-selected="true"><img class="img-fluid" src="assets/img/carts-profile-icon.png" alt="bag-icon"> نمودار کلیک</button>
+                                <a href="ticket-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> محصولات فروشگاه</a>
+                                <a href="Bill-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/message-profile-icon.png" alt="comment-icon"> خرید طرح</a>
+                                <a href="location-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/placeholder-profile-icon.png" alt="location icon"> خرید طرح ویژه</a>
+                                <button class="nav-link" id="exited-button" type="button"><img class="img-fluid" src="assets/img/logout-profile-icon.png" alt="exit icon"> بازگشت به صفحه اصلی</button>
+                            </div>
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-click-chart" role="tabpanel" aria-labelledby="v-pills-profile-acount-tab" tabindex="0">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12 pills-profile-acount-header">
+                                      <h5><img class="img-fluid" src="assets/img/resume-profile-icon.png" alt="profile-icon-image"> پنل مدیریت فروشگاه | ویرایش فروشگاه تکنولایف</h5>
+                                    </div>
+                                    <div class="col-12 pills-profile-acount-content">
+                                      <div class="edit-profile-form">
+                                        <form action="">
+                                            <div class="row mb-3">
+                                              <div class="col">
+                                                <label for="StoreNameTag"><i class="fa-solid fa-pencil ms-2"></i>عنوان فروشگاه</label>
+                                                <input id="StoreNameTag" type="text" disabled class="form-control" aria-label="Store name" placeholder="فروشگاه تکنولایف">
+                                              </div>
+                                              <div class="col">
+                                                <label for="dominNameTag"><i class="fa-solid fa-pencil ms-2"></i>دامنه فروشگاه</label>
+                                                <input id="dominNameTag" type="text" class="form-control" aria-label="domin name" placeholder="tecnolife.com" disabled>
+                                              </div>
+                                            </div>
+                                            <div class="row upload-logo-image">
+                                                <div class="col">
+                                                    <img class="img-fluid" src="assets/img/store-dashboard-icon-2.png" alt="logo image">
+                                                    <label for="logoImageTag"><i class="fa-solid fa-pencil ms-2"></i>لوگو فروشگاه</label>
+                                                    <input id="logoImageTag" type="file" class="form-control" aria-label="logoImageTag" placeholder="فروشگاه تکنولایف">
+                                                    <ul>
+                                                        <li>
+                                                            <p>پسوند های مجاز : png,jpg</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>بهترین سایز :‌ 300*300 پیکسل</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>نمایش لوگو به صورت دایره در وبسایت صورت می پذیرد</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <div class="col">
+                                                <label for="emailAcountTag"><i class="fa-solid fa-pencil ms-2"></i>ایمیل اول</label>
+                                                <input id="emailAcountTag" type="email" class="form-control" aria-label="emailAcountTag" disabled placeholder="mhd.soltani97@gmail.com">
+                                              </div>
+                                              <div class="col">
+                                                <label for="emailAcountTwoTag"><i class="fa-solid fa-pencil ms-2"></i>ایمیل دوم</label>
+                                                <input id="emailAcountTwoTag" type="email" class="form-control" aria-label="emailAcountTwoTag">
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <div class="col">
+                                                <label for="numberAcountTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل اول</label>
+                                                <input id="numberAcountTag" type="tel" class="form-control" aria-label="numberAcountTag" disabled placeholder="09176350307">
+                                              </div>
+                                              <div class="col">
+                                                <label for="numberAcountTwoTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل دوم</label>
+                                                <input id="numberAcountTwoTag" type="tel" class="form-control" aria-label="numberAcountTwoTag">
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <div class="col">
+                                                <label for="telegramIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی تلگرام</label>
+                                                <input id="telegramIdTag" type="text" class="form-control" aria-label="telegramIdTag">
+                                              </div>
+                                              <div class="col">
+                                                <label for="instagramIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی اینستاگرام</label>
+                                                <input id="instagramIdTag" type="text" class="form-control" aria-label="instagramIdTag">
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                  <label for="youtubeIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی یوتیوب</label>
+                                                  <input id="youtubeIdTag" type="text" class="form-control" aria-label="youtubeIdTag">
+                                                </div>
+                                                <div class="col">
+                                                  <label for="baleIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی نرم افزار بله</label>
+                                                  <input id="baleIdTag" type="text" class="form-control" aria-label="baleIdTag">
+                                                </div>
+                                            </div>
+                                            <div class="row location-store-upload">
+                                                <div class="col-12 col-md-3">
+                                                  <label for="locationStoreTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس محل فعالیت</label>
+                                                  <textarea name="locationStoreTag" id="locationStoreTag" class="form-control" aria-label="locationStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                  <label for="locationStoreLiveTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس فروشگاه حضوری</label>
+                                                  <textarea name="locationStoreLiveTag" id="locationStoreLiveTag" class="form-control" aria-label="locationStoreLiveTag">آدرس فروشگاه حضوری شما ...</textarea>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.0465339008365!2d52.5258451183655!3d29.635237495075053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb2120c639a43bf%3A0x1516de5126619a7f!2sEram%20Garden!5e0!3m2!1sen!2s!4v1718046563843!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                    <button type="button" name="accept location" id="acceptLocation">موقعیت مکانی زنده شما</button>
+                                                </div>
+                                            </div>
+                                            <div class="container store-payment-method-container">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h5>روش های پرداخت فروشگاه شما</h5>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                    <label class="form-check-label" for="exampleCheck1">قابلیت پرداخت آنلاین</label>
+                                                                </div>
+                                                                <textarea name="locationStoreTag" id="locationStoreTag" class="form-control" aria-label="locationStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                    <label class="form-check-label" for="exampleCheck2">قابلیت پرداخت در محل</label>
+                                                                </div>
+                                                              <textarea name="paymentMethodStoreTag" id="paymentMethodStoreTag" class="form-control" aria-label="paymentMethodStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                                                    <label class="form-check-label" for="exampleCheck3">قابلیت پرداخت کارت به کارت</label>
+                                                                </div>
+                                                                <textarea name="paymentMethodStoreTa2" id="paymentMethodStoreTag2" class="form-control" aria-label="paymentMethodStoreTag2" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck13">
+                                                                    <label class="form-check-label" for="exampleCheck13">قابلیت پرداخت اقساطی</label>
+                                                                </div>
+                                                              <textarea name="paymentMethodStoreTag3" id="paymentMethodStoreTag3" class="form-control" aria-label="paymentMethodStoreTag3" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                                                                    <label class="form-check-label" for="exampleCheck4">قابلیت ارسال با پست</label>
+                                                                </div>
+                                                                <textarea name="paymentMethodStoreTag4" id="paymentMethodStoreTag4" class="form-control" aria-label="paymentMethodStoreTag4" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                                                                    <label class="form-check-label" for="exampleCheck5">قابلیت ارسال در همان روز خرید</label>
+                                                                </div>
+                                                              <textarea name="paymentMethodStoreTag5" id="paymentMethodStoreTag5" class="form-control" aria-label="paymentMethodStoreTag5" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container store-payment-method-container">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h5>روش های ارسال فروشگاه شما</h5>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                                                                    <label class="form-check-label" for="exampleCheck6">قابلیت خرید حضوری از فروشگاه</label>
+                                                                </div>
+                                                                <textarea name="paymentMethodStoreTag6" id="paymentMethodStoreTag6" class="form-control" aria-label="paymentMethodStoreTag6" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck7">
+                                                                    <label class="form-check-label" for="exampleCheck7">قابلیت تست محصول پس از خرید</label>
+                                                                </div>
+                                                              <textarea name="paymentMethodStoreTag7" id="paymentMethodStoreTag7" class="form-control" aria-label="paymentMethodStoreTag7" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck8">
+                                                                    <label class="form-check-label" for="exampleCheck8">قابلیت ارسال رایگان</label>
+                                                                </div>
+                                                                <textarea name="paymentMethodStoreTag8" id="paymentMethodStoreTag8" class="form-control" aria-label="paymentMethodStoreTag8" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                            <div class="col mb-3">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck9">
+                                                                    <label class="form-check-label" for="exampleCheck9">قابلیت ارسال با پیک فروشگاه</label>
+                                                                </div>
+                                                              <textarea name="paymentMethodStoreTag9" id="paymentMethodStoreTag9" class="form-control" aria-label="paymentMethodStoreTag9" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck10">
+                                                                    <label class="form-check-label" for="exampleCheck10">قابلیت ارسال با پست</label>
+                                                                </div>
+                                                                <textarea name="paymentMethodStoreTag10" id="paymentMethodStoreTag10" class="form-control" aria-label="paymentMethodStoreTag10" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                                                                    <label class="form-check-label" for="exampleCheck11">قابلیت ارسال در همان روز خرید</label>
+                                                                </div>
+                                                              <textarea name="paymentMethodStoreTag11" id="paymentMethodStoreTag11" class="form-control" aria-label="paymentMethodStoreTag11" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button name="send-change-profile-btn" class="send-change-profile-btn" title="ذخیره تغییرات" type="button">ذخیره تغییرات</button>
+                                          </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------- End profile box section ----------------- -->
+    <!-- ----------------- Start footer section ----------------- -->
+    <div class="container footer-details-header">
+      <div class="row">
+        <div class="col-12">
+          <h5><img class="img-fluid" src="assets/img/footer-logo.png" alt="footer-logo">جست و جو در میان هزاران فروشگاه برای انتخابی حساب شده!!!</h5>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+        </div>
+        <div class="col-12 download-app-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 download-app-text mb-2">
+                <p><img class="img-fluid" src="assets/img/logo.png" alt="footer-logo"> دانلود اپلیکیشن جست و جو کالا</p>
+              </div>
+              <div class="col-12 col-md-6 download-app-logo mb-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3">
+                      <img class="img-fluid" src="assets/img/coffe-bazzar.svg" alt="bazar">
+                    </div>
+                    <div class="col-3">
+                      <img class="img-fluid" src="assets/img/myket.svg" alt="mayket">
+                    </div>
+                    <div class="col-3">
+                      <img class="img-fluid" src="assets/img/sib-download.svg" alt="sibapp">
+                    </div>
+                    <div class="col-3">
+                      <img class="img-fluid" src="assets/img/google-play-download.png" alt="google play">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="footer">
+      <div class="container-fluid footer-wrapper">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 visited-comment-popular-container">
+            <div class="visited-comment-popular-inner">
+              <h5>پربازدیدترین</h5>
+              <ul class="popular-comment-list-wrapper">
+                <li><a href="#">رزرو هتل در دبی</a></li>
+                <li><a href="#">چگونه شغل جنرال پیدا کینم</a></li>
+                <li><a href="#">خرید خانه در استانبول</a></li>
+                <li><a href="#">اجاره خانه در لس آنجلس</a></li>
+                <li><a href="#">پیدا کردن شغل متناسب با توانایی شما</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 visited-comment-popular-container">
+            <div class="visited-comment-popular-inner">
+              <h5>بازدید های اخیر شما</h5>
+              <ul class="popular-comment-list-wrapper">
+                <li><a href="#">مغازه های ایرانی اطراف لس آنجلس</a></li>
+                <li><a href="#">اجاره خانه مبله در لس آنجلس</a></li>
+                <li><a href="#">معرفی انواع شغل های جنرال</a></li>
+                <li><a href="#">چگونه کار پیدا کنیم</a></li>
+                <li><a href="#">درباره ما</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 visited-comment-popular-container">
+            <div class="visited-comment-popular-inner">
+              <h5>خدمات مشتریان</h5>
+              <ul class="popular-comment-list-wrapper">
+                <li><a href="#">پاسخ به پرسش های متداول</a></li>
+                <li><a href="#">شرایط استفاده</a></li>
+                <li><a href="#">حریم خصوصی</a></li>
+                <li><a href="#">گزارش خطا</a></li>
+                <li><a href="#">ارتباط با ما</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 visited-comment-popular-container">
+            <div class="visited-comment-popular-inner">
+              <h5>اعتبار سنجی</h5>
+              <div class="rigester-box-container container">
+                <div class="row">
+                  <div class="col-12 phone-number-acount">
+                    <p>شماره تماس پشتیبانی: 67651006-021</p>
+                    <a href="#">mhd.soltani97@gmail.com</a>
+                  </div>
+                  <div class="col-4">
+                    <a class="enamad-icon" href="#"><img class="img-fluid" src="assets/img/logo-rigester.png" alt="rigester-image"></a>
+                  </div>
+                  <div class="col-4">
+                    <a class="enamad-icon" href="#"><img class="img-fluid" src="assets/img/zarin-palpng.parspng.com_.png" alt="rigester-image"></a>
+                  </div>
+                  <div class="col-4">
+                    <a class="enamad-icon" href="#"><img class="img-fluid" src="assets/img/service-d3c4ab12.png" alt="rigester-image"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5 under-page-text-container">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-8 mb-2">
+                  <p>کپی بخش یا کل هر کدام از مطالب تنها با کسب مجوز امکان پذیر خواهد بود.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-2">
+                  <div class="socail-media-link-container">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="#9696a0"><defs><filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"></feColorMatrix></filter><image id="image7" width="16" height="16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVQ4jWNgoBAwMjAwMPz/w/yfLM0sfxmZKHXBqAGjBowaQCUAACboBBz/9bsEAAAAAElFTkSuQmCC"></image><mask id="mask0"><g filter="url(#alpha)"><use href="#image7"></use></g></mask><clipPath id="clip1"><rect x="0" y="0" width="16" height="16"></rect></clipPath><g id="surface6" clip-path="url(#clip1)"><path d="M 3 11 C 4.105469 11 5 11.894531 5 13 C 5 14.105469 4.105469 15 3 15 C 1.894531 15 1 14.105469 1 13 C 1 11.894531 1.894531 11 3 11 Z M 1 1 C 8.699219 1 15 7.300781 15 15 L 12.300781 15 C 12.300781 8.800781 7.199219 3.699219 1 3.699219 Z M 1 5.699219 C 6.101562 5.699219 10.300781 9.898438 10.300781 15 L 7.699219 15 C 7.699219 11.300781 4.699219 8.300781 1 8.300781 Z M 1 5.699219 "></path></g></defs><g id="surface1"><use href="#surface6" mask="url(#mask0)"></use></g></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="#9696a0"><g id="surface1"><path d="M 15 0 C 15.550781 0 16 0.449219 16 1 L 16 15 C 16 15.550781 15.550781 16 15 16 L 1 16 C 0.449219 16 0 15.550781 0 15 L 0 1 C 0 0.449219 0.449219 0 1 0 Z M 4.460938 4 L 1 4 L 1 4.234375 C 1.261719 4.253906 1.472656 4.300781 1.628906 4.375 C 1.78125 4.449219 1.914062 4.550781 2.019531 4.683594 C 2.089844 4.765625 2.3125 4.996094 2.480469 5.375 L 6.039062 12.75 L 6.273438 12.75 L 8.074219 9.050781 L 9.859375 12.75 L 10.09375 12.75 L 13.640625 5.46875 C 13.816406 5.046875 14.078125 4.730469 14.304688 4.523438 C 14.460938 4.382812 14.695312 4.289062 15 4.234375 L 15 4 L 12.402344 4 L 12.402344 4.234375 L 12.511719 4.253906 C 12.804688 4.296875 12.945312 4.378906 13.070312 4.488281 C 13.191406 4.601562 13.253906 4.71875 13.253906 4.839844 C 13.253906 5.027344 13.089844 5.367188 12.886719 5.855469 L 10.320312 10.808594 L 8.710938 7.742188 L 9.816406 5.46875 C 9.992188 5.046875 10.257812 4.730469 10.484375 4.523438 C 10.640625 4.382812 10.871094 4.289062 11.179688 4.234375 L 11.179688 4 L 8.582031 4 L 8.582031 4.234375 L 8.691406 4.253906 C 8.984375 4.296875 9.125 4.378906 9.246094 4.488281 C 9.371094 4.601562 9.429688 4.71875 9.429688 4.839844 C 9.429688 5.027344 9.265625 5.367188 9.066406 5.855469 L 8.398438 7.140625 L 7.691406 5.792969 C 7.496094 5.347656 7.398438 5.019531 7.398438 4.808594 C 7.398438 4.65625 7.457031 4.53125 7.574219 4.433594 C 7.695312 4.339844 7.886719 4.269531 8.285156 4.234375 L 8.285156 4 L 4.820312 4 L 4.820312 4.234375 C 5.085938 4.253906 5.296875 4.300781 5.449219 4.375 C 5.605469 4.449219 5.734375 4.550781 5.84375 4.683594 C 5.910156 4.765625 6.136719 4.996094 6.300781 5.375 L 7.753906 8.382812 L 6.496094 10.808594 L 3.867188 5.792969 C 3.671875 5.347656 3.574219 5.019531 3.574219 4.808594 C 3.574219 4.65625 3.632812 4.53125 3.753906 4.433594 C 3.871094 4.339844 4.0625 4.269531 4.460938 4.234375 Z M 4.460938 4 "></path></g></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#9696a0"><g><path d="M23 0H1a.945.945 0 0 0-1 1v22a.945.945 0 0 0 1 1h22a.945.945 0 0 0 1-1V1a.945.945 0 0 0-1-1zM7.1 20.5H3.6V9h3.6v11.5zM5.3 7.4a2.1 2.1 0 1 1 2.1-2.1 2.051 2.051 0 0 1-2.1 2.1zm15.2 13.1h-3.6v-5.6c0-1.3 0-3-1.8-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6a3.717 3.717 0 0 1 3.4-1.8c3.6 0 4.3 2.4 4.3 5.5z"></path></g></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="#9696a0"><path d="M12 0c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4H4c-2.056 0-4-1.944-4-4V4c0-2.056 1.944-4 4-4h8zm0 2H4c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2V4c0-.935-1.065-2-2-2zM8 4c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4zm0 2c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2zm4.145-3.068c.53 0 .96.43.96.96s-.43.96-.96.96-.96-.43-.96-.96.43-.96.96-.96z"></path></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="#9696a0"><path d="M14.412 12.022l-.414 1.832c-.16.712-.597 1.33-1.214 1.72-.555.351-1.215.49-1.86.397l-.215-.04-1.817-.41c2.326-.274 4.328-1.605 5.52-3.499zM8 1.262c3.72 0 6.737 3.017 6.737 6.738 0 3.72-3.016 6.737-6.737 6.737S1.263 11.72 1.263 8 4.279 1.263 8 1.263zM.478 8.893c.263 2.23 1.497 4.16 3.266 5.367l.233.153-1.832-.414c-.712-.16-1.33-.597-1.72-1.214-.35-.555-.49-1.215-.397-1.86l.04-.215.41-1.817zm9.206.371c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.685 1.684 1.685.93 0 1.684-.755 1.684-1.685s-.754-1.684-1.684-1.684zM5.052 8c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.684 1.684 1.684.93 0 1.685-.754 1.685-1.684C6.737 8.754 5.982 8 5.052 8zm3.374-.746c-.263-.154-.59-.154-.853 0-.263.155-.422.44-.415.746.01.457.384.823.842.823.458 0 .831-.366.841-.824.007-.305-.152-.59-.415-.745zm2.521-2.623c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.685 1.684 1.685.93 0 1.685-.754 1.685-1.685 0-.93-.755-1.684-1.685-1.684zm1.075-3.044l1.832.414c1.427.322 2.343 1.7 2.11 3.125l-.032.164-.41 1.817c-.275-2.325-1.606-4.327-3.5-5.52zM6.315 3.368c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.685 1.684 1.685.93 0 1.685-.755 1.685-1.685s-.754-1.684-1.685-1.684zM5.076.028l.215.04 1.817.41C4.878.74 2.948 1.975 1.74 3.744l-.153.233.414-1.832c.16-.712.598-1.33 1.215-1.72.555-.35 1.215-.49 1.86-.397z"></path></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="#9696a0"><path d="M15.8 4.8c-.2-1.3-.8-2.2-2.2-2.4C11.4 2 8 2 8 2s-3.4 0-5.6.4C1 2.6.3 3.5.2 4.8 0 6.1 0 8 0 8s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4C4.6 14 8 14 8 14s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4C16 9.9 16 8 16 8s0-1.9-.2-3.2zM6 11V5l5 3-5 3z" transform="translate(-1228.000000, -1286.000000) translate(1228.000000, 1286.000000)"></path></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="#9696a0"><path d="M15.968 1.293c-.026-.128-.114-.23-.232-.269-.21-.044-.428-.028-.63.048 0 0-14.019 5.348-14.82 5.94-.172.128-.23.202-.259.289-.138.424.293.608.293.608l3.613 1.25c.061.01.124.007.183-.012.822-.551 8.27-5.543 8.7-5.711.068-.021.118 0 .1.052-.172.637-6.606 6.707-6.641 6.744-.035.031-.053.078-.049.126l-.337 3.744s-.142 1.168.956 0c.779-.826 1.527-1.512 1.9-1.844 1.242.91 2.579 1.917 3.156 2.441.195.202.46.31.732.3.34-.044.618-.307.7-.66 0 0 2.561-10.906 2.646-12.374.008-.143.021-.23.021-.337.004-.112-.007-.225-.032-.335z"></path></svg></a>
+                  </div>
+                </div>
+                <div class="col-12 black-box-container">
+                  <div class="black-box-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- End footer section ----------------- -->
+    <!-- ----------------- Start scroll btn section ----------------- -->
+    <button id="scrollBtn" name="scroll-btn" title="برو بالا" type="button"><img class="img-fluid" src="assets/img/arrow-up.png" alt="arrow scroll icon"></button>
+    <!-- ----------------- End scroll btn section ----------------- -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

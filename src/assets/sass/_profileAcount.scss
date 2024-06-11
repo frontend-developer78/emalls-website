@@ -8,6 +8,29 @@
                     background-color: #fff;
                     padding: 10px;
                     border-radius: 20px;
+                    .store-name-acount {
+                      margin-bottom: 20px;
+                      border: 1px solid #00000017;
+                      padding: 10px;
+                      border-radius: 15px;
+                      .store-acount-profile-content {
+                        h5 {
+                          font: {
+                            size: $default-font-size - 1px;
+                          }
+                          text-align: center;
+                        }
+                        ul.star-rate-comment {
+                          @include flex(flex,center,center);
+                          padding-left: 0;
+                          margin-bottom: 0;
+                          li {
+                            margin: 0 4px;
+                            filter: opacity(0.7);
+                          }
+                        }
+                      }
+                    }
                     .nav-link {
                         border-radius:0; 
                         @include transition-default(all,0.4s);
