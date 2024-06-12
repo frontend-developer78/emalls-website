@@ -12,13 +12,14 @@
     <meta name="resource-type" content="document">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حساب کاربری | ویرایش فروشگاه</title>
+    <title>حساب کاربری | نمودار کلیک ها</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png" type="image/x.icon">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/persian-datepicker.css">
 </head>
 <body dir="rtl">
     <!-- ----------------- Start navbar section ------------------- -->
@@ -489,213 +490,662 @@
                                 </div>   
                                 <a class="nav-link" href="StoreManager.html"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> ویرایش فروشگاه</a>
                                 <button class="nav-link active" id="v-pills-click-chart-tab" data-bs-toggle="pill" data-bs-target="#v-pills-click-chart" type="button" role="tab" aria-controls="v-pills-click-chart" aria-selected="true"><img class="img-fluid" src="assets/img/carts-profile-icon.png" alt="bag-icon"> نمودار کلیک</button>
-                                <a href="ticket-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> محصولات فروشگاه</a>
-                                <a href="Bill-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/message-profile-icon.png" alt="comment-icon"> خرید طرح</a>
-                                <a href="location-profile.html" class="nav-link"><img class="img-fluid" src="assets/img/placeholder-profile-icon.png" alt="location icon"> خرید طرح ویژه</a>
+                                <a href="productStoreList.html" class="nav-link"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> محصولات فروشگاه</a>
                                 <button class="nav-link" id="exited-button" type="button"><img class="img-fluid" src="assets/img/logout-profile-icon.png" alt="exit icon"> بازگشت به صفحه اصلی</button>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
                               <div class="tab-pane fade show active" id="v-pills-click-chart" role="tabpanel" aria-labelledby="v-pills-profile-acount-tab" tabindex="0">
                                 <div class="container">
                                   <div class="row">
-                                    <div class="col-12 pills-profile-acount-header">
-                                      <h5><img class="img-fluid" src="assets/img/resume-profile-icon.png" alt="profile-icon-image"> پنل مدیریت فروشگاه | ویرایش فروشگاه تکنولایف</h5>
+                                    <div class="col-12 click-chart-header">
+                                      <h5><img class="img-fluid" src="assets/img/line-chart.png" alt="chart-icon"> پنل مدیریت فروشگاه | نمودار کلیک ها</h5>
                                     </div>
-                                    <div class="col-12 pills-profile-acount-content">
-                                      <div class="edit-profile-form">
-                                        <form action="">
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="StoreNameTag"><i class="fa-solid fa-pencil ms-2"></i>عنوان فروشگاه</label>
-                                                <input id="StoreNameTag" type="text" disabled class="form-control" aria-label="Store name" placeholder="فروشگاه تکنولایف">
+                                    <div class="col-12 form-final-click-container">
+                                      <form class="form-click-wrapepr" action="">
+                                        <div class="row">
+                                          <div class="col">
+                                            <label for="StartDAte">از تاریخ</label>
+                                            <input type="text" class="example1" />
+                                          </div>
+                                          <div class="col">
+                                            <label for="StartDAte">تا تاریخ</label>
+                                            <input type="text" class="example2" />
+                                          </div>
+                                          <div class="col">
+                                            <button class="show-detail-chart-click-btn" name="show-detail-chart-click-btn" type="button" >نمایش نتیجه</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                      <table class="table table-radius mt-3">
+                                        <tbody>
+                                          <tr>
+                                            <td>بازه زمانی:</td>
+                                            <td>
+                                                <span id="ContentPlaceHolder1_lblBazeZamani" class="black semi-bold">از چهارشنبه ۱۶ خرداد تا چهارشنبه ۲۳ خرداد</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                            <td>نام کالا:</td>
+                                            <td>
+                                                <span id="ContentPlaceHolder1_lblitemname" class="black semi-bold">همه محصولات</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                            <td>تعداد کل کلیک‌های محاسبه شده:</td>
+                                            <td>
+                                                <span id="ContentPlaceHolder1_lblclickcount" class="black semi-bold">۱۰ کلیک آنلاین</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                            <td>اعتبار ویژه‌ی مصرف شده:</td>
+                                            <td>
+                                                <span id="ContentPlaceHolder1_lblEtebarVije" class="black semi-bold">صفر تومان</span>
+                                              </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <div class="chart-details-table container">
+                                        <div class="row">
+                                          <div class="col-12">
+                                            <ul id="ContentPlaceHolder1_tabs" class="nav nav-tabs mt-3" role="tablist" style="border-bottom: 0">
+
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link active" id="liDivTajmieiDaily" data-bs-toggle="tab" data-bs-target="#tab-DivTajmieiDaily" type="button" role="tab" aria-controls="tab-DivTajmieiDaily" aria-selected="true" data-tabheadername="DivTajmieiDaily">گزارش تجمیعی</button>
+                                              </li>
+                  
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link" id="liDivTafkiki" data-bs-toggle="tab" data-bs-target="#tab-DivTafkiki" type="button" role="tab" aria-controls="tab-DivTafkiki" aria-selected="false" data-tabheadername="DivTafkiki">گزارش تفکیکی</button>
+                                              </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                              <div class="tab-pane fade active show" id="tab-DivTajmieiDaily" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="table-responsive-sm">
+                                                      <table class="table table-stripped table-hover table-bordered no-globe">
+                                                          <thead>
+                                                              <tr>
+                                                                  <th>تاریخ</th>
+                                                                  <th>اعتبار ویژه آنلاین</th>
+                                                                  <th>کلیک آنلاین</th>
+                                                                  <th>کلیک‌ محاسبه شده آنلاین</th>
+                  
+                  
+                  
+                                                                  <th>اعتبار ویژه حضوری</th>
+                                                                  <th>کلیک حضوری</th>
+                                                                  <th>کلیک‌ محاسبه شده حضوری</th>
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_0" href="#">
+                                                                  <span id="ContentPlaceHolder1_RptClickTajmiee_lblDate_0">چهارشنبه 23 خرداد</span>
+                                                                </a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_0"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_0">0</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_0">0</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_0">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_0"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_0">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_0">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_0">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptClickTajmiee_trAccounting_1">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_hlinkDate_1" href="#">سه شنبه 22 خرداد</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink1_1"><span id="ContentPlaceHolder1_RptClickTajmiee_lblspecial_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblAllClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_lblClick_1">3</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <a id="ContentPlaceHolder1_RptClickTajmiee_HyperLink2_1"><span id="ContentPlaceHolder1_RptClickTajmiee_Label2_1">۰ تومان</span></a>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label3_1">0</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptClickTajmiee_Label4_1">0</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </div>
+                                                  <input type="submit" name="ctl00$ContentPlaceHolder1$BtnGetExcel" value="دریافت اکسل" id="ContentPlaceHolder1_BtnGetExcel" class="btn btn-success mt-2">
+                  
                                               </div>
-                                              <div class="col">
-                                                <label for="dominNameTag"><i class="fa-solid fa-pencil ms-2"></i>دامنه فروشگاه</label>
-                                                <input id="dominNameTag" type="text" class="form-control" aria-label="domin name" placeholder="tecnolife.com" disabled>
-                                              </div>
-                                            </div>
-                                            <div class="row upload-logo-image">
-                                                <div class="col">
-                                                    <img class="img-fluid" src="assets/img/store-dashboard-icon-2.png" alt="logo image">
-                                                    <label for="logoImageTag"><i class="fa-solid fa-pencil ms-2"></i>لوگو فروشگاه</label>
-                                                    <input id="logoImageTag" type="file" class="form-control" aria-label="logoImageTag" placeholder="فروشگاه تکنولایف">
-                                                    <ul>
-                                                        <li>
-                                                            <p>پسوند های مجاز : png,jpg</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>بهترین سایز :‌ 300*300 پیکسل</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>نمایش لوگو به صورت دایره در وبسایت صورت می پذیرد</p>
-                                                        </li>
-                                                    </ul>
+                                              <div class="tab-pane fade" id="tab-DivTafkiki" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="table-responsive-sm">
+                                                      <table class="table table-stripped table-hover table-bordered no-globe">
+                                                          <thead>
+                                                              <tr>
+                                                                  <th>کالا</th>
+                                                                  <th>کلیک‌</th>
+                                                                  <th>کلیک‌ محاسبه شده</th>
+                                                                  <th>اعتبار ویژه</th>
+                  
+                  
+                                                                  <th>کلیک حضوری‌</th>
+                                                                  <th>کلیک‌ محاسبه شده حضوری</th>
+                                                                  <th>اعتبار ویژه حضوری</th>
+                  
+                                                                  <th>جمع کلیک‌</th>
+                                                                  <th>جمع کلیک‌ محاسبه شده</th>
+                                                                  <th>جمع اعتبار ویژه</th>
+                  
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr id="ContentPlaceHolder1_RptTafkiki_trAccounting_0">
+                                                              <td>
+                                                                <a id="ContentPlaceHolder1_RptTafkiki_hlinkitem_0" href="#">کرم روز اوریفلیم سری Optimals مدل Hydra Radiance م …</a>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label1_0">۵</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblclick_0">۳</span>
+                                                              </td>
+                                                              <td class="semi-blue">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_lblspecialclick_0">۰ تومان</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label5_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label6_0">۰</span>
+                                                              </td>
+                                                              <td class="semi-dark">
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label7_0">۰ تومان</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label8_0">۵</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label9_0">۳</span>
+                                                              </td>
+                                                              <td>
+                                                                <span id="ContentPlaceHolder1_RptTafkiki_Label10_0">۰ تومان</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                      </table>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="emailAcountTag"><i class="fa-solid fa-pencil ms-2"></i>ایمیل اول</label>
-                                                <input id="emailAcountTag" type="email" class="form-control" aria-label="emailAcountTag" disabled placeholder="mhd.soltani97@gmail.com">
-                                              </div>
-                                              <div class="col">
-                                                <label for="emailAcountTwoTag"><i class="fa-solid fa-pencil ms-2"></i>ایمیل دوم</label>
-                                                <input id="emailAcountTwoTag" type="email" class="form-control" aria-label="emailAcountTwoTag">
+                                                <input type="submit" name="ctl00$ContentPlaceHolder1$BtnGetExcelTafkik" value="دریافت اکسل گزارش تفکیکی" id="ContentPlaceHolder1_BtnGetExcelTafkik" class="btn btn-success mt-2">
                                               </div>
                                             </div>
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="numberAcountTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل اول</label>
-                                                <input id="numberAcountTag" type="tel" class="form-control" aria-label="numberAcountTag" disabled placeholder="09176350307">
-                                              </div>
-                                              <div class="col">
-                                                <label for="numberAcountTwoTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل دوم</label>
-                                                <input id="numberAcountTwoTag" type="tel" class="form-control" aria-label="numberAcountTwoTag">
-                                              </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="telegramIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی تلگرام</label>
-                                                <input id="telegramIdTag" type="text" class="form-control" aria-label="telegramIdTag">
-                                              </div>
-                                              <div class="col">
-                                                <label for="instagramIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی اینستاگرام</label>
-                                                <input id="instagramIdTag" type="text" class="form-control" aria-label="instagramIdTag">
-                                              </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col">
-                                                  <label for="youtubeIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی یوتیوب</label>
-                                                  <input id="youtubeIdTag" type="text" class="form-control" aria-label="youtubeIdTag">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="baleIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی نرم افزار بله</label>
-                                                  <input id="baleIdTag" type="text" class="form-control" aria-label="baleIdTag">
-                                                </div>
-                                            </div>
-                                            <div class="row location-store-upload">
-                                                <div class="col-12 col-md-3">
-                                                  <label for="locationStoreTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس محل فعالیت</label>
-                                                  <textarea name="locationStoreTag" id="locationStoreTag" class="form-control" aria-label="locationStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                  <label for="locationStoreLiveTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس فروشگاه حضوری</label>
-                                                  <textarea name="locationStoreLiveTag" id="locationStoreLiveTag" class="form-control" aria-label="locationStoreLiveTag">آدرس فروشگاه حضوری شما ...</textarea>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.0465339008365!2d52.5258451183655!3d29.635237495075053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb2120c639a43bf%3A0x1516de5126619a7f!2sEram%20Garden!5e0!3m2!1sen!2s!4v1718046563843!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                                    <button type="button" name="accept location" id="acceptLocation">موقعیت مکانی زنده شما</button>
-                                                </div>
-                                            </div>
-                                            <div class="container store-payment-method-container">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <h5>روش های پرداخت فروشگاه شما</h5>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">قابلیت پرداخت آنلاین</label>
-                                                                </div>
-                                                                <textarea name="locationStoreTag" id="locationStoreTag" class="form-control" aria-label="locationStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                                                    <label class="form-check-label" for="exampleCheck2">قابلیت پرداخت در محل</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag" id="paymentMethodStoreTag" class="form-control" aria-label="paymentMethodStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                                                    <label class="form-check-label" for="exampleCheck3">قابلیت پرداخت کارت به کارت</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTa2" id="paymentMethodStoreTag2" class="form-control" aria-label="paymentMethodStoreTag2" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck13">
-                                                                    <label class="form-check-label" for="exampleCheck13">قابلیت پرداخت اقساطی</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag3" id="paymentMethodStoreTag3" class="form-control" aria-label="paymentMethodStoreTag3" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                                                                    <label class="form-check-label" for="exampleCheck4">قابلیت ارسال با پست</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag4" id="paymentMethodStoreTag4" class="form-control" aria-label="paymentMethodStoreTag4" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                                                                    <label class="form-check-label" for="exampleCheck5">قابلیت ارسال در همان روز خرید</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag5" id="paymentMethodStoreTag5" class="form-control" aria-label="paymentMethodStoreTag5" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container store-payment-method-container">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <h5>روش های ارسال فروشگاه شما</h5>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck6">
-                                                                    <label class="form-check-label" for="exampleCheck6">قابلیت خرید حضوری از فروشگاه</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag6" id="paymentMethodStoreTag6" class="form-control" aria-label="paymentMethodStoreTag6" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck7">
-                                                                    <label class="form-check-label" for="exampleCheck7">قابلیت تست محصول پس از خرید</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag7" id="paymentMethodStoreTag7" class="form-control" aria-label="paymentMethodStoreTag7" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck8">
-                                                                    <label class="form-check-label" for="exampleCheck8">قابلیت ارسال رایگان</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag8" id="paymentMethodStoreTag8" class="form-control" aria-label="paymentMethodStoreTag8" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col mb-3">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck9">
-                                                                    <label class="form-check-label" for="exampleCheck9">قابلیت ارسال با پیک فروشگاه</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag9" id="paymentMethodStoreTag9" class="form-control" aria-label="paymentMethodStoreTag9" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck10">
-                                                                    <label class="form-check-label" for="exampleCheck10">قابلیت ارسال با پست</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag10" id="paymentMethodStoreTag10" class="form-control" aria-label="paymentMethodStoreTag10" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck11">
-                                                                    <label class="form-check-label" for="exampleCheck11">قابلیت ارسال در همان روز خرید</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag11" id="paymentMethodStoreTag11" class="form-control" aria-label="paymentMethodStoreTag11" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button name="send-change-profile-btn" class="send-change-profile-btn" title="ذخیره تغییرات" type="button">ذخیره تغییرات</button>
-                                          </form>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -840,6 +1290,14 @@
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/persian-date.js"></script>
+    <script src="assets/js/persian-datepicker.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".example1").pDatepicker();
+        $(".example2").pDatepicker();
+      });
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -207,6 +207,256 @@
                             }
                         }
                     }
+                    #v-pills-click-chart {
+                        .container {
+                            .click-chart-header {
+                                margin-bottom: 20px;
+                                h5 {
+                                    font: {
+                                        size: $default-font-size - 1px;
+                                    }
+                                    color: #203591;
+                                    img {
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                            .form-final-click-container {
+                                form.form-click-wrapepr {
+                                    background-color: #e9f3ff;
+                                    padding: 20px;
+                                    border-radius: 20px;
+                                    label {
+                                        display: block;
+                                        font: {
+                                            family:IRANYekan;
+                                        }
+                                        margin-bottom: 10px;
+                                    }
+                                    input {
+                                        padding: 6px;
+                                        background-color: #fff;
+                                        font: {
+                                            size: $default-font-size - 2px;
+                                            family:IRANYekan;
+                                        }
+                                        color: #444444;
+                                        width: 100%;
+                                        border: none;
+                                        outline: none;
+                                        border-radius: 6px;
+                                    }
+                                    button {
+                                        width: 100%;
+                                        transform: translateY(30px);
+                                        border: none;
+                                        outline: none;
+                                        border-radius: 10px;
+                                        background-color: $them-color;
+                                        font: {
+                                            size: $default-font-size - 1px;
+                                        }
+                                        padding: 10px;
+                                        color: #fff;
+                                        @include transition-default(all,0.4s);
+                                        &:hover {
+                                            transform: translateY(30px) scale(0.9);
+                                        }
+                                    }
+                                }
+                                table {
+                                    border: 1px solid #0000001a;
+                                    tbody {
+                                        tr {
+                                            td {
+                                                border-left: 1px solid #00000012;
+                                                font: {
+                                                    size: $default-font-size - 1px;
+                                                }
+                                                span {
+                                                    font: {
+                                                        size: $default-font-size - 1px;
+                                                        family:IRANYekan;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .chart-details-table {
+                                    ul#ContentPlaceHolder1_tabs {
+                                        width: 100%;
+                                        padding-left: 0;
+                                        margin-bottom: 20px;
+                                        @include flex(flex,center,center);
+                                        li {
+                                            width: 49%;
+                                            border: 1px solid #0000001b;
+                                            margin: 0 0.5%;
+                                            border-radius: 10px;
+                                            background-color: #e9e9e9;
+                                            overflow: hidden;
+                                            font: {
+                                                size: $default-font-size - 2px;
+                                            }
+                                            button {
+                                                width: 100%;
+                                                border: none;
+                                                color: #666666;
+                                            }
+                                            button.active {
+                                                background-color: #203591;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                    .tab-content {
+                                        #tab-DivTajmieiDaily {
+                                            .table-responsive-sm {
+                                                table {
+                                                    thead {
+                                                        tr {
+                                                            th {
+                                                                font: {
+                                                                    size: $default-font-size - 3px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    tbody {
+                                                        tr {
+                                                            td {
+                                                                font: {
+                                                                    size: $default-font-size - 1px;
+                                                                }
+                                                                a {
+                                                                    color: #203591;
+                                                                    font-weight: 900;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        #tab-DivTafkiki {
+                                            a#ContentPlaceHolder1_RptTafkiki_hlinkitem_0 {
+                                                font: {
+                                                    size: $default-font-size - 1px;
+                                                    family:IRANYekan;
+                                                }
+                                                color: $them-color;
+                                            }
+                                        }
+                                        input {
+                                            font: {
+                                                size: $default-font-size - 2px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #v-pills-productStore-list {
+                        .pills-productStore-list-header {
+                            margin-bottom: 20px;
+                            h5 {
+                                font: {
+                                    size: $default-font-size - 1px;
+                                }
+                                color: #203591;
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                        .pills-productStore-list-content {
+                            table {
+                                thead {
+                                    tr {
+                                        th {
+                                            font: {
+                                                size: $default-font-size;
+                                                family:IRANYekan;
+                                                weight:900;
+                                            }
+                                            text-align: center;
+                                            color: #2544ce;
+                                        }
+                                    }
+                                }
+                                tbody {
+                                    tr {
+                                        td {
+                                            a {
+                                                font: {
+                                                    size: $default-font-size - 3px;
+                                                    family:IRANYekan;
+                                                }
+                                            }
+                                            p {
+                                                font: {
+                                                    size: $default-font-size - 2px;
+                                                }
+                                                line-height: 30px;
+                                                margin-bottom: 0;
+                                            }
+                                            span {
+                                                font: {
+                                                    size: $default-font-size - 2px;
+                                                }
+                                                img {
+                                                    width: 30px;
+                                                    height: 30px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .group-page-container {
+                                @include flex(flex,center,space-between);
+                                button.group-btn-submit {
+                                    border: none;
+                                    outline: none;
+                                    box-shadow: none;
+                                    padding: 7px;
+                                    border-radius: 10px;
+                                    background-color: #6101b4;
+                                    color: #fff;
+                                    font: {
+                                        size: $default-font-size - 2px;
+                                    }
+                                }
+                                button.group-btn-submit-receive {
+                                    border: none;
+                                    outline: none;
+                                    box-shadow: none;
+                                    padding: 7px;
+                                    border-radius: 10px;
+                                    background-color: #106c00;
+                                    color: #fff;
+                                    font: {
+                                        size: $default-font-size - 3px;
+                                    }
+                                }
+                                .btn-toolbar {
+                                    .btn-group {
+                                        button {
+                                            background-color: #f1f1f1;
+                                            margin: 0 2px;
+                                            border-radius: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

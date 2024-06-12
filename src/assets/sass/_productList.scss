@@ -103,3 +103,16 @@
         }
     }
 }
+
+@media only screen and (max-width:992px) {
+    #productList {
+        .product-list-head-content {
+            h5 {
+                &::after {
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -487,214 +487,234 @@
                                         </ul>
                                     </div>
                                 </div>   
-                                <button class="nav-link active" id="v-pills-profile-acount-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-acount" type="button" role="tab" aria-controls="v-pills-profile-acount" aria-selected="true"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> ویرایش فروشگاه</button>
+                                <a href="StoreManager.html" class="nav-link"><img class="img-fluid" src="assets/img/user-profile-icon.png" alt="profile-icon-image"> ویرایش فروشگاه</a>
                                 <a href="ClickChart.html" class="nav-link"><img class="img-fluid" src="assets/img/carts-profile-icon.png" alt="bag-icon"> نمودار کلیک</a>
-                                <a href="productStoreList.html" class="nav-link"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon"> محصولات فروشگاه</a>
+                                <button class="nav-link active" id="v-pills-productStore-list-tab" data-bs-toggle="pill" data-bs-target="#v-pills-productStore-list" type="button" role="tab" aria-controls="v-pills-productStore-list" aria-selected="true"><img class="img-fluid" src="assets/img/like-folder-profile-icon.png" alt="like-icon">محصولات فروشگاه</button>
                                 <button class="nav-link" id="exited-button" type="button"><img class="img-fluid" src="assets/img/logout-profile-icon.png" alt="exit icon"> بازگشت به صفحه اصلی</button>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
-                              <div class="tab-pane fade show active" id="v-pills-profile-acount" role="tabpanel" aria-labelledby="v-pills-profile-acount-tab" tabindex="0">
+                              <div class="tab-pane fade show active" id="v-pills-productStore-list" role="tabpanel" aria-labelledby="v-pills-productStore-list-tab" tabindex="0">
                                 <div class="container">
                                   <div class="row">
-                                    <div class="col-12 pills-profile-acount-header">
-                                      <h5><img class="img-fluid" src="assets/img/resume-profile-icon.png" alt="profile-icon-image"> پنل مدیریت فروشگاه | ویرایش فروشگاه تکنولایف</h5>
+                                    <div class="col-12 pills-productStore-list-header">
+                                      <h5><img class="img-fluid" src="assets/img/resume-profile-icon.png" alt="profile-icon-image"> پنل مدیریت فروشگاه | محصولات فروشگاه شما</h5>
                                     </div>
-                                    <div class="col-12 pills-profile-acount-content">
-                                      <div class="edit-profile-form">
-                                        <form action="">
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="StoreNameTag"><i class="fa-solid fa-pencil ms-2"></i>عنوان فروشگاه</label>
-                                                <input id="StoreNameTag" type="text" disabled class="form-control" aria-label="Store name" placeholder="فروشگاه تکنولایف">
-                                              </div>
-                                              <div class="col">
-                                                <label for="dominNameTag"><i class="fa-solid fa-pencil ms-2"></i>دامنه فروشگاه</label>
-                                                <input id="dominNameTag" type="text" class="form-control" aria-label="domin name" placeholder="tecnolife.com" disabled>
-                                              </div>
+                                    <div class="col-12 pills-productStore-list-content">
+                                        <table class="table table-stripped table-hover table-bordered no-globe">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <input type="checkbox" class="form-check-input" id="selectedgroup1">
+                                                    </th>
+                                                    <th>عنوان</th>
+                                                    <th>دسته بندی</th>
+                                                    <th>کد کالا</th>
+                                                    <th>قیمت</th>
+                                                    <th>کلیک ها</th>
+                                                    <th>رتبه</th>
+                                                    <th>فعال</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  <a href="#">
+                                                    <span><input type="checkbox" class="form-check-input" id="selectedgroup1"></span>
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ گیگابایت - رنگ گلد - ریجستر نشده - نات اکتیو</p>
+                                                  <a href="#">رفتن به صفحه محصول</a>
+                                                </td>
+                                                <td>
+                                                  <span>گوشی موبایل</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۹۷۵</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۷,۵۴۰,۰۰۰ تومان</span>
+                                                </td>
+                                                <td>
+                                                  <span><img class="img-fluid" src="assets/img/click.png" alt="clicked"> ۲۷۰</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۵</span>
+                                                </td>
+                                                <td>
+                                                    <span><img class="img-fluid" src="assets/img/checked.png" alt="ticked"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <a href="#">
+                                                    <span><input type="checkbox" class="form-check-input" id="selectedgroup1"></span>
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ گیگابایت - رنگ گلد - ریجستر نشده - نات اکتیو</p>
+                                                  <a href="#">رفتن به صفحه محصول</a>
+                                                </td>
+                                                <td>
+                                                  <span>گوشی موبایل</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۹۷۵</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۷,۵۴۰,۰۰۰ تومان</span>
+                                                </td>
+                                                <td>
+                                                  <span><img class="img-fluid" src="assets/img/click.png" alt="clicked"> ۲۷۰</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۵</span>
+                                                </td>
+                                                <td>
+                                                    <span><img class="img-fluid" src="assets/img/checked.png" alt="ticked"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <a href="#">
+                                                    <span><input type="checkbox" class="form-check-input" id="selectedgroup1"></span>
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ گیگابایت - رنگ گلد - ریجستر نشده - نات اکتیو</p>
+                                                  <a href="#">رفتن به صفحه محصول</a>
+                                                </td>
+                                                <td>
+                                                  <span>گوشی موبایل</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۹۷۵</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۷,۵۴۰,۰۰۰ تومان</span>
+                                                </td>
+                                                <td>
+                                                  <span><img class="img-fluid" src="assets/img/click.png" alt="clicked"> ۲۷۰</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۵</span>
+                                                </td>
+                                                <td>
+                                                    <span><img class="img-fluid" src="assets/img/checked.png" alt="ticked"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <a href="#">
+                                                    <span><input type="checkbox" class="form-check-input" id="selectedgroup1"></span>
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ گیگابایت - رنگ گلد - ریجستر نشده - نات اکتیو</p>
+                                                  <a href="#">رفتن به صفحه محصول</a>
+                                                </td>
+                                                <td>
+                                                  <span>گوشی موبایل</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۹۷۵</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۷,۵۴۰,۰۰۰ تومان</span>
+                                                </td>
+                                                <td>
+                                                  <span><img class="img-fluid" src="assets/img/click.png" alt="clicked"> ۲۷۰</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۵</span>
+                                                </td>
+                                                <td>
+                                                    <span><img class="img-fluid" src="assets/img/checked.png" alt="ticked"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <a href="#">
+                                                    <span><input type="checkbox" class="form-check-input" id="selectedgroup1"></span>
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ گیگابایت - رنگ گلد - ریجستر نشده - نات اکتیو</p>
+                                                  <a href="#">رفتن به صفحه محصول</a>
+                                                </td>
+                                                <td>
+                                                  <span>گوشی موبایل</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۹۷۵</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۷,۵۴۰,۰۰۰ تومان</span>
+                                                </td>
+                                                <td>
+                                                  <span><img class="img-fluid" src="assets/img/click.png" alt="clicked"> ۲۷۰</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۵</span>
+                                                </td>
+                                                <td>
+                                                    <span><img class="img-fluid" src="assets/img/checked.png" alt="ticked"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <a href="#">
+                                                    <span><input type="checkbox" class="form-check-input" id="selectedgroup1"></span>
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <p>آیفون ۱۵ پرومکس - ظرفیت ۲۵۶ گیگابایت - رنگ گلد - ریجستر نشده - نات اکتیو</p>
+                                                  <a href="#">رفتن به صفحه محصول</a>
+                                                </td>
+                                                <td>
+                                                  <span>گوشی موبایل</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۹۷۵</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۲۷,۵۴۰,۰۰۰ تومان</span>
+                                                </td>
+                                                <td>
+                                                  <span><img class="img-fluid" src="assets/img/click.png" alt="clicked"> ۲۷۰</span>
+                                                </td>
+                                                <td>
+                                                  <span>۱۵</span>
+                                                </td>
+                                                <td>
+                                                    <span><img class="img-fluid" src="assets/img/checked.png" alt="ticked"></span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="group-page-container">
+                                            <div>
+                                                <button class="group-btn-submit" type="submit">حذف موارد انتخاب شده</button>
+                                                <button class="group-btn-submit-receive" type="submit">دریافت اطلاعات محصولات از وبسایت شما</button>
                                             </div>
-                                            <div class="row upload-logo-image">
-                                                <div class="col">
-                                                    <img class="img-fluid" src="assets/img/store-dashboard-icon-2.png" alt="logo image">
-                                                    <label for="logoImageTag"><i class="fa-solid fa-pencil ms-2"></i>لوگو فروشگاه</label>
-                                                    <input id="logoImageTag" type="file" class="form-control" aria-label="logoImageTag" placeholder="فروشگاه تکنولایف">
-                                                    <ul>
-                                                        <li>
-                                                            <p>پسوند های مجاز : png,jpg</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>بهترین سایز :‌ 300*300 پیکسل</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>نمایش لوگو به صورت دایره در وبسایت صورت می پذیرد</p>
-                                                        </li>
-                                                    </ul>
+                                            <div dir="ltr" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group me-2" role="group" aria-label="First group">
+                                                  <button type="button" class="btn">1</button>
+                                                  <button type="button" class="btn">2</button>
+                                                  <button type="button" class="btn">3</button>
+                                                  <button type="button" class="btn">4</button>
+                                                </div>
+                                                <div class="btn-group me-2" role="group" aria-label="Second group">
+                                                  <button type="button" class="btn">5</button>
+                                                  <button type="button" class="btn">6</button>
+                                                  <button type="button" class="btn">7</button>
+                                                </div>
+                                                <div class="btn-group" role="group" aria-label="Third group">
+                                                    <button type="button" class="btn">...</button>
+                                                    <button type="button" class="btn">8</button>
                                                 </div>
                                             </div>
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="emailAcountTag"><i class="fa-solid fa-pencil ms-2"></i>ایمیل اول</label>
-                                                <input id="emailAcountTag" type="email" class="form-control" aria-label="emailAcountTag" disabled placeholder="mhd.soltani97@gmail.com">
-                                              </div>
-                                              <div class="col">
-                                                <label for="emailAcountTwoTag"><i class="fa-solid fa-pencil ms-2"></i>ایمیل دوم</label>
-                                                <input id="emailAcountTwoTag" type="email" class="form-control" aria-label="emailAcountTwoTag">
-                                              </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="numberAcountTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل اول</label>
-                                                <input id="numberAcountTag" type="tel" class="form-control" aria-label="numberAcountTag" disabled placeholder="09176350307">
-                                              </div>
-                                              <div class="col">
-                                                <label for="numberAcountTwoTag"><i class="fa-solid fa-pencil ms-2"></i>شماره موبایل دوم</label>
-                                                <input id="numberAcountTwoTag" type="tel" class="form-control" aria-label="numberAcountTwoTag">
-                                              </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                              <div class="col">
-                                                <label for="telegramIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی تلگرام</label>
-                                                <input id="telegramIdTag" type="text" class="form-control" aria-label="telegramIdTag">
-                                              </div>
-                                              <div class="col">
-                                                <label for="instagramIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی اینستاگرام</label>
-                                                <input id="instagramIdTag" type="text" class="form-control" aria-label="instagramIdTag">
-                                              </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col">
-                                                  <label for="youtubeIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی یوتیوب</label>
-                                                  <input id="youtubeIdTag" type="text" class="form-control" aria-label="youtubeIdTag">
-                                                </div>
-                                                <div class="col">
-                                                  <label for="baleIdTag"><i class="fa-solid fa-pencil ms-2"></i>آیدی نرم افزار بله</label>
-                                                  <input id="baleIdTag" type="text" class="form-control" aria-label="baleIdTag">
-                                                </div>
-                                            </div>
-                                            <div class="row location-store-upload">
-                                                <div class="col-12 col-md-3">
-                                                  <label for="locationStoreTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس محل فعالیت</label>
-                                                  <textarea name="locationStoreTag" id="locationStoreTag" class="form-control" aria-label="locationStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                  <label for="locationStoreLiveTag"><i class="fa-solid fa-pencil ms-2"></i>آدرس فروشگاه حضوری</label>
-                                                  <textarea name="locationStoreLiveTag" id="locationStoreLiveTag" class="form-control" aria-label="locationStoreLiveTag">آدرس فروشگاه حضوری شما ...</textarea>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.0465339008365!2d52.5258451183655!3d29.635237495075053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb2120c639a43bf%3A0x1516de5126619a7f!2sEram%20Garden!5e0!3m2!1sen!2s!4v1718046563843!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                                    <button type="button" name="accept location" id="acceptLocation">موقعیت مکانی زنده شما</button>
-                                                </div>
-                                            </div>
-                                            <div class="container store-payment-method-container">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <h5>روش های پرداخت فروشگاه شما</h5>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                    <label class="form-check-label" for="exampleCheck1">قابلیت پرداخت آنلاین</label>
-                                                                </div>
-                                                                <textarea name="locationStoreTag" id="locationStoreTag" class="form-control" aria-label="locationStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                                                    <label class="form-check-label" for="exampleCheck2">قابلیت پرداخت در محل</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag" id="paymentMethodStoreTag" class="form-control" aria-label="paymentMethodStoreTag" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                                                    <label class="form-check-label" for="exampleCheck3">قابلیت پرداخت کارت به کارت</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTa2" id="paymentMethodStoreTag2" class="form-control" aria-label="paymentMethodStoreTag2" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck13">
-                                                                    <label class="form-check-label" for="exampleCheck13">قابلیت پرداخت اقساطی</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag3" id="paymentMethodStoreTag3" class="form-control" aria-label="paymentMethodStoreTag3" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                                                                    <label class="form-check-label" for="exampleCheck4">قابلیت ارسال با پست</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag4" id="paymentMethodStoreTag4" class="form-control" aria-label="paymentMethodStoreTag4" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                                                                    <label class="form-check-label" for="exampleCheck5">قابلیت ارسال در همان روز خرید</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag5" id="paymentMethodStoreTag5" class="form-control" aria-label="paymentMethodStoreTag5" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container store-payment-method-container">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <h5>روش های ارسال فروشگاه شما</h5>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck6">
-                                                                    <label class="form-check-label" for="exampleCheck6">قابلیت خرید حضوری از فروشگاه</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag6" id="paymentMethodStoreTag6" class="form-control" aria-label="paymentMethodStoreTag6" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck7">
-                                                                    <label class="form-check-label" for="exampleCheck7">قابلیت تست محصول پس از خرید</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag7" id="paymentMethodStoreTag7" class="form-control" aria-label="paymentMethodStoreTag7" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck8">
-                                                                    <label class="form-check-label" for="exampleCheck8">قابلیت ارسال رایگان</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag8" id="paymentMethodStoreTag8" class="form-control" aria-label="paymentMethodStoreTag8" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col mb-3">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck9">
-                                                                    <label class="form-check-label" for="exampleCheck9">قابلیت ارسال با پیک فروشگاه</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag9" id="paymentMethodStoreTag9" class="form-control" aria-label="paymentMethodStoreTag9" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck10">
-                                                                    <label class="form-check-label" for="exampleCheck10">قابلیت ارسال با پست</label>
-                                                                </div>
-                                                                <textarea name="paymentMethodStoreTag10" id="paymentMethodStoreTag10" class="form-control" aria-label="paymentMethodStoreTag10" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck11">
-                                                                    <label class="form-check-label" for="exampleCheck11">قابلیت ارسال در همان روز خرید</label>
-                                                                </div>
-                                                              <textarea name="paymentMethodStoreTag11" id="paymentMethodStoreTag11" class="form-control" aria-label="paymentMethodStoreTag11" disabled>شیراز - خیابان ارم - باغ ارم</textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button name="send-change-profile-btn" class="send-change-profile-btn" title="ذخیره تغییرات" type="button">ذخیره تغییرات</button>
-                                          </form>
-                                      </div>
+                                        </div>
                                     </div>
                                   </div>
                                 </div>

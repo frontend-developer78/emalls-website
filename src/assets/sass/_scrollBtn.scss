@@ -14,3 +14,13 @@
         bottom: 24px;
     }
 }
+.activa-scroll-btn {
+    bottom: 20px;
+}
+
+@media only screen and (max-width:992px) {
+    .activa-scroll-btn {
+        bottom: 130px!important;
+        left: 10px!important;
+    }
+}
