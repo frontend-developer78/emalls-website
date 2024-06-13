@@ -15,12 +15,15 @@
     }
 }
 .activa-scroll-btn {
-    bottom: 20px;
+    bottom: 20px!important;
 }
 
 @media only screen and (max-width:992px) {
     .activa-scroll-btn {
         bottom: 130px!important;
         left: 10px!important;
+    }
+    #tumbnailBaner {
+        margin-top: 70px!important;
     }
 }

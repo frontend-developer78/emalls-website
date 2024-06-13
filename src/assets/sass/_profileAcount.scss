@@ -1113,19 +1113,18 @@
           .profile-acount-card-wrapper {
             display: block!important;
             .nav-pills {
-              margin-bottom: 30px;
-              width: 96%!important;
-              flex-direction: row !important;
-              button {
-                width: 50%;
-              }
+              display: none;
             }
             .tab-content {
               padding: 15px 0;
               margin-right: 0;
+              h5 {
+                padding-right: 20px;
+              }
               #v-pills-profile-acount {
                 .pills-profile-acount-content {
                   table {
+                    overflow-x: scroll;
                     tr {
                       padding: 10px;
                       @include flex(flex,center,center);
@@ -1158,6 +1157,13 @@
             }
           }
         }
+      }
+    }
+  }
+  .pills-profile-acount-content {
+    table {
+      tbody {
+        @include flex(flex,center,space-between);
       }
     }
   }

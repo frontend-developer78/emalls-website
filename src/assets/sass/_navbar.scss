@@ -62,8 +62,13 @@ body {
                                 border-left: 1px solid #00000024;
                                 max-width: 260px;
                                 .dropdown-menu-inner {
-                                    position: relative;
+                                    // position: relative;
                                     margin-bottom: 40px;
+                                    &:hover {
+                                        .sub-menu-container {
+                                            opacity: 1;
+                                        }
+                                    }
                                     a {
                                         color: $dropdown-menu-link-color;
                                         font: {
@@ -80,6 +85,35 @@ body {
                                             color: $them-color;
                                             i {
                                                 color: $them-color;
+                                            }
+                                        }
+                                    }
+                                    .sub-menu-container {
+                                        opacity: 0;
+                                        @include transition-default(all,0.4s);
+                                        position: absolute;
+                                        right: 275px;
+                                        top: 20px;
+                                        height: 100vh;
+                                        width: 700px;
+                                        border-left: 1px solid #00000017;
+                                        .dropdown-box-submenu {
+                                            li {
+                                                margin-bottom: 20px;
+                                                a {
+                                                    font: {
+                                                        size: $default-font-size - 2px;
+                                                    }
+                                                    padding: 6px 10px;
+                                                    background-color: #efefef;
+                                                    display: block;
+                                                    border-radius: 10px;
+                                                    img {
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        margin-left: 10px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -405,6 +439,11 @@ body {
                         padding-left: 0;
                         .menu-list-category-inner {
                             .dropdown {
+                                &:hover {
+                                    ul.drop-list-container {
+                                        display: block!important;
+                                    }
+                                }
                                 button.dropdown-toggle {
                                     margin-bottom: 20px;
                                     position: relative;
@@ -427,17 +466,22 @@ body {
                                         }
                                     }
                                 }
-                                .dropdown-menu {
+                                ul.drop-list-container {
+                                    overflow: hidden;
+                                    display: none;
                                     width: 100%;
                                     text-align: right;
                                     border: none;
+                                    margin-bottom: 10px;
+                                    padding-left: 10px;
                                     li {
                                         border-bottom: 1px solid #eaeaea;
                                         padding: 6px 0;
-                                        .dropdown-item {
+                                        a {
                                             font: {
                                                 size: $default-font-size - 3px;
                                             }
+                                            padding-right: 10px;
                                             color: #2f2f2f;
                                         }
                                     }
@@ -663,7 +707,7 @@ button.menu-btn-responsive {
         font: {
             size: $default-font-size + 5px;
         }
-        color: #fff;
+        color: #202020;
         span{
             color: rgb(255, 153, 0);
             margin-right: 5px;

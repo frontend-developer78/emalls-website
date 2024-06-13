@@ -361,3 +361,41 @@
         }
     }
 }
+@media only screen and (max-width:992px) {
+    #productCategory {
+        .category-product-box-container {
+            .category-product-box-inner {
+                .container {
+                    .pagination-number-container {
+                        .navigation-custom {
+                            width: 100%;
+                            ul.pagination {
+                                @include flex(flex,center,center);
+                                li.page-item {
+                                    .page-link {
+                                        padding: 10px 15px;
+                                        border-radius: 0;
+                                        border: 1px solid #00000015;
+                                        color: #787878;
+                                        font: {
+                                            size: $default-font-size - 1px;
+    
+                                        }
+                                        &:focus {
+                                            background-color: #12b001;
+                                            box-shadow: 0 0 10px rgba(2, 249, 64, 0.046);
+                                            color: #ffffff;
+                                        }
+                                    }
+                                }
+                                li.respons-page-hide {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

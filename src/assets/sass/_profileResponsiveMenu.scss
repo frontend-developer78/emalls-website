@@ -1,0 +1,62 @@
+.profile-menu-responsive {
+    width: 250px;
+    .menu-responsive-container {
+        .menu-responsive-inner {
+            .tab-content {
+                #nav-home {
+                    .menu-list-category {
+                        .menu-list-category-inner {
+                            .dropdown {
+                                padding: 0 15px;
+                                .nav-link {
+                                    border-radius:0; 
+                                    @include transition-default(all,0.4s);
+                                    &:hover {
+                                        color: $them-color;
+                                        border-right: 2px solid #b8b8b8;
+                                    }
+                                    font: {
+                                        size: $default-font-size;
+                                        family:IRANYekan;
+                                    }
+                                    color: $profile-sidebar-link-color;
+                                    text-align: right;
+                                    margin-bottom: 20px;
+                                    img {
+                                        margin-left: 10px;
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                                button.active {
+                                    background-color: transparent;
+                                    border: none;
+                                    outline: none;
+                                    border-right: 3px solid red;
+                                    padding-right: 7px;
+                                    color: $them-color;
+                                }
+                            }
+                            #exited-button {
+                                background-color: transparent;
+                                border: none;
+                                outline: none;
+                                padding: 0 15px;
+                                font: {
+                                    size: $default-font-size;
+                                    family:IRANYekan;
+                                }
+                                color: red;
+                                img {
+                                    margin-left: 10px;
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

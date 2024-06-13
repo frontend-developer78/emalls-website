@@ -209,8 +209,10 @@ body {
   max-width: 260px;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner {
-  position: relative;
   margin-bottom: 40px;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner:hover .sub-menu-container {
+  opacity: 1;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a {
   color: #383838;
@@ -228,6 +230,31 @@ body {
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a:hover i {
   color: #11B76B;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container {
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: absolute;
+  right: 275px;
+  top: 20px;
+  height: 100vh;
+  width: 700px;
+  border-left: 1px solid rgba(0, 0, 0, 0.0901960784);
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container .dropdown-box-submenu li {
+  margin-bottom: 20px;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container .dropdown-box-submenu li a {
+  font-size: 14px;
+  padding: 6px 10px;
+  background-color: #efefef;
+  display: block;
+  border-radius: 10px;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container .dropdown-box-submenu li a img {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
 }
 #navbar nav.navbar div .navbar-collapse .regester-profile-btn {
   border: 1px solid rgba(0, 0, 0, 0.1647058824);
@@ -511,6 +538,9 @@ body {
   margin-left: 0;
   padding-left: 0;
 }
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown:hover ul.drop-list-container {
+  display: block !important;
+}
 #menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown button.dropdown-toggle {
   margin-bottom: 20px;
   position: relative;
@@ -529,17 +559,22 @@ body {
   top: 17px;
   font-size: 15px;
 }
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown .dropdown-menu {
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown ul.drop-list-container {
+  overflow: hidden;
+  display: none;
   width: 100%;
   text-align: right;
   border: none;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown .dropdown-menu li {
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown ul.drop-list-container li {
   border-bottom: 1px solid #eaeaea;
   padding: 6px 0;
 }
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown .dropdown-menu li .dropdown-item {
+#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown ul.drop-list-container li a {
   font-size: 13px;
+  padding-right: 10px;
   color: #2f2f2f;
 }
 #menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .login-btn {
@@ -739,7 +774,7 @@ button.menu-btn-responsive i {
     top: 20px;
     right: 20px;
     font-size: 21px;
-    color: #fff;
+    color: #202020;
   }
   .navbar-brand-responsive span {
     color: rgb(255, 153, 0);
@@ -1141,13 +1176,16 @@ button.menu-btn-responsive i {
 }
 
 .activa-scroll-btn {
-  bottom: 20px;
+  bottom: 20px !important;
 }
 
 @media only screen and (max-width: 992px) {
   .activa-scroll-btn {
     bottom: 130px !important;
     left: 10px !important;
+  }
+  #tumbnailBaner {
+    margin-top: 70px !important;
   }
 }
 #breadcrumb {
@@ -1603,6 +1641,31 @@ button.menu-btn-responsive i {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 992px) {
+  #productCategory .category-product-box-container .category-product-box-inner .container .pagination-number-container .navigation-custom {
+    width: 100%;
+  }
+  #productCategory .category-product-box-container .category-product-box-inner .container .pagination-number-container .navigation-custom ul.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #productCategory .category-product-box-container .category-product-box-inner .container .pagination-number-container .navigation-custom ul.pagination li.page-item .page-link {
+    padding: 10px 15px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.0823529412);
+    color: #787878;
+    font-size: 15px;
+  }
+  #productCategory .category-product-box-container .category-product-box-inner .container .pagination-number-container .navigation-custom ul.pagination li.page-item .page-link:focus {
+    background-color: #12b001;
+    box-shadow: 0 0 10px rgba(2, 249, 64, 0.046);
+    color: #ffffff;
+  }
+  #productCategory .category-product-box-container .category-product-box-inner .container .pagination-number-container .navigation-custom ul.pagination li.respons-page-hide {
+    display: none;
+  }
+}
 #introduction .product-introduction-page-slider-container .slider-product-wrapper .slide-product-container {
   background-color: #fff;
   border-radius: 20px;
@@ -2143,6 +2206,37 @@ button.menu-btn-responsive i {
   opacity: 1 !important;
 }
 
+@media only screen and (max-width: 992px) {
+  #introduction .comment-product-header {
+    justify-content: flex-start !important;
+  }
+  #introduction .rating {
+    margin: 0 !important;
+  }
+  #introduction .product-baner-image {
+    margin-bottom: 20px;
+  }
+  #introduction .buy-popular-store {
+    display: block !important;
+  }
+  #introduction .buy-popular-store p {
+    display: inline;
+  }
+  #introduction .store-seller-item-content-header a {
+    margin-bottom: 10px;
+    display: block;
+  }
+  #introduction .store-seller-item-inner h3 {
+    font-size: 14px !important;
+    line-height: 30px;
+  }
+  #introduction .product-list-card {
+    margin: 0 10px;
+  }
+  #introduction .product-list-head-content h5::after {
+    display: none;
+  }
+}
 #similarProducts .product-list-head-content h5 {
   position: relative;
   font-size: 17px;
@@ -3167,16 +3261,17 @@ button.menu-btn-responsive i {
     display: block !important;
   }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills {
-    margin-bottom: 30px;
-    width: 96% !important;
-    flex-direction: row !important;
-  }
-  #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills button {
-    width: 50%;
+    display: none;
   }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content {
     padding: 15px 0;
     margin-right: 0;
+  }
+  #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content h5 {
+    padding-right: 20px;
+  }
+  #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content #v-pills-profile-acount .pills-profile-acount-content table {
+    overflow-x: scroll;
   }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content #v-pills-profile-acount .pills-profile-acount-content table tr {
     padding: 10px;
@@ -3193,6 +3288,11 @@ button.menu-btn-responsive i {
   }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content #v-pills-bag .my-orders-card-container .my-orders-card-inner h5 {
     margin-right: 15px;
+  }
+  .pills-profile-acount-content table tbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 #loginPage {
@@ -3645,6 +3745,89 @@ button.menu-btn-responsive i {
   background-color: #f1f1f1;
   margin: 0 2px;
   border-radius: 7px;
+}
+
+@media only screen and (max-width: 992px) {
+  #StoreDashboardAcount {
+    margin-top: 80px !important;
+    margin-right: 0 !important;
+  }
+  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper {
+    flex-direction: column;
+  }
+  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills .store-name-acount {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills a, #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills button {
+    display: none;
+  }
+  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content {
+    margin-right: 0;
+  }
+  .pills-productStore-list-content {
+    overflow-x: scroll !important;
+  }
+  .group-page-container {
+    flex-direction: column;
+  }
+  .group-page-container .btn-toolbar {
+    margin-top: 30px;
+  }
+}
+.profile-menu-responsive {
+  width: 250px;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner .dropdown {
+  padding: 0 15px;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner .dropdown .nav-link {
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 16px;
+  font-family: IRANYekan;
+  color: #1f1f1f;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner .dropdown .nav-link:hover {
+  color: #11B76B;
+  border-right: 2px solid #b8b8b8;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner .dropdown .nav-link img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner .dropdown button.active {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-right: 3px solid red;
+  padding-right: 7px;
+  color: #11B76B;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner #exited-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  font-family: IRANYekan;
+  color: red;
+}
+.profile-menu-responsive .menu-responsive-container .menu-responsive-inner .tab-content #nav-home .menu-list-category .menu-list-category-inner #exited-button img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .footer-details-header h5 {
