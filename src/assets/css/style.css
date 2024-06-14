@@ -241,18 +241,41 @@ body {
   height: 100vh;
   border-left: 1px solid rgba(0, 0, 0, 0.0901960784);
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp {
   margin-bottom: 20px;
   border-right: 2px solid #d3d3d3;
+  position: relative;
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li a {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp:hover .inner-menu-box {
+  display: block;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp a {
   font-size: 14px;
   padding: 6px 10px;
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li a img {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp a img {
   width: 15px;
   height: 15px;
   margin-left: 5px;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp .inner-menu-box {
+  min-width: 60%;
+  position: absolute;
+  top: 0;
+  display: none;
+  right: 150px;
+  z-index: 2;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp .inner-menu-box li {
+  padding: 7px;
+  margin-bottom: 20px;
+}
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp .inner-menu-box li a {
+  font-size: 17px;
 }
 #navbar nav.navbar div .navbar-collapse .regester-profile-btn {
   border: 1px solid rgba(0, 0, 0, 0.1647058824);
@@ -426,6 +449,7 @@ button.menu-btn-responsive i {
     top: 0;
     overflow-y: scroll;
     height: 100vh;
+    background: rgb(255, 253, 250);
     right: -500px;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
@@ -484,6 +508,24 @@ button.menu-btn-responsive i {
     top: 0;
     width: 100%;
     height: 0;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper .drop-down-linkLopp .inner-menu-box {
+    position: relative;
+    right: 0;
+    width: 170px;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper .drop-down-linkLopp .inner-menu-box li {
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper .drop-down-linkLopp .inner-menu-box li a {
+    font-size: 13px;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper .drop-down-linkLopp .inner-menu-box li a img {
+    width: 10px;
+    height: 10px;
   }
   #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar {
     flex-direction: column;

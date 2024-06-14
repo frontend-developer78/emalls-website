@@ -105,7 +105,12 @@ const navLinkDropdown = document.querySelector(".nav-link-dropdown");
 const dropdownMenuCustom = document.querySelector(".dropdown-menu-custom");
 navLinkDropdown.addEventListener("click", () => {
     dropdownMenuCustom.classList.toggle("dropdown-menu-active");
-})
+});
+document.addEventListener('click', (event) => {
+  if (!dropdownMenuCustom.contains(event.target) && !navLinkDropdown.contains(event.target)) {
+    dropdownMenuCustom.classList.remove('dropdown-menu-active');
+  }
+});
 
 const menuResponBtn = document.getElementById("menuResponBtn");
 const menuResponse = document.getElementById("navbar");
