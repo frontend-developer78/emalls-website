@@ -1,5 +1,32 @@
 // ----------------- Start profile box section style
 #StoreDashboardAcount {
+    .profile-btn-responsive-acount-container {
+        display: none;
+        margin-bottom: 20px;
+        #profileBtnAcount {
+          border: none;
+          outline: none;
+          box-shadow: none;
+          background-color: gold;
+          box-shadow: 0 0 8px rgb(255, 213, 0);
+          padding: 7px;
+          border-radius: 8px;
+          @include flex(flex,center,center);
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            margin-left: 4px;
+          }
+          p {
+            margin-bottom: 0;
+            font: {
+              size: $default-font-size - 2px;
+            }
+            color: #262626;
+          }
+        }
+    }
     .profile-acount-box-container {
         .profile-acount-box-inner {
             .profile-acount-card {
@@ -467,23 +494,31 @@
     #StoreDashboardAcount {
         margin-top: 80px!important;
         margin-right: 0!important;
+        .profile-btn-responsive-acount-container {
+            display: block;
+        }
         .profile-acount-box-container {
             .profile-acount-box-inner {
                 .profile-acount-card {
                     .profile-acount-card-wrapper {
                         flex-direction: column;
                         .nav-pills {
-                            margin-bottom: 20px;
-                            width: 100%;
-                            margin-right: 0!important;
+                            position: absolute;
+                            top: 130px;
+                            display: none;
+                            right: 0;
+                            overflow-y: scroll;
+                            height: 500px;
                             .store-name-acount {
                                 width: 100%;
                                 @include flex(flex,center,center);
                                 flex-direction: column;
                             }
-                            a, button {
-                                display: none;
-                            }
+                        }
+                        .nav-pills-active {
+                            display: block!important;
+                            z-index: 1000;
+                            box-shadow: 0 0 8px rgba(46, 46, 46, 0.209);
                         }
                         .tab-content {
                             margin-right: 0;

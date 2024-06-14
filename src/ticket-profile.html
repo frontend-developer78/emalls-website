@@ -26,7 +26,7 @@
     <section id="navbar" class="navbar-sticky">
         <div class="container-fluid px-0">
             <nav class="navbar">
-                <div class="container-fluid">
+                <div class="container-fluid navbar-box-wrapper">
                   <a class="navbar-brand" href="#"><img width="20" height="20" src="assets/img/logo.png" alt="logo-website"> جست و جو<span class="m-2">کالا</span></a>
                   <div class="navbar-collapse">
                     <ul class="navbar-nav mb-2 mb-lg-0">
@@ -35,7 +35,35 @@
                         <div class="dropdown-menu-custom container-fluid">
                           <ul class="dropdown-menu-container">
                             <li class="dropdown-menu-inner">
-                              <a href="#">گوشی موبایل <i class="fa-solid fa-angle-left"></i></a>
+                              <a class="nav-link nav-link-dropdown" aria-current="page" href="#">گوشی موبایل <i class="fa-solid fa-angle-left"></i></a>
+                              <div class="dropdown-menu-loop">
+                                <ul class="drop-down-box-looper">
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> سامسونگ</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> اپل</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> شیاومی</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> آنر</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> هواوی</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> نوکیا</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> ایسوس</a>
+                                  </li>
+                                  <li class="drop-down-linkLopp">
+                                    <a class="drop-card" href="#"><img src="assets/img/link.png" alt=""> اوپو</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </li>
                             <li class="dropdown-menu-inner">
                               <a href="#">تبلت و لپتاپ <i class="fa-solid fa-angle-left"></i></a>
@@ -77,7 +105,7 @@
                         <a class="nav-link"><img class="img-fluid ms-2" src="assets/img/about us.png" width="20" height="20" alt="icon image">درباره ما</a>
                       </li>
                     </ul>
-                    <div class="d-flex">
+                    <div class="d-flex btn-group-navbar">
                       <a class="regester-profile-btn me-4" href="login.html">
                         <i class="fa-solid fa-right-to-bracket"></i><p class="me-1">ورود / ثبت نام</p>
                       </a>
@@ -106,349 +134,24 @@
         <div class="col-12 navbar-responsive-container">
           <ul class="navbar-ersponsive-inner">
             <li class="navbar-responsive-link">
-              <img class="img-fluid" src="assets/img/icons8-menu-32.png" alt="image">
-              <button id="menuResponBtn" type="button">منو</button>
+              <a id="menuResponBtn" class="d-flex align-items-center justify-content-center flex-column" href="#">
+                <img class="img-fluid" src="assets/img/icons8-menu-32.png" alt="image">
+                <button type="button">منو</button>
+              </a>
             </li>
             <li class="navbar-responsive-link">
-              <img class="img-fluid" src="assets/img/icons8-home-48.png" alt="image">
-              <a href="#">خانه</a>
+              <a href="#">
+                <img class="img-fluid" src="assets/img/icons8-home-48.png" alt="image">
+                <p>خانه</p>
+              </a>
             </li>
             <li class="navbar-responsive-link">
-              <img class="img-fluid" src="assets/img/icons8-store-100.png" alt="image">
-              <a href="#">فروشگاه</a>
+              <a href="#">
+                <img class="img-fluid" src="assets/img/icons8-store-100.png" alt="image">
+                <p>فروشگاه</p>
+              </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-    <section id="menuResponsive" class="menu-response">
-      <div class="menu-responsive-container">
-        <div class="menu-responsive-inner">
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">فهرست اصلی</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">دسته بندی محصولات</button>
-            </div>
-          </nav>
-          <div class="tab-content mt-3" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-              <ul class="menu-list-category">
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      گوشی موبایل
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      تبلت
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      لپتاپ
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      کامپیوتر
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ساعت هوشمند
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      هدفون
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      لوازم جانبی
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      تلویزیون
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <button class="login-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      ورود / ثبت نام
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-              <ul class="menu-list-category">
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      گوشی موبایل
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      تبلت
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      لپتاپ
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      کامپیوتر
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ساعت هوشمند
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      هدفون
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      لوازم جانبی
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-list-category-inner">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      تلویزیون
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">اپل</a></li>
-                      <li><a class="dropdown-item" href="#">سامسونگ</a></li>
-                      <li><a class="dropdown-item" href="#">شیاومی</a></li>
-                      <li><a class="dropdown-item" href="#">اوپو</a></li>
-                      <li><a class="dropdown-item" href="#">ال جی</a></li>
-                      <li><a class="dropdown-item" href="#">انکر</a></li>
-                      <li><a class="dropdown-item" href="#">هواوی</a></li>
-                      <li><a class="dropdown-item" href="#">باسوس</a></li>
-                      <li><a class="dropdown-item" href="#">ایسوس</a></li>
-                      <li><a class="dropdown-item" href="#">داریا</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -469,6 +172,12 @@
     <!-- ----------------- Start profile box section ----------------- -->
     <section id="profileAcount" class="container-fluid my-5">
         <div class="row">
+          <div class="col-12 profile-btn-responsive-acount-container">
+            <button id="profileBtnAcount" type="button">
+              <img class="img-fluid" src="assets/img/profile-icon-image.png" alt="image">
+              <p>محمد سلطانی</p>
+            </button>
+          </div>
             <div class="col-12 profile-acount-box-container">
                 <div class="profile-acount-box-inner">
                     <div class="profile-acount-card">

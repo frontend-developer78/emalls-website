@@ -100,19 +100,6 @@ function deleteBtn() {
 function deleteBtnAdver() {
   advertisingBox.classList.add("active-delete-btn");
 }
-
-
-
-let navbar = document.querySelector(".navbar-sticky");
-
-window.addEventListener("scroll", () => {
-  let scroll = window.scrollY;
-  if(scroll >= 50) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-})
 ///////////////////////////////////////////////////
 const navLinkDropdown = document.querySelector(".nav-link-dropdown");
 const dropdownMenuCustom = document.querySelector(".dropdown-menu-custom");
@@ -121,10 +108,31 @@ navLinkDropdown.addEventListener("click", () => {
 })
 
 const menuResponBtn = document.getElementById("menuResponBtn");
-const menuResponse = document.querySelector(".menu-response");
+const menuResponse = document.getElementById("navbar");
 menuResponBtn.addEventListener("click", () => {
   menuResponse.classList.toggle("menu-response-active");
 })
+
+document.addEventListener('click', (event) => {
+  if (!menuResponse.contains(event.target) && !menuResponBtn.contains(event.target)) {
+    menuResponse.classList.remove('menu-response-active');
+  }
+});
+///////////////////////////////////////////////////
+
+const profileBtnAcount = document.getElementById("profileBtnAcount");
+const navPills = document.querySelector(".nav-pills");
+
+profileBtnAcount.addEventListener("click", () => {
+  navPills.classList.toggle("nav-pills-active");
+});
+
+document.addEventListener('click', (event) => {
+  if (!navPills.contains(event.target) && !profileBtnAcount.contains(event.target)) {
+    navPills.classList.remove('nav-pills-active');
+  }
+});
+
 ///////////////////////////////////////////// sign up page style
 const signUpBtn = document.getElementById("signUpBtn");
 const loginContent = document.querySelector(".loginContent");
@@ -166,3 +174,4 @@ const boxSubmitRetwitte = document.querySelector(".boxSubmitRetwitte");
 retwitteBtn.addEventListener("click", () => {
   boxSubmitRetwitte.classList.toggle("active-box-Submit-Retwitte");
 })
+/////////////////////////////////////////////////

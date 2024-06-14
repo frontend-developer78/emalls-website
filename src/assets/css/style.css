@@ -211,7 +211,7 @@ body {
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner {
   margin-bottom: 40px;
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner:hover .sub-menu-container {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner:hover .dropdown-menu-loop {
   opacity: 1;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a {
@@ -231,30 +231,28 @@ body {
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a:hover i {
   color: #11B76B;
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop {
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: absolute;
-  right: 275px;
+  right: 300px;
   top: 20px;
+  width: 100%;
   height: 100vh;
-  width: 700px;
   border-left: 1px solid rgba(0, 0, 0, 0.0901960784);
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container .dropdown-box-submenu li {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li {
   margin-bottom: 20px;
+  border-right: 2px solid #d3d3d3;
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container .dropdown-box-submenu li a {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li a {
   font-size: 14px;
   padding: 6px 10px;
-  background-color: #efefef;
-  display: block;
-  border-radius: 10px;
 }
-#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .sub-menu-container .dropdown-box-submenu li a img {
+#navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li a img {
   width: 15px;
   height: 15px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 #navbar nav.navbar div .navbar-collapse .regester-profile-btn {
   border: 1px solid rgba(0, 0, 0, 0.1647058824);
@@ -336,150 +334,24 @@ body {
   box-shadow: 0 0 12px rgba(0, 199, 103, 0.902);
 }
 
-.modal .modal-dialog .modal-content {
-  border-radius: 20px;
-  overflow: hidden;
-}
-.modal .modal-dialog .modal-content .modal-header {
-  padding-bottom: 0;
-  padding-top: 33px;
-  border-bottom: 0;
-}
-.modal .modal-dialog .modal-content .modal-header div {
-  text-align: center;
-  width: 100%;
-}
-.modal .modal-dialog .modal-content .modal-header div h1 {
-  font-size: 16px !important;
-}
-.modal .modal-dialog .modal-content .modal-header div h1 p {
-  color: #11B76B;
-  display: inline-block;
-  margin-left: 6px;
-  margin-bottom: 0;
-}
-.modal .modal-dialog .modal-content .modal-header div h1 p.signContent {
-  display: none;
-}
-.modal .modal-dialog .modal-content .modal-header div p.modal-title-details {
-  font-size: 14px !important;
-  color: #a3a3a3;
-  margin-top: 10px;
-}
-.modal .modal-dialog .modal-content .modal-header button {
-  margin: 0;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner {
-  width: 100%;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSignReturn, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContent, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSign, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSignReturn {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px 8px 10px 8px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  background-color: #f3f3f3;
-  font-size: 14px;
-  color: #343434;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSignReturn::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContent::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSign::-moz-placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSignReturn::-moz-placeholder {
-  font-size: 13px;
-  color: #5d5d5d;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#emailContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .loginContainer input#passwordContentSignReturn::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContent::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#emailContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSign::placeholder, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer input#passwordContentSignReturn::placeholder {
-  font-size: 13px;
-  color: #5d5d5d;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .signContainer {
-  display: none;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner p.forget-pass-link {
-  font-size: 13px;
-  color: #313131;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner p.forget-pass-link a {
-  color: #11B76B;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner div label {
-  font-size: 15px;
-  color: #ff8400;
-  margin-right: 6px;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitLogin, .modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitSign {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  color: #fff;
-  background-color: #11B76B;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner button#submitSign {
-  background-color: #ffa600;
-  display: none;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container .form-login-inner .login-with-google {
-  width: 100%;
-  display: block;
-  color: #ff5100;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container, .modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container {
-  margin-top: 10px;
-  padding-top: 13px;
-  border-top: 1px solid #e6e6e6;
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: #3a3a3a;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container p.signUp-btn-container button, .modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container button {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  background: transparent;
-  color: #11B76B;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container {
-  display: none;
-}
-.modal .modal-dialog .modal-content .modal-body .login-form-container p.login-btn-container button {
-  margin-right: 5px;
-}
-
 #responsiveNavbar {
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
   z-index: 1001;
-  width: 100%;
+  width: 98%;
+  margin: 0 1%;
   background: rgb(229, 255, 253);
   background: linear-gradient(0deg, rgb(240, 255, 254) 0%, rgb(255, 255, 255) 100%);
-  border-radius: 40px 40px 0 0;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: 0px -7px 19px rgba(0, 0, 0, 0.2);
 }
 #responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
   margin-bottom: 0;
 }
 #responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link {
@@ -498,237 +370,21 @@ body {
   border: none;
   box-shadow: none;
   background-color: transparent;
-  font-size: 15px;
+  font-size: 13px;
   color: #555555;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 #responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link button:hover {
   color: #11B76B;
 }
-#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link a {
-  font-size: 15px;
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link p {
+  font-size: 13px;
   color: #555555;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link a:hover {
-  color: #11B76B;
-}
-
-#menuResponsive {
-  overflow-y: auto;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #fff;
-  height: 100vh;
-  transform: translateX(500px);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner nav .nav-tabs button {
-  border-radius: 0;
-  font-size: 12px;
-  color: #a4a4a4;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner nav .nav-tabs .active {
-  background: #f1f1f1;
-  color: #505050;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category {
-  margin-left: 0;
-  padding-left: 0;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown:hover ul.drop-list-container {
-  display: block !important;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown button.dropdown-toggle {
-  margin-bottom: 20px;
-  position: relative;
-  width: 100%;
-  border-radius: 0;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: #3a3a3a;
-  text-align: right;
-  font-size: 14px;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown button.dropdown-toggle::after {
-  left: 6px;
-  position: absolute;
-  top: 17px;
-  font-size: 15px;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown ul.drop-list-container {
-  overflow: hidden;
-  display: none;
-  width: 100%;
-  text-align: right;
-  border: none;
-  margin-bottom: 10px;
-  padding-left: 10px;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown ul.drop-list-container li {
-  border-bottom: 1px solid #eaeaea;
-  padding: 6px 0;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .dropdown ul.drop-list-container li a {
-  font-size: 13px;
-  padding-right: 10px;
-  color: #2f2f2f;
-}
-#menuResponsive .menu-responsive-container .menu-responsive-inner .tab-content .tab-pane .menu-list-category .menu-list-category-inner .login-btn {
-  margin-bottom: 20px;
-  padding: 15px;
-  width: 100%;
-  border-radius: 0;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: #3a3a3a;
-  text-align: right;
-  font-size: 14px;
-}
-
-.menu-response-active {
-  transform: translateX(0) !important;
-}
-
-.sticky {
-  background-color: #ffffff;
-  position: fixed !important;
-  top: 0 !important;
-  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.22);
-  border-radius: 0 0 20px 20px;
-  overflow: hidden;
-}
-.sticky nav.navbar div a.navbar-brand {
-  color: #000 !important;
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link {
-  color: #373737 !important;
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown {
-  position: relative;
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom {
-  padding: 20px 20px 20px 20px;
-  position: fixed;
-  top: 60px;
-  right: 0;
-  transform: translate(-2.5%, 0);
-  max-width: 95%;
-  height: 0;
-  display: none;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  z-index: 1000;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1098039216);
-  border-top: 0;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container {
-  border-left: 1px solid rgba(0, 0, 0, 0.1411764706);
-  max-width: 260px;
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner {
-  position: relative;
-  margin-bottom: 40px;
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a {
-  color: #383838;
-  font-size: 14px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a i {
-  position: absolute;
-  left: 0;
-  color: rgba(0, 0, 0, 0.2078431373);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a:hover {
-  color: #11B76B;
-}
-.sticky nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a:hover i {
-  color: #11B76B;
-}
-.sticky nav.navbar div .navbar-collapse .regester-profile-btn {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 12px 10px 12px;
-  background-color: #fff4ec;
-  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.348);
-  border-radius: 10px;
-}
-.sticky nav.navbar div .navbar-collapse .regester-profile-btn p {
-  font-size: 14px;
-  color: #292929;
   margin-bottom: 0;
 }
-.sticky nav.navbar div .navbar-collapse .user-acount-section {
-  position: relative;
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section button.user-profile-btn {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 12px 10px 12px;
-  background-color: #ffd000;
-  border-radius: 10px;
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section button.user-profile-btn p {
-  font-size: 14px;
-  color: #292929;
-  margin-bottom: 0;
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container {
-  position: absolute;
-  top: 45px;
-  left: 10px;
-  width: 10rem;
-  height: 0;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  overflow: hidden;
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner {
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.9254901961);
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a {
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  text-decoration: none;
-  font-size: 14px;
-  color: #353535;
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a img {
-  margin-left: 4px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a:hover {
-  color: #00686b;
-}
-.sticky nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a:hover img {
-  transform: rotate(5deg);
-}
-.sticky nav.navbar div .navbar-collapse button.store-registration {
-  padding: 8px 10px 8px 10px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background: #11B76B;
-  color: #fff;
-  box-shadow: 0 0 12px rgba(0, 199, 103, 0.902);
+#responsiveNavbar .navbar-responsive-container .navbar-ersponsive-inner .navbar-responsive-link p:hover {
+  color: #11B76B;
 }
 
 button.menu-btn-responsive {
@@ -764,6 +420,82 @@ button.menu-btn-responsive i {
 }
 
 @media only screen and (max-width: 992px) {
+  #navbar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+    height: 100vh;
+    right: -500px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  #navbar div.container-fluid {
+    height: 100%;
+  }
+  #navbar div.container-fluid nav.navbar {
+    height: 100%;
+    align-items: flex-start;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom {
+    position: relative !important;
+    top: 0;
+    box-shadow: none;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.0705882353);
+    border-radius: 10px;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container {
+    border-left: none;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner {
+    margin-bottom: 20px;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner:hover .dropdown-menu-loop {
+    opacity: 1;
+    display: block;
+    height: auto;
+    border-left: none;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner a {
+    font-size: 14px;
+    font-family: IranYekan;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop {
+    opacity: 0;
+    display: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar a, #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar .user-acount-section, #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar button {
+    margin-right: 0 !important;
+  }
+  .menu-response-active {
+    right: 0 !important;
+  }
   button.menu-btn-responsive {
     display: block !important;
   }
@@ -779,101 +511,6 @@ button.menu-btn-responsive i {
   .navbar-brand-responsive span {
     color: rgb(255, 153, 0);
     margin-right: 5px;
-  }
-  #navbar nav.navbar {
-    display: none;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: translateX(400px);
-    margin-top: 30px;
-    margin-right: 30px;
-    overflow: hidden;
-    border-radius: 20px;
-    width: 200px;
-    height: 90vh !important;
-    background: linear-gradient(0deg, #fffaff, #ffd6fe, #fff5ff, #ffffff);
-    box-shadow: 2px 1px 11px 2px rgba(0, 0, 0, 0.24);
-  }
-  #navbar nav.navbar div {
-    height: 100%;
-    flex-wrap: wrap !important;
-  }
-  #navbar nav.navbar div a.navbar-brand {
-    display: none;
-    color: rgb(51, 51, 51);
-  }
-  #navbar nav.navbar div a.navbar-brand span {
-    color: rgb(255, 153, 0);
-  }
-  #navbar nav.navbar div .navbar-collapse {
-    justify-content: flex-start !important;
-    display: block !important;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav {
-    display: block !important;
-    flex-direction: row;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item {
-    margin-top: 10px;
-    padding-right: 20px;
-    margin-bottom: 30px;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link {
-    cursor: pointer;
-    color: #323232;
-    font-size: 14px;
-  }
-  #navbar nav.navbar div .navbar-collapse ul.navbar-nav li.nav-item .nav-link i {
-    font-size: 17px;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section {
-    display: none;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section button.user-profile-btn {
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section button.user-profile-btn i {
-    padding: 6px 7px 6px 7px;
-    background-color: #fff;
-    border-radius: 100%;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container {
-    position: absolute;
-    top: 40px;
-    left: 10px;
-    width: 10rem;
-    height: 0;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    overflow: hidden;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner {
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9254901961);
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a {
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    text-decoration: none;
-    font-size: 14px;
-    color: #353535;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a img {
-    margin-left: 4px;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a:hover {
-    color: #00686b;
-  }
-  #navbar nav.navbar div .navbar-collapse .user-acount-section .user-acount-box-container ul.user-acount-inner li.profile-acount-list a:hover img {
-    transform: rotate(5deg);
-  }
-  #navbar nav.active-responsive-menu {
-    transform: translateX(0) !important;
-    display: block;
-  }
-  .sticky {
-    display: none;
   }
   .user-acount-responsive-section {
     display: inline-block !important;
@@ -2305,6 +1942,33 @@ button.menu-btn-responsive i {
   margin-bottom: 0;
 }
 
+#profileAcount .profile-btn-responsive-acount-container {
+  display: none;
+  margin-bottom: 20px;
+}
+#profileAcount .profile-btn-responsive-acount-container #profileBtnAcount {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: gold;
+  box-shadow: 0 0 8px rgb(255, 213, 0);
+  padding: 7px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#profileAcount .profile-btn-responsive-acount-container #profileBtnAcount img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 4px;
+}
+#profileAcount .profile-btn-responsive-acount-container #profileBtnAcount p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #262626;
+}
 #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills {
   width: 300px;
   background-color: #fff;
@@ -3257,11 +2921,22 @@ button.menu-btn-responsive i {
   #profileAcount {
     margin-top: 80px !important;
   }
+  #profileAcount .profile-btn-responsive-acount-container {
+    display: block;
+  }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper {
     display: block !important;
   }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills {
+    position: absolute;
+    z-index: 1000;
+    top: 130px;
     display: none;
+    right: 0;
+  }
+  #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills-active {
+    display: block !important;
+    box-shadow: 0 0 8px rgba(46, 46, 46, 0.209);
   }
   #profileAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content {
     padding: 15px 0;
@@ -3405,6 +3080,33 @@ button.menu-btn-responsive i {
   border-radius: 20px;
 }
 
+#StoreDashboardAcount .profile-btn-responsive-acount-container {
+  display: none;
+  margin-bottom: 20px;
+}
+#StoreDashboardAcount .profile-btn-responsive-acount-container #profileBtnAcount {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: gold;
+  box-shadow: 0 0 8px rgb(255, 213, 0);
+  padding: 7px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#StoreDashboardAcount .profile-btn-responsive-acount-container #profileBtnAcount img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 4px;
+}
+#StoreDashboardAcount .profile-btn-responsive-acount-container #profileBtnAcount p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #262626;
+}
 #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .nav-pills {
   width: 300px;
   background-color: #fff;
@@ -3752,13 +3454,19 @@ button.menu-btn-responsive i {
     margin-top: 80px !important;
     margin-right: 0 !important;
   }
+  #StoreDashboardAcount .profile-btn-responsive-acount-container {
+    display: block;
+  }
   #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper {
     flex-direction: column;
   }
   #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills {
-    margin-bottom: 20px;
-    width: 100%;
-    margin-right: 0 !important;
+    position: absolute;
+    top: 130px;
+    display: none;
+    right: 0;
+    overflow-y: scroll;
+    height: 500px;
   }
   #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills .store-name-acount {
     width: 100%;
@@ -3767,8 +3475,10 @@ button.menu-btn-responsive i {
     justify-content: center;
     flex-direction: column;
   }
-  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills a, #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills button {
-    display: none;
+  #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .nav-pills-active {
+    display: block !important;
+    z-index: 1000;
+    box-shadow: 0 0 8px rgba(46, 46, 46, 0.209);
   }
   #StoreDashboardAcount .profile-acount-box-container .profile-acount-box-inner .profile-acount-card .profile-acount-card-wrapper .tab-content {
     margin-right: 0;
