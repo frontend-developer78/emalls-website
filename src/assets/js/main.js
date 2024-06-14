@@ -103,12 +103,16 @@ function deleteBtnAdver() {
 ///////////////////////////////////////////////////
 const navLinkDropdown = document.querySelector(".nav-link-dropdown");
 const dropdownMenuCustom = document.querySelector(".dropdown-menu-custom");
+const dropdownMenuLoop = document.querySelector(".dropdown-menu-loop");
+const dropDownBoxLooper = document.querySelector(".drop-down-box-looper");
+
 navLinkDropdown.addEventListener("click", () => {
     dropdownMenuCustom.classList.toggle("dropdown-menu-active");
 });
 document.addEventListener('click', (event) => {
   if (!dropdownMenuCustom.contains(event.target) && !navLinkDropdown.contains(event.target)) {
     dropdownMenuCustom.classList.remove('dropdown-menu-active');
+    dropdownMenuCustom.style.display = "none";
   }
 });
 
