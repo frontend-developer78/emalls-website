@@ -104,7 +104,8 @@ body {
                                                 position: relative;
                                                 &:hover {
                                                     .inner-menu-box {
-                                                        display: block;
+                                                        display: grid;
+                                                        grid-template-columns: auto auto auto;
                                                     }
                                                 }
                                                 a {
@@ -125,17 +126,17 @@ body {
                                                     display: none;
                                                     right: 150px;
                                                     z-index: 2;
-                                                    height: 300px;
                                                     overflow-y: scroll;
-                                                    background-color: #f6f6f6;
                                                     border-radius: 10px;
                                                     li {
                                                         padding: 7px;
-                                                        margin-bottom: 20px;
+                                                        margin-bottom: 6px;
                                                         a {
                                                             font: {
                                                                 size: $default-font-size + 1px;
                                                             }
+                                                            background-color: #f6f6f6;
+                                                            border-radius: 10px;
                                                         }
                                                     }
                                                 }
@@ -340,6 +341,7 @@ button.menu-btn-responsive {
                     justify-content: flex-start;
                     flex-direction: column;
                     .navbar-collapse {
+                        width: 100%;
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items: flex-start;
@@ -410,11 +412,15 @@ button.menu-btn-responsive {
                             }
                         }
                         .btn-group-navbar {
+                            width: 100%;
+                            display: block!important;
                             flex-direction: column;
                             gap: 20px;
                             align-items: flex-start;
                             a, .user-acount-section, button {
                                 margin-right: 0!important;
+                                margin-top: 10px;
+                                width: 100%;
                             }
                         }
                     }

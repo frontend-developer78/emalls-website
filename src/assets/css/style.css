@@ -247,7 +247,8 @@ body {
   position: relative;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp:hover .inner-menu-box {
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp a {
   font-size: 14px;
@@ -265,17 +266,17 @@ body {
   display: none;
   right: 150px;
   z-index: 2;
-  height: 300px;
   overflow-y: scroll;
-  background-color: #f6f6f6;
   border-radius: 10px;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp .inner-menu-box li {
   padding: 7px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #navbar nav.navbar div .navbar-collapse ul.navbar-nav .nav-item-dropdown .dropdown-menu-custom .dropdown-menu-container .dropdown-menu-inner .dropdown-menu-loop .drop-down-box-looper li.drop-down-linkLopp .inner-menu-box li a {
   font-size: 17px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
 }
 #navbar nav.navbar div .navbar-collapse .regester-profile-btn {
   border: 1px solid rgba(0, 0, 0, 0.1647058824);
@@ -467,6 +468,7 @@ button.menu-btn-responsive i {
     flex-direction: column;
   }
   #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse {
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -528,12 +530,16 @@ button.menu-btn-responsive i {
     height: 10px;
   }
   #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar {
+    width: 100%;
+    display: block !important;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
   }
   #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar a, #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar .user-acount-section, #navbar div.container-fluid nav.navbar .navbar-box-wrapper .navbar-collapse .btn-group-navbar button {
     margin-right: 0 !important;
+    margin-top: 10px;
+    width: 100%;
   }
   .menu-response-active {
     right: 0 !important;
