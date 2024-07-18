@@ -11,7 +11,11 @@ body {
     width: 100%;
     z-index: 1000;
     nav.navbar{
-        background-color: rgb(255, 253, 250);
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 98%;
+        margin: 10px 1%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.086);
         div {
             flex-wrap: nowrap;
             a.navbar-brand{
@@ -44,7 +48,7 @@ body {
                         .dropdown-menu-custom {
                             @include margin-padding(20px,20px,20px,20px,false);
                             position: fixed;
-                            top: 60px;
+                            top: 65px;
                             right: 0;
                             transform: translate(-2.5%, 0);
                             max-width: 95%;
@@ -52,18 +56,19 @@ body {
                             display: none;
                             overflow: hidden;
                             @include transition-default(all,0.4s);
-                            z-index: 1000;
+                            z-index: -1;
                             background-color: #ffffff;
                             border: 1px solid #0000001c;
                             border-top: 0;
-                            border-radius: 0 0 20px 20px;
+                            border-radius: 8px;
                             box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
                             .dropdown-menu-container {
+                                padding-left: 0;
                                 border-left: 1px solid #00000024;
                                 max-width: 260px;
                                 .dropdown-menu-inner {
                                     // position: relative;
-                                    margin-bottom: 40px;
+                                    margin-bottom: 20px;
                                     &:hover {
                                         .dropdown-menu-loop {
                                             opacity: 1;
@@ -72,40 +77,35 @@ body {
                                     a {
                                         color: $dropdown-menu-link-color;
                                         font: {
-                                            size: $default-font-size - 2px;
-                                        }
-                                        i {
-                                            position: absolute;
-                                            left: 0;
-                                            color: #00000035;
-                                            @include transition-default(all,0.4s);
+                                            size: $default-font-size;
+                                            family: IRANYekan;
                                         }
                                         @include transition-default(all,0.4s);
                                         &:hover {
-                                            color: $them-color;
-                                            i {
-                                                color: $them-color;
+                                            color: red;
+                                            font: {
+                                                weight:900;
                                             }
                                         }
                                     }
                                     .dropdown-menu-loop {
                                         opacity: 0;
-                                        @include transition-default(all,0.4s);
+                                        @include transition-default(all,0.7s);
                                         position: absolute;
-                                        right: 300px;
+                                        right: 24%;
                                         top: 20px;
-                                        width: 100%;
-                                        height: 100vh;
+                                        padding: 10px;
+                                        border-radius: 10px;
+                                        height: 96%;
+                                        background-color: rgb(247, 247, 247);
                                         border-left: 1px solid #00000017;
-                                        .drop-down-box-looper {
+                                        ul.drop-down-box-looper {
                                             li.drop-down-linkLopp {
                                                 margin-bottom: 20px;
-                                                border-right: 2px solid #d3d3d3;
-                                                position: relative;
+                                                //position: relative;
                                                 &:hover {
                                                     .inner-menu-box {
-                                                        display: grid;
-                                                        grid-template-columns: auto auto auto;
+                                                        opacity: 1;
                                                     }
                                                 }
                                                 a {
@@ -120,10 +120,12 @@ body {
                                                     }
                                                 }
                                                 .inner-menu-box {
-                                                    min-width: 60%;
+                                                    min-width: 700px!important;
                                                     position: absolute;
                                                     top: 0;
-                                                    display: none;
+                                                    opacity: 0;
+                                                    display: grid;
+                                                    grid-template-columns: auto auto auto;
                                                     right: 150px;
                                                     z-index: 2;
                                                     overflow-y: scroll;
@@ -334,6 +336,9 @@ button.menu-btn-responsive {
             height: 100%;
             nav.navbar {
                 height: 100%;
+                width: 100%;
+                border: 0;
+                box-shadow: none;
                 align-items: flex-start;
                 .navbar-box-wrapper {
                     display: flex;
@@ -353,18 +358,21 @@ button.menu-btn-responsive {
                                     position: relative!important;
                                     top: 0;
                                     box-shadow: none;
-                                    width: 100%;
+                                    right: -20px;
+                                    width: 235px;
+                                    z-index: 1;
                                     border: 1px solid #00000012;
                                     border-radius: 10px;
                                     .dropdown-menu-container {
                                         border-left: none;
                                         .dropdown-menu-inner {
-                                            margin-bottom: 20px;
+                                            margin-bottom: 10px;
                                             &:hover {
                                                 .dropdown-menu-loop {
                                                     opacity: 1;
+                                                    height: 100%;
                                                     display: block;
-                                                    height: auto;
+                                                    overflow-y: scroll;
                                                     border-left: none;
                                                 }
                                             }
@@ -381,17 +389,28 @@ button.menu-btn-responsive {
                                                 position: relative;
                                                 right: 0;
                                                 top: 0;
-                                                width: 100%;
+                                                width: 190px;
                                                 height: 0;
                                                 .drop-down-box-looper {
                                                     .drop-down-linkLopp {
+                                                        &:hover {
+                                                            .inner-menu-box {
+                                                                opacity: 1!important;
+                                                                display: grid;
+                                                                grid-template-columns: auto;
+                                                            }
+                                                        }
                                                         .inner-menu-box {
+                                                            opacity: 0;
+                                                            display: none;
                                                             position: relative;
                                                             right: 0;
-                                                            width: 170px;
+                                                            z-index: 1000;
+                                                            width: 100px!important;
+                                                            background-color: rgb(246, 246, 246);
                                                             li {
                                                                 margin-bottom: 0!important;
-                                                                @include flex(flex,center,center);
+                                                                display: unset;
                                                                 a {
                                                                     font: {
                                                                         size: $default-font-size - 3px;
