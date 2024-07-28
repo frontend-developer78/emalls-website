@@ -46,99 +46,130 @@ body {
                     .nav-item-dropdown {
                         position: relative;
                         .dropdown-menu-custom {
-                            @include margin-padding(20px,20px,20px,20px,false);
-                            position: fixed;
-                            top: 65px;
-                            right: 0;
-                            transform: translate(-2.5%, 0);
-                            max-width: 95%;
-                            height: 0;
                             display: none;
+                            position: absolute;
                             overflow: hidden;
-                            @include transition-default(all,0.4s);
-                            z-index: -1;
-                            background-color: #ffffff;
-                            border: 1px solid #0000001c;
-                            border-top: 0;
-                            border-radius: 8px;
-                            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
-                            .dropdown-menu-container {
-                                padding-left: 0;
-                                border-left: 1px solid #00000024;
-                                max-width: 260px;
-                                .dropdown-menu-inner {
-                                    // position: relative;
+                            background-color: #fff;
+                            border-radius: 0 0 20px 20px;
+                            min-width: 55rem;
+                            top: 100%;
+                            padding: 40px;
+                            right: 0;
+                            z-index: -2;
+                            ul.dropdown-menu-wrapper {
+                                position: relative;
+                                li.dropdown-item-content {
                                     margin-bottom: 20px;
+                                    padding: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 140px;
+                                    border-left: 1px solid #00686b84;
+                                    padding-left: 10px;
+                                    @include transition-default(all,0.4s);
                                     &:hover {
-                                        .dropdown-menu-loop {
+                                        background-color: #00686b26;
+                                        .dropdown-innerbox-container {
+                                            display: block;
                                             opacity: 1;
                                         }
                                     }
-                                    a {
-                                        color: $dropdown-menu-link-color;
-                                        font: {
-                                            size: $default-font-size;
-                                            family: IRANYekan;
-                                        }
-                                        @include transition-default(all,0.4s);
-                                        &:hover {
-                                            color: red;
+                                    button#drop-btn-item {
+                                        width: 100%;
+                                        background: transparent;
+                                        border: none;
+                                        outline: none;
+                                        @include flex(flex,center,space-between);
+                                        p {
                                             font: {
-                                                weight:900;
+                                                size: $default-font-size - 3px;
                                             }
+                                            margin-bottom: 0;
+                                            color: #00686b;
                                         }
                                     }
-                                    .dropdown-menu-loop {
+                                    .dropdown-innerbox-container {
+                                        width: 100%;
+                                        display: none;
                                         opacity: 0;
-                                        @include transition-default(all,0.7s);
                                         position: absolute;
-                                        right: 24%;
-                                        top: 20px;
-                                        padding: 10px;
-                                        border-radius: 10px;
-                                        height: 96%;
-                                        background-color: rgb(247, 247, 247);
-                                        border-left: 1px solid #00000017;
-                                        ul.drop-down-box-looper {
-                                            li.drop-down-linkLopp {
+                                        right: 130px;
+                                        padding: 0 10px;
+                                        top: 0;
+                                        height: 100%;
+                                        .dropdown-innerbox-subbox {
+                                            overflow-y: scroll;
+                                            position: relative;
+                                            scroll-behavior: smooth;
+                                            li {
                                                 margin-bottom: 20px;
-                                                //position: relative;
+                                                padding: 10px;
+                                                display: flex;
+                                                width: 140px;
+                                                border-left: 1px solid #00686b84;
+                                                padding-left: 10px;
                                                 &:hover {
-                                                    .inner-menu-box {
+                                                    background-color: #00686b26;
+                                                    .dropdown-innerbox-container-2 {
+                                                        display: block;
                                                         opacity: 1;
                                                     }
                                                 }
-                                                a {
-                                                    font: {
-                                                        size: $default-font-size - 2px;
-                                                    }
-                                                    padding: 6px 10px;
-                                                    img {
-                                                        width: 15px;
-                                                        height: 15px;
-                                                        margin-left: 5px;
+                                                button#drop-subbox-content {
+                                                    width: 100%;
+                                                    background: transparent;
+                                                    border: none;
+                                                    outline: none;
+                                                    @include flex(flex,center,space-between);
+                                                    p {
+                                                        font: {
+                                                            size: $default-font-size - 3px;
+                                                        }
+                                                        margin-bottom: 0;
+                                                        color: #00686b;
                                                     }
                                                 }
-                                                .inner-menu-box {
-                                                    min-width: 700px!important;
-                                                    position: absolute;
-                                                    top: 0;
+                                                .dropdown-innerbox-container-2 {
+                                                    display: none;
                                                     opacity: 0;
-                                                    display: grid;
-                                                    grid-template-columns: auto auto auto;
-                                                    right: 150px;
-                                                    z-index: 2;
-                                                    overflow-y: scroll;
-                                                    border-radius: 10px;
-                                                    li {
-                                                        padding: 7px;
-                                                        margin-bottom: 6px;
-                                                        a {
-                                                            font: {
-                                                                size: $default-font-size + 1px;
+                                                    position: absolute;
+                                                    right: 130px;
+                                                    padding: 0 10px;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    .dropdown-innerbox-subbox {
+                                                        overflow-y: scroll;
+                                                        scroll-behavior: smooth;
+                                                        li {
+                                                            margin-bottom: 20px;
+                                                            padding: 10px;
+                                                            position: relative;
+                                                            display: flex;
+                                                            width: 140px;
+                                                            border-left: 1px solid #00686b84;
+                                                            padding-left: 10px;
+                                                            &:hover {
+                                                                background-color: #00686b26;
+                                                                // .dropdown-innerbox-container {
+                                                                //     display: block;
+                                                                //     opacity: 1;
+                                                                // }
                                                             }
-                                                            background-color: #f6f6f6;
-                                                            border-radius: 10px;
+                                                            button#drop-subbox-content {
+                                                                width: 100%;
+                                                                background: transparent;
+                                                                border: none;
+                                                                outline: none;
+                                                                @include flex(flex,center,space-between);
+                                                                p {
+                                                                    font: {
+                                                                        size: $default-font-size - 3px;
+                                                                    }
+                                                                    margin-bottom: 0;
+                                                                    color: #00686b;
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -355,69 +386,96 @@ button.menu-btn-responsive {
                             align-items: flex-start;
                             .nav-item-dropdown {
                                 .dropdown-menu-custom {
-                                    position: relative!important;
+                                    position: relative;
+                                    padding: 0;
+                                    background-color: transparent;
                                     top: 0;
-                                    box-shadow: none;
-                                    right: -20px;
-                                    width: 235px;
-                                    z-index: 1;
-                                    border: 1px solid #00000012;
+                                    right: 0;
                                     border-radius: 10px;
-                                    .dropdown-menu-container {
-                                        border-left: none;
-                                        .dropdown-menu-inner {
-                                            margin-bottom: 10px;
-                                            &:hover {
-                                                .dropdown-menu-loop {
-                                                    opacity: 1;
-                                                    height: 100%;
-                                                    display: block;
-                                                    overflow-y: scroll;
-                                                    border-left: none;
+                                    min-width: 13rem!important;
+                                    z-index: unset!important;
+                                    ul.dropdown-menu-wrapper {
+                                        position: relative;
+                                        padding-left: 0;
+                                        li.dropdown-item-content {
+                                            display: block;
+                                            width: 100%;
+                                            border-left: none!important;
+                                            border-bottom: 1px solid #00686b84;
+                                            button#drop-btn-item {
+                                                svg {
+                                                    transform: rotate(-90deg)!important;
                                                 }
                                             }
-                                            a {
-                                                font: {
-                                                    size: $default-font-size - 2px;
-                                                    family:IranYekan;
-                                                }
-                                            }
-                                            .dropdown-menu-loop {
-                                                opacity: 0;
-                                                display: none;
-                                                @include transition-default(all,0.4s);
+                                            .dropdown-innerbox-container {
                                                 position: relative;
                                                 right: 0;
-                                                top: 0;
-                                                width: 190px;
-                                                height: 0;
-                                                .drop-down-box-looper {
-                                                    .drop-down-linkLopp {
+                                                padding: 0 10px;
+                                                top: 20px;
+                                                height: unset!important;
+                                                .dropdown-innerbox-subbox {
+                                                    overflow-y: scroll;
+                                                    position: relative;
+                                                    padding-left: 0;
+                                                    li {
+                                                        margin-bottom: 20px;
+                                                        padding: 10px;
+                                                        display: block!important;
+                                                        width: 100%!important;
+                                                        border-left: 0!important;
+                                                        border-bottom: 1px solid #00686b84;
                                                         &:hover {
-                                                            .inner-menu-box {
-                                                                opacity: 1!important;
-                                                                display: grid;
-                                                                grid-template-columns: auto;
+                                                            background-color: #00686b26;
+                                                            .dropdown-innerbox-container-2 {
+                                                                display: block;
+                                                                opacity: 1;
                                                             }
                                                         }
-                                                        .inner-menu-box {
-                                                            opacity: 0;
+                                                        button#drop-subbox-content {
+                                                            svg {
+                                                                transform: rotate(-90deg);
+                                                            }
+                                                        }
+                                                        .dropdown-innerbox-container-2 {
                                                             display: none;
+                                                            opacity: 0;
                                                             position: relative;
                                                             right: 0;
-                                                            z-index: 1000;
-                                                            width: 100px!important;
-                                                            background-color: rgb(246, 246, 246);
-                                                            li {
-                                                                margin-bottom: 0!important;
-                                                                display: unset;
-                                                                a {
-                                                                    font: {
-                                                                        size: $default-font-size - 3px;
+                                                            padding: 0 10px;
+                                                            top: 0;
+                                                            height: 100%;
+                                                            .dropdown-innerbox-subbox {
+                                                                overflow-y: scroll;
+                                                                scroll-behavior: smooth;
+                                                                padding-left: 0;
+                                                                li {
+                                                                    margin-bottom: 20px;
+                                                                    padding: 10px;
+                                                                    position: relative;
+                                                                    display: flex;
+                                                                    width: 100%!important;
+                                                                    border-left: 1px solid #00686b84;
+                                                                    padding-left: 10px!important;
+                                                                    &:hover {
+                                                                        background-color: #00686b26;
+                                                                        // .dropdown-innerbox-container {
+                                                                        //     display: block;
+                                                                        //     opacity: 1;
+                                                                        // }
                                                                     }
-                                                                    img {
-                                                                        width: 10px;
-                                                                        height: 10px;
+                                                                    button#drop-subbox-content {
+                                                                        width: 100%;
+                                                                        background: transparent;
+                                                                        border: none;
+                                                                        outline: none;
+                                                                        @include flex(flex,center,space-between);
+                                                                        p {
+                                                                            font: {
+                                                                                size: $default-font-size - 3px;
+                                                                            }
+                                                                            margin-bottom: 0;
+                                                                            color: #00686b;
+                                                                        }
                                                                     }
                                                                 }
                                                             }
