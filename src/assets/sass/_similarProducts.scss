@@ -1,0 +1,92 @@
+// ------------------------ Start similarProducts section
+#similarProducts {
+    .product-list-head-content {
+        h5 {
+            position: relative;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            font: {
+                size: $default-font-size + 1px;
+            }
+            color: #4d4d4d;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 85%;
+                height: 1px;
+                background-color: #dadada;
+                top: 50%;
+                left: 0;
+            }
+        }
+    }
+    .similar-products-container {
+        .swiper-wrapper {
+            .product-list-card-container {
+                .product-list-card-inner {
+                    a {
+                        .product-list-card {
+                            background-color: #fff;
+                            padding: 10px;
+                            border-radius: 14px;
+                            img {
+                                margin-left: 6px;
+                            }
+                            .product-list-card-content {
+                                p {
+                                    color: $product-list-card-header-color;
+                                    font: {
+                                        size: $default-font-size - 3px;
+                                    }
+                                    text-align: center;
+                                }
+                                ul.detail-product {
+                                    @include flex(flex,center,center);
+                                    padding-left: 0;
+                                    li {
+                                        @include margin-padding(4px,5px,4px,5px,false);
+                                        @include margin-padding(0,3px,0,3px);
+                                        background-color: $detail-product-bg;
+                                        color: #4d4d4d;
+                                        border-radius: 5px;
+                                        font: {
+                                            size: $default-font-size - 9px;
+                                        }
+                                        i {
+                                            margin-left: 2px;
+                                        }
+                                    }
+                                }
+                                p.Price-before-discount {
+                                    text-align: right;
+                                    span {
+                                        background-color: red;
+                                        color: #fff;
+                                        font: {
+                                            size: $default-font-size - 5px;
+                                        }
+                                        padding: 3px;
+                                        border-radius: 5px;
+                                        margin-left: 4px;
+                                    }
+                                    s {
+                                        font: {
+                                            size: $default-font-size - 6px;
+                                        }
+                                        color: #919191;
+                                    }
+                                }
+                                p.price-product {
+                                    text-align: right;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+// --------------- Start footer style section
+.footer-details-header {
+    h5 {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+        font: {
+            size: $default-font-size + 9px;
+            weight: 900;
+        }
+        color: $footer-details-header;
+    }
+    p {
+        font: {
+            size: $default-font-size - 3px;
+        }
+        line-height: 35px;
+        text-align: right;
+        color: #797979;
+    }
+    .download-app-content {
+        @include margin-padding(20px,10px,20px,10px,false);
+        background-color: rgb(0, 0, 107);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        .download-app-text {
+            p {
+                margin-bottom: 0;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                font: {
+                    size: $default-font-size + 5px;
+                }
+                color: #fff;
+            }
+        }
+        .download-app-logo {
+            @include flex(flex,center,center);
+            img {
+                width: 120px;
+                height: 33px;
+                @include margin-padding(0,0,0,6px);
+            }
+        }
+    }
+}
+#footer {
+    border-radius: 20px;
+    width: 98%;
+    margin: 10px 1%;
+    background: #262626;
+    padding: 30px 30px 0 30px;
+    .footer-wrapper{
+        .visited-comment-popular-container{
+            .visited-comment-popular-inner{
+                h5{
+                    font: {
+                        size: $default-font-size;
+                    }
+                    color: $text-header-footer-color;
+                    border-right: 5px solid red;
+                    padding-right: 10px;
+                    margin-bottom: 20px;
+                }
+                ul.popular-comment-list-wrapper {
+                    li {
+                        margin-bottom: 17px;
+                        a{
+                            font: {
+                                size: $default-font-size - 3px;
+                            }
+                            color: $link-footer-color;
+                            @include transition-default(all,0.4s);
+                        }
+                        @include transition-default(all,0.4s);
+                        &:hover {
+                            transform: translateX(-4px);
+                            a{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+                .rigester-box-container{
+                    .phone-number-acount {
+                        p {
+                            font: {
+                                size: $default-font-size - 3px;
+                            }
+                            color: #eaeaea;
+                        }
+                        a {
+                            font: {
+                                size: $default-font-size - 2px;
+                            }
+                            color: #e1e1e1;
+                            display: block;
+                            margin-bottom: 40px;
+                        }
+                    }
+                    a.enamad-icon{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .under-page-text-container{
+            p{
+                font: {
+                    size: $default-font-size - 2px;
+                }
+                margin-bottom: 0;
+                color: #fff;
+            }
+            .socail-media-link-container{
+                overflow: hidden;
+                @include flex(flex,center,center);
+                a{
+                    margin-right: 12px;
+                }
+            }
+            .black-box-container{
+                margin-top: 20px;
+                .black-box-inner{
+                    width: 100%;
+                    height: 15px;
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}

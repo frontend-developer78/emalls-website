@@ -1,0 +1,1208 @@
+// ----------------- Start profile box section style
+#profileAcount {
+  .profile-btn-responsive-acount-container {
+    display: none;
+    margin-bottom: 20px;
+    #profileBtnAcount {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: gold;
+      box-shadow: 0 0 8px rgb(255, 213, 0);
+      padding: 7px;
+      border-radius: 8px;
+      @include flex(flex,center,center);
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin-left: 4px;
+      }
+      p {
+        margin-bottom: 0;
+        font: {
+          size: $default-font-size - 2px;
+        }
+        color: #262626;
+      }
+    }
+  }
+    .profile-acount-box-container {
+        .profile-acount-box-inner {
+            .profile-acount-card {
+                .nav-pills {
+                  width: 300px;
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 20px;
+                    .store-name-acount {
+                      margin-bottom: 20px;
+                      border: 1px solid #00000017;
+                      padding: 10px;
+                      border-radius: 15px;
+                      .store-acount-profile-content {
+                        h5 {
+                          font: {
+                            size: $default-font-size - 1px;
+                          }
+                          text-align: center;
+                        }
+                        ul.star-rate-comment {
+                          @include flex(flex,center,center);
+                          padding-left: 0;
+                          margin-bottom: 0;
+                          li {
+                            margin: 0 4px;
+                            filter: opacity(0.7);
+                          }
+                        }
+                      }
+                    }
+                    .nav-link {
+                        border-radius:0; 
+                        @include transition-default(all,0.4s);
+                        &:hover {
+                            color: $them-color;
+                            border-right: 2px solid #b8b8b8;
+                        }
+                        font: {
+                            size: $default-font-size;
+                            family:IRANYekan;
+                        }
+                        color: $profile-sidebar-link-color;
+                        text-align: right;
+                        margin-bottom: 20px;
+                        img {
+                            margin-left: 10px;
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    button.active {
+                        background-color: transparent;
+                    }
+                }
+                .tab-content {
+                  width: 100%;
+                    background: #ffffff;
+                    margin-right: 20px;
+                    padding: 20px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    #v-pills-profile-acount {
+                        .pills-profile-acount-header {
+                            h5 {
+                                margin-bottom: 20px;
+                                color: #2b2b2b;
+                                font: {
+                                    size: $default-font-size - 1px;
+                                }
+                                img {
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                        .pills-profile-acount-content {
+                            margin-top: 20px;
+                            table {
+                                width: 100%;
+                                background: #f5f5f5;
+                                padding: 20px;
+                                height: 150px;
+                                border-radius: 20px;
+                                margin-bottom: 50px;
+                                tr {
+                                    th {
+                                        text-align: center;
+                                        margin: 0 30px;
+                                        font: {
+                                            size: $default-font-size + 1px;
+                                            family:IRANYekan;
+                                            weight:900;
+                                        }
+                                    }
+                                    td {
+                                        text-align: center;
+                                        margin: 0 30px;
+                                        font: {
+                                            size: $default-font-size - 2px;
+                                        }
+                                        color: #818181;
+                                    }
+                                }
+                            }
+                        }
+                        .edit-profile-form {
+                            margin-top: 80px;
+                            ul#myEditProfileTab {
+                                border: none;
+                                width: 100%;
+                                @include flex(flex,center,center);
+                                li {
+                                    width: 49%;
+                                    background-color: #fff;
+                                    border-radius: 10px;
+                                    border: 1px solid #00000016;
+                                    text-align: center;
+                                    overflow: hidden;
+                                    margin: 0 0.5%;
+                                    button {
+                                        width: 100%;
+                                        padding: 10px;
+                                        color: #5a5a5a;
+                                        font: {
+                                            size: $default-font-size - 2px;
+                                        }
+                                    }
+                                    button.active {
+                                        border: none;
+                                        color: #fff;
+                                        font: {
+                                            size: $default-font-size - 2px;
+                                        }
+                                        background-color: $personal-profile-edit-bg-color;
+                                    }
+                                }
+                            }
+                            .tab-content {
+                              .tab-pane {
+                                form {
+                                  background: #f5f5f5;
+                                  padding: 20px;
+                                  border-radius: 14px;
+                                  label {
+                                    font: {
+                                      size: $default-font-size;
+                                      family:IRANYekan;
+                                      weight:900;
+                                    }
+                                    margin: 10px 0;
+                                    color: #262626;
+                                  }
+
+                                  input {
+                                    border: none;
+                                    outline: none;
+                                    box-shadow: none;
+                                    font: {
+                                      size: $default-font-size - 1px;
+                                      family:IRANYekan;
+                                    }
+                                    color: #404660;
+                                    padding: 10px;
+                                    border-radius: 9px;
+                                    @include transition-default(all,0.4s);
+                                    &:focus {
+                                      border: 1px solid #0000001e;
+                                    }
+                                  }
+                                  select {
+                                    border: none;
+                                    outline: none;
+                                    box-shadow: none;
+                                    font: {
+                                      size: $default-font-size - 1px;
+                                      family:IRANYekan;
+                                    }
+                                    color: #404660;
+                                    padding: 10px 30px 10px 0;
+                                    border-radius: 9px;
+                                    @include transition-default(all,0.4s);
+                                    &:focus {
+                                      border: 1px solid #0000001e;
+                                    }
+                                  }
+                                  button {
+                                    padding: 10px;
+                                    border: none;
+                                    outline: none;
+                                    box-shadow: none;
+                                    border-radius: 15px;
+                                    background-color: $them-color;
+                                    color: #fff;
+                                    font: {
+                                      size: $default-font-size - 2px;
+                                    }
+                                    @include transition-default(all,0.4s);
+                                    &:hover {
+                                      background-color: rgb(0, 135, 0);
+                                      transform: translateY(-3px);
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                        }
+                    }
+                    #v-pills-bag {
+                      .my-orders-card-container {
+                        .my-orders-card-inner {
+                          h5 {
+                            margin-bottom: 20px;
+                            color: #002183;
+                            font: {
+                              size: $default-font-size + 1px;
+                            }
+                          }
+                          .container {
+                            .my-orders-card {
+                              a {
+                                .product-list-card {
+                                    background-color: #ffffff;
+                                    padding: 10px;
+                                    border: 1px solid #0000001b;
+                                    border-radius: 14px;
+                                    img {
+                                        width: 80%;
+                                        margin: 0 10%;
+                                    }
+                                    .product-list-card-content {
+                                        p {
+                                            color: $product-list-card-header-color;
+                                            font: {
+                                                size: $default-font-size + 3px;
+                                                family:IRANYekan;
+                                            }
+                                            text-align: center;
+                                        }
+                                        ul.detail-product {
+                                            @include flex(flex,center,center);
+                                            padding-left: 0;
+                                            li {
+                                                @include margin-padding(4px,5px,4px,5px,false);
+                                                @include margin-padding(0,3px,0,3px);
+                                                background-color: $detail-product-bg;
+                                                color: #4d4d4d;
+                                                border-radius: 5px;
+                                                font: {
+                                                    size: $default-font-size - 4px;
+                                                }
+                                            }
+                                        }
+                                        p.price-product {
+                                            text-align: right;
+                                            margin-bottom: 10px;
+                                        }
+                                        p.Store-name-product {
+                                          text-align: right;
+                                          margin-top: 10px;
+                                          font: {
+                                            size: $default-font-size - 1px;
+                                            family: IRANYekan;
+                                            weight:900;
+                                          }
+                                          span {
+                                            padding: 5px;
+                                            font: {
+                                              size: $default-font-size - 2px;
+                                            }
+                                            color: #fff;
+                                            border-radius: 5px 5px 0 5px;
+                                            background-color: red;
+                                          }
+                                        }
+                                    }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    #v-pills-like-folder {
+                      .like-product-folder-container {
+                        .like-product-folder-inner {
+                          h5 {
+                            margin-bottom: 20px;
+                            color: #002183;
+                            font: {
+                              size: $default-font-size - 1px;
+                            }
+                          }
+                          .container {
+                            .ticket-table-container {
+                              border-radius: 10px;
+                              overflow: hidden;
+                              border: 1px solid #0000001c;
+                              max-height: 400px;
+                              overflow-y: scroll;
+                              width: 100%;
+                              display: block;
+                              thead {
+                                background: #f0f0f0;
+                                tr {
+                                  td,th {
+                                    width: 200px;
+                                    padding: 10px;
+                                    font: {
+                                      size: $default-font-size - 1px;
+                                    }
+                                    color: #434343;
+                                    text-align: center;
+                                    border-left: 1px solid #0000001d;
+                                  }
+                                }
+                              }
+                              tbody {
+                                tr {
+                                  th,td {
+                                    width: 200px;
+                                    padding: 10px;
+                                    font: {
+                                      family:IRANYekan;
+                                      size: $default-font-size - 1px;
+                                    }
+                                    img {
+                                      width: 25px;
+                                      height: 25px;
+                                      margin-left: 5px;
+                                    }
+                                    color: #434343;
+                                    text-align: right;
+                                    padding-right: 6px;
+                                    border-left: 1px solid #0000001d;
+                                  }
+                                }
+                              }
+                            }
+                            .Documents-btn {
+                              margin-top: 20px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: flex-start;
+                              width: fit-content;
+                              height: 45px;
+                              border: none;
+                              padding: 0px 15px;
+                              border-radius: 12px;
+                              background-color: rgb(49, 49, 83);
+                              gap: 10px;
+                              cursor: pointer;
+                              transition: all 0.3s;
+                              &:active {
+                                transform: scale(0.95);
+                              }
+                              &:hover {
+                                background-color: rgb(58, 58, 94);
+                                .filePage {
+                                  transform: translateY(-5px);
+                                }
+                                .fileFront {
+                                  transform: rotateX(30deg);
+                                }
+                              }
+                              .folderContainer {
+                                width: 40px;
+                                height: fit-content;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: flex-end;
+                                position: relative;
+                                .fileBack {
+                                  z-index: 1;
+                                  width: 80%;
+                                  height: auto;
+                                }
+                                .filePage {
+                                  width: 50%;
+                                  height: auto;
+                                  position: absolute;
+                                  z-index: 2;
+                                  transition: all 0.3s ease-out;
+                                }
+                                .fileFront {
+                                  width: 85%;
+                                  height: auto;
+                                  position: absolute;
+                                  z-index: 3;
+                                  opacity: 0.95;
+                                  transform-origin: bottom;
+                                  transition: all 0.3s ease-out;
+                                }
+                              }
+                              .text {
+                                color: white;
+                                font: {
+                                  size: $default-font-size - 1px;
+                                  family: IRANYekan;
+                                }
+                                font-weight: 600;
+                                letter-spacing: 0.5px;
+                                margin-bottom: 0;
+                              }
+                            }
+                            .ticket-form-container {
+                              display: none;
+                              margin-top: 30px;
+                              form.ticket-form {
+                                padding: 20px;
+                                border: 1px solid #0000002f;
+                                border-radius: 20px;
+                                label {
+                                  font: {
+                                    size: $default-font-size - 1px;
+                                    family:IRANYekan;
+                                  }
+                                }
+                                input,select {
+                                  //padding: 7px;
+                                  outline: none;
+                                  box-shadow: none;
+                                  @include transition-default(all,0.4s);
+                                  border: 1px solid #0000000e;
+                                  &:focus {
+                                    border: 2px solid #2205de32;
+                                  }
+                                  border-radius: 10px;
+                                  margin-top: 7px;
+                                  font: {
+                                    size: $default-font-size - 1px;
+                                  }
+                                  color: #404040;
+                                }
+                                textarea {
+                                  display: block;
+                                  margin-top: 10px;
+                                  width: 100%;
+                                  padding: 20px;
+                                  box-shadow: none;
+                                  outline: none;
+                                  @include transition-default(all,0.4s);
+                                  border: 1px solid #0000000e;
+                                  &:focus {
+                                    border: 2px solid #2205de32;
+                                  }
+                                  border-radius: 10px;
+                                }
+                                .ticket-file-container {
+                                  background-color: #dbb0ff1f;
+                                  padding: 20px;
+                                  border-radius: 20px;
+                                  input#ticketfile {
+                                    display: block;
+                                    padding: 15px;
+                                  }
+                                }
+                                .button-ticket-form {
+                                  margin-top: 20px;
+                                  width: 100%;
+                                  display: inline-block;
+                                  transition: all 0.2s ease-in;
+                                  position: relative;
+                                  overflow: hidden;
+                                  z-index: 1;
+                                  color: #090909;
+                                  padding: 0.7em 1.7em;
+                                  cursor: pointer;
+                                  font: {
+                                    size: $default-font-size - 1px;
+                                  }
+                                  border-radius: 0.5em;
+                                  background: #f5f5f5;
+                                  border: 1px solid #e8e8e8;
+                                  box-shadow: 6px 6px 12px #c5c5c576, -6px -6px 12prgba(255, 255, 255, 0.292)ff;
+                                  &:active {
+                                    color: #666;
+                                    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+                                  }
+                                  &::before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+                                    top: 100%;
+                                    width: 140%;
+                                    height: 180%;
+                                    background-color: rgba(0, 0, 0, 0.05);
+                                    border-radius: 50%;
+                                    display: block;
+                                    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                                    z-index: -1;
+                                  }
+                                  &::after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 55%;
+                                    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+                                    top: 180%;
+                                    width: 160%;
+                                    height: 190%;
+                                    background-color: #009087;
+                                    border-radius: 50%;
+                                    display: block;
+                                    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                                    z-index: -1;
+                                  }
+                                  &:hover {
+                                    color: #ffffff;
+                                    border: 1px solid #009087;
+                                    &::before {
+                                      top: -35%;
+                                      background-color: #009087;
+                                      transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                                    }
+                                    &::after {
+                                      top: -45%;
+                                      background-color: #009087;
+                                      transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    #v-pills-Bill {
+                      .bill-ticket-folder-container {
+                        .bill-ticket-folder-inner {
+                          h5 {
+                            margin-bottom: 20px;
+                            color: #002183;
+                            font: {
+                              size: $default-font-size - 1px;
+                            }
+                          }
+                          .container {
+                            .ticket-table-container {
+                              border-radius: 10px;
+                              overflow: hidden;
+                              border: 1px solid #0000001c;
+                              max-height: 400px;
+                              overflow-y: scroll;
+                              width: 100%;
+                              display: block;
+                              thead {
+                                background: #f0f0f0;
+                                tr {
+                                  td,th {
+                                    width: 200px;
+                                    padding: 10px;
+                                    font: {
+                                      size: $default-font-size - 1px;
+                                    }
+                                    color: #434343;
+                                    text-align: center;
+                                    border-left: 1px solid #0000001d;
+                                  }
+                                  td {
+                                    width: 50px!important;
+                                  }
+                                }
+                              }
+                              tbody {
+                                tr {
+                                  th,td {
+                                    width: 200px;
+                                    padding: 10px;
+                                    font: {
+                                      family:IRANYekan;
+                                      size: $default-font-size - 1px;
+                                    }
+                                    img {
+                                      width: 25px;
+                                      height: 25px;
+                                      margin-left: 5px;
+                                    }
+                                    color: #434343;
+                                    text-align: right;
+                                    padding-right: 6px;
+                                    border-left: 1px solid #0000001d;
+                                  }
+                                  th {
+                                    width: 50px!important;
+                                    text-align: center;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    #v-pills-comments {
+                      .my-tab-pane-comments {
+                        .my-tab-pane-comments-inner {
+                          .comment-seller-item-box {
+                            margin-bottom: 20px;
+                            border: 1px solid #0000001c;
+                            @include margin-padding(20px,20px,20px,20px,false);
+                            border-radius: 20px;
+                            overflow: hidden;
+                            .comment-seller-item-box-head {
+                                padding-bottom: 15px;
+                                margin-bottom: 15px;
+                                border-bottom: 1px solid #00000011;
+                                @include flex(flex,center,space-between);
+                                .profile-icon-container {
+                                    @include flex(flex,center,center);
+                                    .profile-icon-image {
+                                        width: 50px;
+                                        height: 50px;
+                                        margin-left: 10px;
+                                        border-radius: 100%;
+                                        overflow: hidden;
+                                    }
+                                    div {
+                                        h4 {
+                                            font: {
+                                                size: $default-font-size - 1px;
+                                            }
+                                            margin-bottom: 0;
+                                        }
+                                        span {
+                                            font: {
+                                                size: $default-font-size - 3px;
+                                            }
+                                            color: #838383;
+                                        }
+                                    }
+                                }
+                                div {
+                                    ul.star-rate-comment {
+                                        margin-bottom: 10px;
+                                        padding-left: 0;
+                                        @include flex(flex,center,center);
+                                        li {
+                                            margin: 0 1px;
+                                            i {
+                                                color: rgb(255, 179, 0);
+                                            }
+                                        }
+                                    }
+                                    button.retwitteBtn {
+                                        border: none;
+                                        outline: none;
+                                        box-shadow: none;
+                                        padding: 10px;
+                                        border-radius: 14px;
+                                        background-color: #caffc7;
+                                        color: green;
+                                        box-shadow: 0 2px 3px rgba(11, 237, 3, 0.709);
+                                        font: {
+                                            size: $default-font-size - 3px;
+                                        }
+                                    }
+                                }
+                            }
+                            .comment-seller-item-box-text {
+                                p {
+                                    font: {
+                                        size: $default-font-size - 1px;
+                                    }
+                                }
+                                div.boxSubmitRetwitte {
+                                    height: 0;
+                                    opacity: 0;
+                                    @include transition-default(all,0.4s);
+                                    .retwitteCommentProduct {
+                                        width: 100%;
+                                        padding: 20px;
+                                        border-radius: 14px;
+                                        border: 1px solid #0000000e;
+                                        font: {
+                                            size: $default-font-size - 3px;
+                                        }
+                                        &::placeholder {
+                                            font: {
+                                                size: $default-font-size - 3px;
+                                            }
+                                        }
+                                        color: #3f3f3f;
+                                    }
+                                    #SubmitRetwitteBtn {
+                                        border: none;
+                                        outline: none;
+                                        box-shadow: none;
+                                        padding: 10px;
+                                        border-radius: 14px;
+                                        background-color: #ffc7c7;
+                                        color: rgb(128, 0, 0);
+                                        box-shadow: 0 2px 3px rgba(237, 3, 3, 0.709);
+                                        font: {
+                                            size: $default-font-size - 3px;
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    #v-pills-location {
+                      iframe {
+                        width: 100%;
+                        height: 450px;
+                        overflow: hidden;
+                        border-radius: 20px;
+                      }
+                    }
+                    #v-pills-visited {
+                      .like-product-folder-container {
+                        .like-product-folder-inner {
+                          h5 {
+                            margin-bottom: 20px;
+                            color: #002183;
+                            font: {
+                              size: $default-font-size - 1px;
+                            }
+                          }
+                          .container {
+                            .ticket-table-container {
+                              border-radius: 10px;
+                              overflow: hidden;
+                              border: 1px solid #0000001c;
+                              max-height: 400px;
+                              overflow-y: scroll;
+                              width: 100%;
+                              display: block;
+                              thead {
+                                background: #f0f0f0;
+                                tr {
+                                  td,th {
+                                    width: 200px;
+                                    padding: 10px;
+                                    font: {
+                                      size: $default-font-size - 1px;
+                                    }
+                                    color: #434343;
+                                    text-align: center;
+                                    border-left: 1px solid #0000001d;
+                                  }
+                                }
+                              }
+                              tbody {
+                                tr {
+                                  th,td {
+                                    width: 200px;
+                                    padding: 10px;
+                                    font: {
+                                      family:IRANYekan;
+                                      size: $default-font-size - 1px;
+                                    }
+                                    img {
+                                      width: 25px;
+                                      height: 25px;
+                                      margin-left: 5px;
+                                    }
+                                    color: #434343;
+                                    text-align: right;
+                                    padding-right: 6px;
+                                    border-left: 1px solid #0000001d;
+                                  }
+                                }
+                              }
+                            }
+                            .ticket-form-container {
+                              margin-top: 30px;
+                              form.ticket-form {
+                                padding: 20px;
+                                border: 1px solid #0000002f;
+                                border-radius: 20px;
+                                label {
+                                  font: {
+                                    size: $default-font-size - 1px;
+                                    family:IRANYekan;
+                                  }
+                                }
+                                input,select {
+                                  //padding: 7px;
+                                  outline: none;
+                                  box-shadow: none;
+                                  @include transition-default(all,0.4s);
+                                  border: 1px solid #0000000e;
+                                  &:focus {
+                                    border: 2px solid #2205de32;
+                                  }
+                                  border-radius: 10px;
+                                  margin-top: 7px;
+                                  font: {
+                                    size: $default-font-size - 1px;
+                                  }
+                                  color: #404040;
+                                }
+                                textarea {
+                                  display: block;
+                                  margin-top: 10px;
+                                  width: 100%;
+                                  padding: 20px;
+                                  box-shadow: none;
+                                  outline: none;
+                                  @include transition-default(all,0.4s);
+                                  border: 1px solid #0000000e;
+                                  &:focus {
+                                    border: 2px solid #2205de32;
+                                  }
+                                  border-radius: 10px;
+                                }
+                                .ticket-file-container {
+                                  background-color: #dbb0ff1f;
+                                  padding: 20px;
+                                  border-radius: 20px;
+                                  input#ticketfile {
+                                    display: block;
+                                    padding: 15px;
+                                  }
+                                }
+                                .button-ticket-form {
+                                  margin-top: 20px;
+                                  width: 100%;
+                                  display: inline-block;
+                                  transition: all 0.2s ease-in;
+                                  position: relative;
+                                  overflow: hidden;
+                                  z-index: 1;
+                                  color: #090909;
+                                  padding: 0.7em 1.7em;
+                                  cursor: pointer;
+                                  font: {
+                                    size: $default-font-size - 1px;
+                                  }
+                                  border-radius: 0.5em;
+                                  background: #f5f5f5;
+                                  border: 1px solid #e8e8e8;
+                                  box-shadow: 6px 6px 12px #c5c5c576, -6px -6px 12prgba(255, 255, 255, 0.292)ff;
+                                  &:active {
+                                    color: #666;
+                                    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+                                  }
+                                  &::before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+                                    top: 100%;
+                                    width: 140%;
+                                    height: 180%;
+                                    background-color: rgba(0, 0, 0, 0.05);
+                                    border-radius: 50%;
+                                    display: block;
+                                    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                                    z-index: -1;
+                                  }
+                                  &::after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 55%;
+                                    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+                                    top: 180%;
+                                    width: 160%;
+                                    height: 190%;
+                                    background-color: #009087;
+                                    border-radius: 50%;
+                                    display: block;
+                                    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                                    z-index: -1;
+                                  }
+                                  &:hover {
+                                    color: #ffffff;
+                                    border: 1px solid #009087;
+                                    &::before {
+                                      top: -35%;
+                                      background-color: #009087;
+                                      transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                                    }
+                                    &::after {
+                                      top: -45%;
+                                      background-color: #009087;
+                                      transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.continue-application {
+  --color: #fff;
+  --background: #404660;
+  --background-hover: #3A4059;
+  --background-left: #2B3044;
+  --folder: #F3E9CB;
+  --folder-inner: #BEB393;
+  --paper: #FFFFFF;
+  --paper-lines: #BBC1E1;
+  --paper-behind: #E1E6F9;
+  --pencil-cap: #fff;
+  --pencil-top: #275EFE;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5C86FF;
+  --shadow: rgba(13, 15, 25, .2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  float: left;
+  transform: translateY(-40px);
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: IranYekan;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 53px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  background: var(--background-left);
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: .15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: .15s;
+  --pex: -24px;
+}
+
+.activ-ticket-form {
+  display: block!important;
+}
+
+
+/////////////////////////////// responsive section
+@media only screen and (max-width:992px) {
+  #profileAcount {
+    margin-top: 80px!important;
+    .profile-btn-responsive-acount-container {
+      display: block;
+    }
+    .profile-acount-box-container {
+      .profile-acount-box-inner {
+        .profile-acount-card {
+          .profile-acount-card-wrapper {
+            display: block!important;
+            .nav-pills {
+              position: absolute;
+              z-index: 1000;
+              top: 130px;
+              display: none;
+              right: 0;
+            }
+            .nav-pills-active {
+              display: block!important;
+              box-shadow: 0 0 8px rgba(46, 46, 46, 0.209);
+            }
+            .tab-content {
+              padding: 15px 0;
+              margin-right: 0;
+              h5 {
+                padding-right: 20px;
+              }
+              #v-pills-profile-acount {
+                .pills-profile-acount-content {
+                  table {
+                    overflow-x: scroll;
+                    tr {
+                      padding: 10px;
+                      @include flex(flex,center,center);
+                      flex-direction: column;
+                      th,td {
+                        margin-bottom: 10px;
+                      }
+                    }
+                  }
+                  .edit-profile-form {
+                    .tab-content {
+                      .edit-personal-profile {
+                        form {
+                          margin-top: 20px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              #v-pills-bag {
+                .my-orders-card-container {
+                  .my-orders-card-inner {
+                    h5 {
+                      margin-right: 15px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .pills-profile-acount-content {
+    table {
+      tbody {
+        @include flex(flex,center,space-between);
+      }
+    }
+  }
+}

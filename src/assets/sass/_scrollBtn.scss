@@ -1,0 +1,29 @@
+// ------------------ Start scroll Btn style section
+#scrollBtn {
+    position: fixed;
+    z-index: 20200;
+    bottom: -70px;
+    left: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    @include transition-default(all,0.4s);
+    &:hover {
+        transform: scale(1.07);
+        text-shadow: 0 0 8px rgba(0,0,0,0.1);
+        bottom: 24px;
+    }
+}
+.activa-scroll-btn {
+    bottom: 20px!important;
+}
+
+@media only screen and (max-width:992px) {
+    .activa-scroll-btn {
+        bottom: 130px!important;
+        left: 10px!important;
+    }
+    #tumbnailBaner {
+        margin-top: 70px!important;
+    }
+}

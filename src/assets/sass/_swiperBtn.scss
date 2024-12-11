@@ -1,0 +1,12 @@
+// --------------------- Start Style Swiper btn
+.swiper-button-prev, .swiper-button-next{
+    background-color: #ffffff;
+    color: #008700!important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.196);
+    border-radius: 6px;
+    &::after {
+        font: {
+            size: $default-font-size + 4px!important;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $(".owl-loop").owlCarousel({
+        margin:10,
+        loop:false,
+        nav:true,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1200:{
+            items:10
+        },
+        1400: {
+            items:7
+        }
+    }
+    });
+});

@@ -1,0 +1,583 @@
+// -------------- start navbar section style
+body {
+    background: #ecf0f6!important;
+}
+.navbar-brand-responsive {
+    display: none;
+}
+#navbar{
+    @include transition-default(all,0.4s);
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    nav.navbar{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 98%;
+        margin: 10px 1%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.086);
+        div {
+            flex-wrap: nowrap;
+            a.navbar-brand{
+                color: $navbar-brand-color;
+                span{
+                    color: $them-color;
+                }
+            }
+            .navbar-collapse{
+                @include flex(flex,center,space-between);
+                ul.navbar-nav{
+                    @include flex(flex,center,center);
+                    flex-direction: row;
+                    margin-right: 10px;
+                    li.nav-item{
+                        .nav-link{
+                            cursor: pointer;
+                            color: $navbar-link-color;
+                            @include transition-default(all, 0.4s);
+                            font: {
+                                size: $default-font-size - 3px;
+                            }
+                            &:hover {
+                                color: $them-color;
+                            }
+                        }
+                    }
+                    .nav-item-dropdown {
+                        position: relative;
+                        .dropdown-menu-custom {
+                            display: none;
+                            position: absolute;
+                            overflow: hidden;
+                            background-color: #fff;
+                            border-radius: 0 0 20px 20px;
+                            min-width: 55rem;
+                            top: 100%;
+                            padding: 40px;
+                            right: 0;
+                            z-index: -2;
+                            ul.dropdown-menu-wrapper {
+                                position: relative;
+                                li.dropdown-item-content {
+                                    margin-bottom: 20px;
+                                    padding: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 140px;
+                                    border-left: 1px solid #00686b84;
+                                    padding-left: 10px;
+                                    @include transition-default(all,0.4s);
+                                    &:hover {
+                                        background-color: #00686b26;
+                                        .dropdown-innerbox-container {
+                                            display: block;
+                                            opacity: 1;
+                                        }
+                                    }
+                                    button#drop-btn-item {
+                                        width: 100%;
+                                        background: transparent;
+                                        border: none;
+                                        outline: none;
+                                        @include flex(flex,center,space-between);
+                                        p {
+                                            font: {
+                                                size: $default-font-size - 3px;
+                                            }
+                                            margin-bottom: 0;
+                                            color: #00686b;
+                                        }
+                                    }
+                                    .dropdown-innerbox-container {
+                                        width: 100%;
+                                        display: none;
+                                        opacity: 0;
+                                        position: absolute;
+                                        right: 130px;
+                                        padding: 0 10px;
+                                        top: 0;
+                                        height: 100%;
+                                        .dropdown-innerbox-subbox {
+                                            overflow-y: scroll;
+                                            position: relative;
+                                            scroll-behavior: smooth;
+                                            li {
+                                                margin-bottom: 20px;
+                                                padding: 10px;
+                                                display: flex;
+                                                width: 140px;
+                                                border-left: 1px solid #00686b84;
+                                                padding-left: 10px;
+                                                &:hover {
+                                                    background-color: #00686b26;
+                                                    .dropdown-innerbox-container-2 {
+                                                        display: block;
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                                button#drop-subbox-content {
+                                                    width: 100%;
+                                                    background: transparent;
+                                                    border: none;
+                                                    outline: none;
+                                                    @include flex(flex,center,space-between);
+                                                    p {
+                                                        font: {
+                                                            size: $default-font-size - 3px;
+                                                        }
+                                                        margin-bottom: 0;
+                                                        color: #00686b;
+                                                    }
+                                                }
+                                                .dropdown-innerbox-container-2 {
+                                                    display: none;
+                                                    opacity: 0;
+                                                    position: absolute;
+                                                    right: 130px;
+                                                    padding: 0 10px;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    .dropdown-innerbox-subbox {
+                                                        overflow-y: scroll;
+                                                        scroll-behavior: smooth;
+                                                        li {
+                                                            margin-bottom: 20px;
+                                                            padding: 10px;
+                                                            position: relative;
+                                                            display: flex;
+                                                            width: 140px;
+                                                            border-left: 1px solid #00686b84;
+                                                            padding-left: 10px;
+                                                            &:hover {
+                                                                background-color: #00686b26;
+                                                                // .dropdown-innerbox-container {
+                                                                //     display: block;
+                                                                //     opacity: 1;
+                                                                // }
+                                                            }
+                                                            button#drop-subbox-content {
+                                                                width: 100%;
+                                                                background: transparent;
+                                                                border: none;
+                                                                outline: none;
+                                                                @include flex(flex,center,space-between);
+                                                                p {
+                                                                    font: {
+                                                                        size: $default-font-size - 3px;
+                                                                    }
+                                                                    margin-bottom: 0;
+                                                                    color: #00686b;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .regester-profile-btn {
+                    border: 1px solid #0000002a;
+                    outline: none;
+                    background-color: transparent;
+                    @include flex(flex,center,center);
+                    @include margin-padding(10px,12px,10px,12px,false);
+                    border-radius: 10px;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        background-color: #fffbf3;
+                        box-shadow: 0 0 10px rgb(254, 231, 207);
+                    }
+                    p {
+                        font: {
+                            size: $default-font-size - 2px;
+                        }
+                        color: #292929;
+                        margin-bottom: 0;
+                    }
+                }
+                .user-acount-section{
+                    position: relative;
+                    button.user-profile-btn{
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        @include flex(flex,center,center);
+                        @include margin-padding(10px,12px,10px,12px,false);
+                        background-color: #ffd000;
+                        border-radius: 10px;
+                        p {
+                            font: {
+                                size: $default-font-size - 2px;
+                            }
+                            color: #292929;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .user-acount-box-container{
+                        position: absolute;
+                        top: 51px;
+                        left: 10px;
+                        width: 10rem;
+                        height: 0;
+                        @include transition-default(all,0.4s);
+                        overflow: hidden;
+                        ul.user-acount-inner{
+                            @include margin-padding(10px,10px,10px,10px,false);
+                            border-radius: 10px;
+                            background-color: #ffffffec;
+                            li.profile-acount-list{
+                                a{
+                                    @include transition-default(all,0.4s);
+                                    text-decoration: none;
+                                    font: {
+                                        size: $default-font-size - 2px;
+                                    }
+                                    color: #353535;
+                                    img{
+                                        margin-left: 4px;
+                                        @include transition-default(all,0.4s);
+                                    }
+                                    &:hover{
+                                        color: #00686b;
+                                        img{
+                                            transform: rotate(5deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                button.store-registration {
+                    @include margin-padding(8px,10px,8px,10px,false);
+                    font: {
+                        size: $default-font-size - 1px;
+                    }
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    background: $them-color;
+                    color: #fff;
+                    box-shadow: 0 0 12px rgba(0, 199, 103, 0.902);
+                }
+            }
+        }
+    }
+}
+#responsiveNavbar {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    z-index: 1001;
+    width: 98%;
+    margin: 0 1%;
+    background: rgb(229,255,253);
+    background: linear-gradient(0deg, rgb(240, 255, 254) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px -7px 19px rgba(0, 0, 0, 0.2);
+    .navbar-responsive-container {
+        .navbar-ersponsive-inner {
+            @include flex(flex,center,space-between);
+            @include margin-padding(10px,20px,10px,20px,false);
+            margin-bottom: 0;
+            .navbar-responsive-link {
+                @include flex(flex,center,center);
+                flex-direction: column;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                }
+                button {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    background-color: transparent;
+                    font: {
+                        size: $default-font-size - 3px;
+                    }
+                    color: #555555;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        color: $them-color;
+                    }
+                }
+                p {
+                    font: {
+                        size: $default-font-size - 3px;
+                    }
+                    color: #555555;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        color: $them-color;
+                    }
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+button.menu-btn-responsive {
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    top: 20px;
+    left: 70px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    @include margin-padding(5px,7px,5px,7px,false);
+    border-radius: 6px;
+    font-family: IRANSansXfanumberBold;
+    i {
+        vertical-align: -2px;
+    }
+}
+.user-acount-responsive-section {
+    display: none;
+}
+.active-user-acount-box{
+    height: 15rem!important;
+}
+.dropdown-menu-active {
+    height: unset!important;
+    display: block!important;
+    @include transition-default(all,0.4s);
+}
+
+@media only screen and (max-width: 992px) {
+    #navbar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        overflow-y: scroll;
+        height: 100vh;
+        background:rgb(255, 253, 250);
+        right: -500px;
+        @include transition-default(all,0.4s);
+        div.container-fluid {
+            height: 100%;
+            nav.navbar {
+                height: 100%;
+                width: 100%;
+                border: 0;
+                box-shadow: none;
+                align-items: flex-start;
+                .navbar-box-wrapper {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    .navbar-collapse {
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        ul.navbar-nav {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .nav-item-dropdown {
+                                .dropdown-menu-custom {
+                                    position: relative;
+                                    padding: 0;
+                                    background-color: transparent;
+                                    top: 0;
+                                    right: 0;
+                                    border-radius: 10px;
+                                    min-width: 13rem!important;
+                                    z-index: unset!important;
+                                    ul.dropdown-menu-wrapper {
+                                        position: relative;
+                                        padding-left: 0;
+                                        li.dropdown-item-content {
+                                            display: block;
+                                            width: 100%;
+                                            border-left: none!important;
+                                            border-bottom: 1px solid #00686b84;
+                                            button#drop-btn-item {
+                                                svg {
+                                                    transform: rotate(-90deg)!important;
+                                                }
+                                            }
+                                            .dropdown-innerbox-container {
+                                                position: relative;
+                                                right: 0;
+                                                padding: 0 10px;
+                                                top: 20px;
+                                                height: unset!important;
+                                                .dropdown-innerbox-subbox {
+                                                    overflow-y: scroll;
+                                                    position: relative;
+                                                    padding-left: 0;
+                                                    li {
+                                                        margin-bottom: 20px;
+                                                        padding: 10px;
+                                                        display: block!important;
+                                                        width: 100%!important;
+                                                        border-left: 0!important;
+                                                        border-bottom: 1px solid #00686b84;
+                                                        &:hover {
+                                                            background-color: #00686b26;
+                                                            .dropdown-innerbox-container-2 {
+                                                                display: block;
+                                                                opacity: 1;
+                                                            }
+                                                        }
+                                                        button#drop-subbox-content {
+                                                            svg {
+                                                                transform: rotate(-90deg);
+                                                            }
+                                                        }
+                                                        .dropdown-innerbox-container-2 {
+                                                            display: none;
+                                                            opacity: 0;
+                                                            position: relative;
+                                                            right: 0;
+                                                            padding: 0 10px;
+                                                            top: 0;
+                                                            height: 100%;
+                                                            .dropdown-innerbox-subbox {
+                                                                overflow-y: scroll;
+                                                                scroll-behavior: smooth;
+                                                                padding-left: 0;
+                                                                li {
+                                                                    margin-bottom: 20px;
+                                                                    padding: 10px;
+                                                                    position: relative;
+                                                                    display: flex;
+                                                                    width: 100%!important;
+                                                                    border-left: 1px solid #00686b84;
+                                                                    padding-left: 10px!important;
+                                                                    &:hover {
+                                                                        background-color: #00686b26;
+                                                                        // .dropdown-innerbox-container {
+                                                                        //     display: block;
+                                                                        //     opacity: 1;
+                                                                        // }
+                                                                    }
+                                                                    button#drop-subbox-content {
+                                                                        width: 100%;
+                                                                        background: transparent;
+                                                                        border: none;
+                                                                        outline: none;
+                                                                        @include flex(flex,center,space-between);
+                                                                        p {
+                                                                            font: {
+                                                                                size: $default-font-size - 3px;
+                                                                            }
+                                                                            margin-bottom: 0;
+                                                                            color: #00686b;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .btn-group-navbar {
+                            width: 100%;
+                            display: block!important;
+                            flex-direction: column;
+                            gap: 20px;
+                            align-items: flex-start;
+                            a, .user-acount-section, button {
+                                margin-right: 0!important;
+                                margin-top: 10px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu-response-active {
+        right: 0!important;
+    }
+    button.menu-btn-responsive {
+        display: block!important;
+    }
+    .navbar-brand-responsive {
+        display: block!important;
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        right: 20px;
+        font: {
+            size: $default-font-size + 5px;
+        }
+        color: #202020;
+        span{
+            color: rgb(255, 153, 0);
+            margin-right: 5px;
+        }
+    }
+    .user-acount-responsive-section {
+        display: inline-block!important;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10000;
+        button.user-profile-btn{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            i {
+                @include margin-padding(9px,10px,9px,10px,false);
+                background-color: #fff;
+                border-radius: 8px;
+            }
+        }
+        .user-acount-box-container{
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            width: 10rem;
+            height: 0;
+            @include transition-default(all,0.4s);
+            overflow: hidden;
+            ul.user-acount-inner{
+                @include margin-padding(10px,10px,10px,10px,false);
+                border-radius: 10px;
+                background-color: #ffffffec;
+                li.profile-acount-list{
+                    a{
+                        @include transition-default(all,0.4s);
+                        text-decoration: none;
+                        font: {
+                            size: $default-font-size - 2px;
+                        }
+                        color: #353535;
+                        img{
+                            margin-left: 4px;
+                            @include transition-default(all,0.4s);
+                        }
+                        &:hover{
+                            color: #00686b;
+                            img{
+                                transform: rotate(5deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #responsiveNavbar {
+        display: block;
+    }
+}

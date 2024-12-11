@@ -1,0 +1,145 @@
+// ------------ Start header section style
+#header {
+    .header-baner-image{
+        width: 98%;
+        margin: 0 1%;
+        border-radius: 46px;
+        margin-top: 20px;
+    }
+    .header-baner-image-responsive {
+        display: none;
+    }
+    position: relative;
+    .search-header-container {
+        position: absolute;
+        top: 50%;
+        .search-header-content {
+            color: $search-header-content;
+            font: {
+                size: $default-font-size + 10px;
+            }
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 10px;
+            .search-form-container {
+                background-color: #fff;
+                max-width: 500px;
+                padding: 15px;
+                border-radius: 16px;
+                @include flex(flex,center,center);
+                input {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    width: 100%;
+                    font: {
+                        size: $default-font-size - 2px;
+                    }
+                    &::placeholder {
+                        font: {
+                            size: $default-font-size - 2px;
+                        }
+                        color: #686868;
+                    }
+                }
+                button {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+                    i {
+                        background-color: #11B76B;
+                        padding: 10px;
+                        border-radius: 6px;
+                        box-shadow: 0 0 20px rgb(0 128 69);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .last-searching-content {
+            ul {
+                @include flex(flex,center,flex-start);
+                li {
+                    background: #fff;
+                    @include margin-padding(3px,4px,3px,4px,false);
+                    @include margin-padding(0,4px,0,4px);
+                    border-radius: 5px;
+                    @include transition-default(all,0.4s);
+                    &:hover {
+                        transform: skewX(5deg);
+                        box-shadow: 0 0 12px rgba(0, 0, 0, 0.27);
+                    }
+                    a {
+                        font: {
+                            size: $default-font-size - 3px;
+                        }
+                        color: #404040;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #header {
+        .header-baner-image {
+            display: none;
+        }
+        .header-baner-image-responsive {
+            display: block;
+        }
+        .search-header-container {
+            .search-header-content {
+                display: none;
+            }
+            form {
+                .search-form-container {
+                    padding: 6px!important;
+                }
+            }
+        }
+        .last-searching-content {
+            ul {
+                li {
+                    a {
+                        font: {
+                            size: $default-font-size - 9px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    #header {
+        .search-header-container {
+            form {
+                .search-form-container {
+                    border-radius: 9px;
+                }
+            }
+            .last-searching-content {
+                ul {
+                    padding-left: 0;
+                    justify-content: center!important;
+                    li {
+                        a {
+                            font: {
+                                size: $default-font-size - 8px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// ------------------- start category section style
+#category {
+    width: 98%;
+    margin: 0 1%;
+    border-radius: 20px;
+    overflow: hidden;
+    .category-carousel-wrapper {
+        .category-carousel-container {
+            .swiper-wrapper {
+                .carousel-card-inner {
+                    a {
+                        @include flex(flex,center,center);
+                        @include margin-padding(0,5px,0,5px);
+                        flex-direction: column;
+                        img {
+                            transform: scale(0.5);
+                            padding: 10px;
+                            background: #d8f1fd;
+                            border-radius: 20px;
+                        }
+                        p {
+                            font: {
+                                size: $default-font-size - 3px;
+                            }
+                            color: $category-text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
